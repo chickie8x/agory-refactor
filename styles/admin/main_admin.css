@@ -10,6 +10,7 @@
 @import url(./newcamp-cost.css);
 @import url(./newcamp-list.css);
 @import url(./newcamp-list-empty.css);
+@import url(./post-management.css);
 @font-face {
     font-family: Nunito;
     src: url('/assets/fonts/Nunito-Regular.ttf');

@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Nunito;
+    src: url('/assets/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito Semi Bold;
+    src: url('/assets/fonts/Nunito-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Nunito Bold;
+    src: url('/assets/fonts/Nunito-Bold.ttf');
+}
+
+@font-face {
+    font-family: Nunito Light;
+    src: url('/assets/fonts/Nunito-Light.ttf');
+}
+
+.post-management-container{
+    padding: 24px 0;
+}
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    color: #3E7BFA;
+    font-family: 'Nunito';
+    font-size: 14px;
+    max-width: fit-content;
+    cursor: pointer;
+}
+
+.top-nav img{
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.head-title{
+    color: #1C1C28;
+    font-size: 20px;
+    font-family: 'Nunito Bold';
+    margin-top: 8px;
+}
+
+.tabs-container{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-items-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: fit-content;
+    border: solid 1px #3E7BFA;
+    border-radius: 8px;
+}
+
+.btn-tab-item{
+    width: 190px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.btn-tab-active{
+    background-color: #3E7BFA;
+    color: white;
+    border: solid 1px #3E7BFA;
+    border-radius: 6px;
+}
