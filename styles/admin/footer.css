@@ -1,0 +1,42 @@
+/* footer section  */
+
+.footer {
+    height: 109px;
+    background: #3E7BFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.brand-slogan {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+
+.policy {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+
+.policy-link a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+
+/* footer section end  */

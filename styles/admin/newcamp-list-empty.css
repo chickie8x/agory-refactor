@@ -1,0 +1,100 @@
+/* empty table section  */
+
+.empty-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 684px;
+    height: 220px;
+    margin-top: 40px;
+}
+
+.empty-img {
+    width: 320px;
+    height: 220px;
+    padding: 16px;
+    display: flex;
+}
+
+.empty-img>img {
+    object-fit: contain;
+    margin-left: 24px;
+}
+
+.empty-desc {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito';
+    margin-left: 32px;
+}
+
+.empty-title {
+    color: #3E7BFA;
+    font-size: 20px;
+    font-family: 'Nunito Bold';
+}
+
+.empty-text {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.empty-btn {
+    width: 136px;
+    height: 32px;
+    border: none;
+    outline: none;
+    background-color: #3E7BFA;
+    color: white;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.selection-decision {
+    margin-top: 8px;
+    padding: 0 24px;
+}
+
+.decision-yes,
+.decision-no {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.decision-yes>input,
+.decision-no>input {
+    margin-right: 8px;
+    scale: 1.2;
+}
+
+.task-mobile,
+.note-mobile {
+    display: none;
+    color: #1C1C28;
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+
+.mobile-select-list {
+    display: none;
+}
+
+
+/* empty table section end  */
+
+@media only screen and (max-width: 700px) {
+    .empty-list {
+        width: 100%;
+    }
+    .empty-btn {
+        display: none;
+    }
+    .empty-img {
+        width: 100%;
+    }
+    .empty-img>img {
+        width: 100%;
+    }
+}

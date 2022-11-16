@@ -1,0 +1,47 @@
+/* search no item block  */
+
+.search-no-item {
+    display: flex;
+    flex-direction: row;
+    margin: 32px 98px;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-item-img {
+    width: 270px;
+    height: 258px;
+}
+
+.no-item-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.no-item-big-text {
+    color: #3E7BFA;
+    font-family: 'Nunito Bold';
+    font-size: 20px;
+}
+
+.no-item-small-text {
+    color: #1C1C28;
+    font-family: 'Nunito Light';
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+@media only screen and (max-width: 660px) {
+    /* search no item  */
+    .search-no-item {
+        flex-direction: column;
+        width: 100%;
+        margin: 8px auto;
+    }
+    .no-item-text {
+        margin-left: unset;
+        text-align: center;
+        padding: 8px;
+    }
+}

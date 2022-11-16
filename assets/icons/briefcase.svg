@@ -1,0 +1,8 @@
+<svg id="briefcase" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <path id="Vector" d="M11.5,32h16c8.04,0,9.48-3.22,9.9-7.14l1.5-16c.54-4.88-.86-8.86-9.4-8.86H9.5C.962,0-.438,3.98.1,8.86l1.5,16C2.022,28.78,3.462,32,11.5,32Z" transform="translate(4.498 12)" fill="none" stroke="#06c270" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Vector-2" data-name="Vector" d="M0,8V6.4C0,2.86,0,0,6.4,0H9.6C16,0,16,2.86,16,6.4V8" transform="translate(16 4)" fill="none" stroke="#06c270" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Vector-3" data-name="Vector" d="M8,2V4.04C8,6.22,7.98,8,4,8,.04,8,0,6.24,0,4.06V2C0,0,0,0,2,0H6C8,0,8,0,8,2Z" transform="translate(20 24)" fill="none" stroke="#06c270" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Vector-4" data-name="Vector" d="M15.3,0A32.969,32.969,0,0,1,0,6.04" transform="translate(28 22)" fill="none" stroke="#06c270" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Vector-5" data-name="Vector" d="M0,0A32.566,32.566,0,0,0,14.76,5.52" transform="translate(5.24 22.54)" fill="none" stroke="#06c270" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Vector-6" data-name="Vector" d="M0,0H48V48H0Z" transform="translate(48 48) rotate(180)" fill="none" opacity="0"/>
+</svg>

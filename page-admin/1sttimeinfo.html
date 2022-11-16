@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0ea2bdc334.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/admin/1sttimeinfo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-section">
+            <!-- top left logo  -->
+            <div class="top-logo">
+                <img src="/assets/images/logo.jfif" alt="">
+            </div>
+
+            <!-- welcome dialog  -->
+            <div class="welcome-dialog">
+                <span class="welcome-title">Chào mừng đến với Agory, Châu!</span>
+                <span class="provide-info-message">Vui lòng cung cấp một vài thông tin để thu hút những báo giá chất
+                    lượng từ các đối tác nhé</span>
+                <div class="welcome-images">
+                    <img src="/assets/icons/vuesax-linear-profile-circle.svg" alt="">
+                    <span class="horizontal-divider"></span>
+                    <img src="/assets/icons/vuesax-linear-briefcase.svg" alt="">
+                    <span class="horizontal-divider"></span>
+                    <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
+                </div>
+                <span class="introduce-message">Hãy bắt đầu với việc giới thiệu bản thân hoặc doanh nghiệp của
+                    bạn!</span>
+                <textarea id="introduce-input" placeholder="Một chút mô tả về bạn hoặc thông tin công ty nhé..."></textarea>
+                <div class="welcome-btn">
+                    <button class="add-later-btn" id="welcome-later-btn">Tôi sẽ bổ sung sau</button>
+                    <button class="continue-btn" id="welcome-continue-btn">Tiếp tục</button>
+                </div>
+            </div>
+
+            <!-- identify dialog  -->
+            <div class="identify-dialog">
+                <span class="welcome-title">Chào mừng đến với Agory, Châu!</span>
+                <span class="provide-info-message">Vui lòng cung cấp một vài thông tin để thu hút những báo giá chất
+                    lượng từ các đối tác nhé</span>
+                <div class="identify-images">
+                    <img src="/assets/icons/profile-circle.svg" alt="">
+                    <span class="horizontal-divider"></span>
+                    <img src="/assets/icons/briefcase-blue.svg" alt="">
+                    <span class="horizontal-divider"></span>
+                    <img src="/assets/icons/vuesax-linear-gallery (1).svg" alt="">
+                </div>
+                <span class="identify-info-title">Thông tin định danh</span>
+                <span class="identify-info-message">Cần có để phục vụ cho quá trình khởi tạo hợp đồng với đối tác</span>
+                <div class="identify-tabs">
+
+                    <div class="tabs-btn">
+                        <button class="activated-tab" id="individual-tab">Cá nhân</button><button id="enterprise-tab">Doanh nghiệp</button>
+                    </div>
+
+                    <div class="individual-tab-content">
+                        <div class="personal-info">
+
+                            <label for="fname">Họ và tên</label>
+                            <input type="text" id="fname" name="fname">
+
+                            <div class="identify-card-detail">
+                                <div>
+                                    <label for="identify-card-number">Số CMND/CCCD</label>
+                                    <input type="text" id="identify-card-number" name="card-number">
+                                </div>
+                                <div>
+                                    <label for="identify-card-date">Cấp ngày</label>
+                                    <input type="text" id="identify-card-date" name="card-date">
+                                </div>
+                            </div>
+
+                            <label for="address">Địa chỉ</label>
+                            <input type="text" id="address" name="address">
+
+                        </div>
+                        <div class="identify-photo">
+
+                            <span class="identify-photo-title">Hình chụp CMND/CCCD</span>
+
+                            <div class="card-wrapper">
+                                <div class="front-side">
+                                    <label for="identify-card-front"> <span> Mặt trước</span> <span
+                                            class="front-btn-symbol">+</span></label>
+                                    <input type="file" id="identify-card-front" name="card-front">
+                                </div>
+
+                                <div class="front-side">
+                                    <label for="identify-card-front"> <span>Mặt sau</span><span class="front-btn-symbol">+</span></label>
+                                    <input type="file" id="identify-card-front" name="card-front">
+                                </div>
+                            </div>
+
+                            <label for="tax-code">Mã số thuế</label>
+                            <input type="text" id="tax-code" name="taxcode">
+                        </div>
+                    </div>
+
+                    <div class="enterprise-tab-content">
+                        <div class="enterprise-info">
+                            <div class="company-info">
+                                <div>
+                                    <label for="company-name">Tên công ty</label>
+                                    <input type="text" id="company-name" name="cname">
+                                </div>
+
+                                <div>
+                                    <label for="company-name-short">Tên viết tắt</label>
+                                    <input type="text" id="company-name-short" name="cnameshort">
+                                </div>
+
+                            </div>
+
+                            <div class="address-tax">
+                                <div>
+                                    <label for="company-address">Địa chỉ</label>
+                                    <input type="text" id="company-address" name="caddress">
+                                </div>
+
+                                <div>
+                                    <label for="company-tax-code">Mã số thuế</label>
+                                    <input type="text" id="company-tax-code" name="ctax">
+                                </div>
+                            </div>
+
+
+                            <div class="deputy-detail">
+                                <div class="deputy-x">
+                                    <div class="deputy-prefix">
+                                        <label for="deputy">Người đại diện</label>
+                                        <select name="deputy" id="deputy">
+                                            <option value="Mr">Ông</option>
+                                            <option value="Mrs">Bà</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="deputy-name" style="opacity: 0;">Tên</label>
+                                        <input type="text" id="deputy-name" name="deputyname">
+                                    </div>
+                                </div>
+
+                                <div class="deputy-position">
+                                    <label for="position">Chức vụ</label>
+                                    <input type="text" id="position" name="position">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="identify-btn">
+                    <button class="back-btn" id="identify-back-btn"><img src="/assets/icons/arrow-left.svg" class="mr-2" alt="">Quay
+                        lại</button>
+                    <div>
+                        <button class="add-later-btn">Bỏ qua bước này</button>
+                        <button class="continue-btn" id="identify-continue-btn">Tiếp tục</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- set avatar dialog -->
+            <div class="set-avatar">
+                <span class="welcome-title">Chào mừng đến với Agory, Châu!</span>
+                <span class="provide-info-message">Vui lòng cung cấp một vài thông tin để thu hút những báo giá chất
+                    lượng từ các đối tác nhé</span>
+                <div class="set-avatar-images">
+                    <img src="/assets/icons/profile-circle.svg" alt="">
+                    <span class="horizontal-divider"></span>
+                    <img src="/assets/icons/briefcase-green.svg" alt="">
+                    <span class="horizontal-divider"></span>
+                    <img src="/assets/icons/gallery-blue.svg" alt="">
+                </div>
+                <span class="identify-info-title">Hình ảnh đại diện</span>
+                <span class="identify-info-message">Sử dụng ảnh chân dung rõ rang, chính diện</span>
+                <div class="avatar-props">
+                    <div class="select-photo">
+                        <label for="avatar-photo">+</label>
+                        <input type="file" id="avatar-photo" name="avatar">
+                    </div>
+                    <div class="img-slider">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                </div>
+                <div class="identify-btn">
+                    <button class="back-btn"><img src="/assets/icons/arrow-left.svg" class="mr-2" alt="">Quay
+                        lại</button>
+                    <div>
+                        <button class="add-later-btn">Bỏ qua bước này</button>
+                        <button class="continue-btn">Tiếp tục</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- finish dialog  -->
+            <div class="finish-dialog">
+                <span>Bạn sẽ cần những thông tin này để khởi tạo hợp đồng trên Agory. Nếu bỏ qua bây giờ, bạn có thể bổ
+                    sung sau tại mục <a href="">Hồ sơ</a> .</span>
+                <div class="finish-dialog-btn">
+                    <button class="reform-btn">Tiếp tục điền</button>
+                    <button class="continue-btn">OK, tôi sẽ bổ sung sau</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div class="bottom-section-text">
+            <span>Được tin tưởng sử dụng bởi 200+ Agency và Thương hiệu</span>
+        </div>
+
+        <div class="bottom-logos">
+            <img class="logos" src="/assets/images/Ogilvy_Logo.png" alt="">
+            <img class="logos" src="/assets/images/logo111.png" alt="">
+            <img class="logos" src="/assets/images/dentsu-X-logo.png" alt="">
+            <img class="logos" src="/assets/images/2560px-Vivo_logo_2019.svg.png" alt="">
+            <img class="logos" src="/assets/images/GroupM_Hero_Logo_RGB_png.png" alt="">
+        </div>
+
+        <div class="bottom-section-text">
+            <span>Cách tốt nhất để thực hiện Influencer Marketing</span>
+        </div>
+
+        <div class="bottom-section-info">
+            <div class="bottom-section-info-item">
+                <img src="/assets/icons/vuesax-linear-star.svg" alt="">
+                <span>Đăng tuyển chiến dịch</span>
+                <p>Gửi yêu cầu về chiến dịch Influencer Marketing của bạn đến với các chuyên gia trong ngành</p>
+            </div>
+            <div class="bottom-section-info-item">
+                <img src="/assets/icons/document-filter.svg" alt="">
+                <span>Duyệt báo giá</span>
+                <p>Xem xét các phương án phù hợp nhất với kế hoạch và ngân sách của bạn</p>
+            </div>
+            <div class="bottom-section-info-item">
+                <img src="/assets/icons/security-card.svg" alt="">
+                <span>Thanh toán an toàn</span>
+                <p>Chỉ thanh toán sau khi công việc của Influencer được hoàn thành</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="social">
+            <i class="fas fa-basketball-ball mr-4 text-white fa-lg"></i>
+            <i class="fab fa-instagram mr-4 text-white fa-lg"></i>
+            <i class="fab fa-twitter mr-4 text-white fa-lg"></i>
+            <i class="fab fa-youtube mr-4 text-white fa-lg"></i>
+        </div>
+        <div class="brand-slogan">
+            <span>Agory - Influencer Marketing Network</span>
+        </div>
+        <div class="policy">
+            <div class="trademark">
+                <span style="font-size: 10px; font-family: Nunito Light;">© 2020 - All Rights Reserved</span>
+            </div>
+            <div class="policy-link">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Sitemap</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./1sttimeinfo.js"></script>
+</body>
+
+</html>

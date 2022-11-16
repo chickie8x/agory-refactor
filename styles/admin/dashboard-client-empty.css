@@ -1,0 +1,375 @@
+.tabs-job-content {
+    margin-top: 16px;
+    width: 100%;
+    height: 339px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-content-img img {
+    width: 368px;
+    height: 275px;
+}
+
+.job-content-content .table-content {
+    padding: 8px 24px;
+    font-family: 'Nunito';
+    color: #555770;
+    font-size: 16px;
+}
+
+.job-content-content span {
+    display: block;
+    max-width: 370px;
+    color: #555770;
+}
+
+.job-content-content button {
+    margin-top: 24px;
+    border: none;
+    outline: none;
+    background-color: #3E7BFA;
+    color: white;
+    font-size: 12px;
+    border-radius: 8px;
+    width: 134px;
+    height: 32px;
+    font-family: 'Nunito';
+}
+
+.empty-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 384px;
+    margin-top: 16px;
+}
+
+.table-img img {
+    width: 368px;
+    height: 320px;
+}
+
+.table-content span {
+    display: block;
+    max-width: 370px;
+    color: #555770;
+}
+
+.table-content button {
+    margin-top: 24px;
+    border: none;
+    outline: none;
+    background-color: #3E7BFA;
+    color: white;
+    font-size: 12px;
+    border-radius: 8px;
+    width: 186px;
+    height: 32px;
+    font-family: 'Nunito';
+}
+
+.influencer-table {
+    margin-top: 32px;
+}
+
+
+/* modal section  */
+
+#create-post>.modal-dialog>.modal-content {
+    width: 564px;
+    box-shadow: 0px 20px 32px #60617029;
+    border-radius: 8px;
+    background: white;
+}
+
+.title-modal {
+    color: #1C1C28;
+    font-family: 'Nunito Bold';
+    font-size: 14px;
+}
+
+.input-container {
+    color: #555770;
+    font-size: 12px;
+    font-family: 'Nunito';
+    margin-top: 24px;
+    display: flex;
+}
+
+.input-container>input {
+    margin-right: 16px;
+    scale: 1.1;
+}
+
+.type-container {
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-around;
+}
+
+.fixed-cost,
+.fixed-list {
+    width: 246px;
+    background: #FAFAFC;
+    box-shadow: 0px 2px 4px #00000029;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.fixed-cost {
+    margin-right: 24px;
+}
+
+.fixed-cost>input,
+.fixed-list>input {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.fixed-cost>img,
+.fixed-list>img {
+    width: 24px;
+    height: 24px;
+}
+
+.fixed-subtitle {
+    font-family: 'Nunito Bold';
+}
+
+.fixed-subdesc {
+    font-size: 12px;
+    font-family: 'Nunito Light';
+}
+
+.select-type {
+    margin-top: 8px;
+}
+
+.select-type>select {
+    min-width: 270px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+    appearance: none;
+    outline: none;
+    box-shadow: 0px 0.5px 2px #00000029;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    background-color: #FAFAFC;
+    color: #555770;
+    font-size: 14px;
+    font-family: 'Nunito Light';
+    background-image: url('/assets/icons/vuesax-linear-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+}
+
+#create-post>.modal-dialog>.modal-content>.modal-footer {
+    border-top: none;
+}
+
+.btn-cancel-modal {
+    border: none;
+    outline: none;
+    background: none;
+    color: #3E7BFA;
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+
+.btn-create-post {
+    width: 134px;
+    height: 32px;
+    background-color: #3E7BFA;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 12px;
+    font-family: 'Nunito';
+    border-radius: 8px;
+}
+
+.btn-cancel-modal:focus,
+.btn-create-post:focus {
+    outline: none;
+}
+
+.item-selected {
+    background-color: #E5F0FF;
+}
+
+.text-change-color {
+    color: #3E7BFA;
+}
+
+
+/* modal section end  */
+
+
+/* footer section  */
+
+.footer {
+    height: 109px;
+    background: #3E7BFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.brand-slogan {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+
+.policy {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+
+.policy-link a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+
+/* footer section end  */
+
+@media only screen and (max-width: 1160px) {
+    .main-wrapper {
+        width: auto;
+        margin: 0 16px 32px 16px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .menu-item {
+        padding: 8px 12px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .menu {
+        display: none;
+    }
+    .message-notification {
+        display: none;
+    }
+    .collapse-btn {
+        display: flex;
+    }
+    /* main content section  */
+    .main-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+    .tabs-job-wrapper {
+        padding: 0 8px;
+    }
+    .profile-incompleted-message {
+        margin: 16px 8px 0 8px;
+    }
+    .tabs-job-header {
+        flex-direction: column;
+        padding: 0;
+    }
+    .tabs-job-header button {
+        margin-top: 8px;
+    }
+    .tabs-job-content,
+    .empty-table {
+        flex-direction: column;
+        height: auto;
+        padding: 8px;
+    }
+    .job-content-img img {
+        width: 100%;
+    }
+    .job-content-content {
+        text-align: center;
+    }
+    .job-content-content button {
+        margin: 16px auto;
+    }
+    .influencer-table {
+        padding: 0 8px;
+        margin-bottom: 48px;
+    }
+    .table-content {
+        text-align: center;
+    }
+    .table-content button {
+        margin: 16px auto;
+    }
+    /* modal  */
+    .type-container {
+        flex-direction: column;
+    }
+    .fixed-cost,
+    .fixed-list {
+        width: 100%;
+    }
+    .fixed-cost {
+        margin-bottom: 8px;
+    }
+    .select-type>select {
+        width: 100%;
+    }
+    /* footer section  */
+    .footer {
+        justify-content: center;
+        height: unset;
+        padding: unset;
+        margin-top: 16px;
+    }
+    .social {
+        justify-content: center;
+        margin: 28px auto 8px auto;
+    }
+    .brand-slogan {
+        justify-content: center;
+    }
+    .policy {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .trademark {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .policy-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+        background: #3568D4;
+        padding: 16px;
+    }
+}

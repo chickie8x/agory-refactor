@@ -1,0 +1,44 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./emptylist.css);
+@import url(./listwithdata.css);
+@import url(./seachnoresult.css);
+@import url(./dashboard-client.css);
+@import url(./dashboard-client-empty.css);
+@import url(./dashboard-vendor.css);
+@import url(./dashboard-vendor-empty.css);
+@import url(./newcamp-cost.css);
+@import url(./newcamp-list.css);
+@import url(./newcamp-list-empty.css);
+@font-face {
+    font-family: Nunito;
+    src: url('/assets/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito Bold;
+    src: url('/assets/fonts/Nunito-Bold.ttf');
+}
+
+@font-face {
+    font-family: Nunito Light;
+    src: url('/assets/fonts/Nunito-Light.ttf');
+}
+
+html {
+    height: -webkit-fill-available;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #EBEBF0;
+    height: 100%;
+    min-height: -webkit-fill-available;
+}
+
+.fluid-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}

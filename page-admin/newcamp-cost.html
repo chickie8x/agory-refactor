@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/admin/main_admin.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0ea2bdc334.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/3rdlib/styles/ion.rangeSlider.min.css">
+    <title>Agory</title>
+</head>
+
+<body>
+
+    <div class="fluid-container">
+
+        <!-- navigation bar section  -->
+
+        <div class="navigation-wrapper">
+            <div class="navigation">
+                <div class="brand-logo">
+                    <img src="/assets/images/logo.jfif" class="img-fluid w-100" alt="">
+                </div>
+                <div class="menu">
+                    <div class="menu-item">
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Đăng tuyển của tôi</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Danh sách Influencer</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Đối tác</span>
+                    </div>
+                </div>
+                <div class="message-notification">
+                    <div class="messages right-section-item">
+                        <img src="/assets/icons/white-message.svg" class="text-white" alt="">
+                        <span class="notification-badge">8</span>
+                    </div>
+                    <div class="notifications right-section-item">
+                        <img src="/assets/icons/white-notification.svg" alt="">
+                        <span class="notification-badge">8</span>
+                    </div>
+                    <div class="user right-section-item">
+                        <img src="/assets/images/useravt.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+                <div class="collapse-btn">
+                    <img src="/assets/icons/bars-btn.svg" class="collapse-btn-img" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- navigation bar section end  -->
+
+
+
+        <!-- collapse-menu section  -->
+
+        <div class="collapse-menu">
+            <div class="collapse-menu-header">
+                <div class="collapse-btn">
+                    <img src="/assets/icons/bars-btn-blue.svg" class="collapse-btn-img" alt="">
+                </div>
+                <div class="collapse-header-item">
+                    <div class="messages right-section-item">
+                        <img src="/assets/icons/blue-message.svg" alt="">
+                        <span class="notification-badge">8</span>
+                    </div>
+                    <div class="notifications right-section-item">
+                        <img src="/assets/icons/blue-notification.svg" alt="">
+                        <span class="notification-badge">8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse-menu-item-wrapper">
+                <div class="collapse-menu-item">
+                    <span>Đăng tuyển của tôi</span>
+                </div>
+                <div class="collapse-menu-item">
+                    <span>Danh sách Influencer</span>
+                </div>
+                <div class="collapse-menu-item">
+                    <span>Đối tác</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- collapse menu section end  -->
+
+
+        <!-- main content section  -->
+        <div class="main-wrapper">
+
+            <h3 class="post-title">Tạo đăng tuyển</h3>
+            <div class="process-steps">
+
+                <div class="step">
+                    <img src="/assets/icons/curr-step.svg" alt="">
+                    <span>Tiêu đề và kinh phí</span>
+                    <div class="steps-divider">
+                        <img src="/assets/icons/step-divider.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="step">
+                    <img src="/assets/icons/default-step.svg" alt="">
+                    <span>Về chiến dịch</span>
+                    <div class="steps-divider">
+                        <img src="/assets/icons/step-divider.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="step">
+                    <img src="/assets/icons/default-step.svg" alt="">
+                    <span>Về Influencer</span>
+                    <div class="steps-divider">
+                        <img src="/assets/icons/step-divider.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="step">
+                    <img src="/assets/icons/default-step.svg" alt="">
+                    <span>Hiển thị</span>
+                    <div class="steps-divider">
+                        <img src="/assets/icons/step-divider.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="step">
+                    <img src="/assets/icons/default-step.svg" alt="">
+                    <span>Xem lại và đăng</span>
+                </div>
+
+            </div>
+
+            <div class="box-container">
+
+                <div class="noti">
+                    <img src="/assets/icons/blue-info-circle.svg" alt="">
+                    <span>Bạn sẽ sử dụng <span class="credit-value">01</span> Credit để đăng tuyển. Số lượng Credit còn lại là <span class="credit-value">14</span>.</span>
+                </div>
+
+                <!-- step1  -->
+                <div class="box-general step1-box">
+                    <span class="box-title">Tiêu đề và kinh phí</span>
+                    <div class="title-section">
+                        <div class="title-input">
+                            <label for="title-text">Tiêu đề</label>
+                            <input type="text" id="title-text">
+                        </div>
+                    </div>
+                    <div class="box-desc">
+                        <span>Ví dụ: </span>
+                        <span>- Tìm influencer cho chiến dịch ra mắt sản phẩm đồ uống </span>
+                        <span>- Cần tìm influencer có lối sống lành mạnh </span>
+                        <span>- Influencer nam dưới 30 tuổi chụp hình thời trang</span>
+                    </div>
+                    <div class="cost-section">
+                        <span>Kinh phí</span>
+                        <div class="cost-input">
+                            <input type="text">
+                            <span>VND</span>
+                        </div>
+                    </div>
+                    <div class="VAT-section">
+                        <div>
+                            <input type="radio" name="vat">
+                            <label for="vat">Có lấy hóa đơn VAT</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="vat">
+                            <label for="vat">Không lấy hóa đơn VAT</label>
+                        </div>
+                    </div>
+
+                    <div class="btn-section">
+                        <button class="btn-cancel">Hủy</button>
+                        <button class="btn-continue">Tiếp tục</button>
+                    </div>
+                </div>
+
+                <!-- step2  -->
+                <div class="box-general step2-box">
+                    <span class="box-title">Mô tả chiến dịch</span>
+                    <div class="box-desc2">
+                        <span class="sub-title">Một mô tả đầy đủ nên có:  </span>
+                        <span>- Thông tin nhãn hàng và mục tiêu chiến dịch </span>
+                        <span>- Nhóm khách hàng bạn đang muốn nhắm tới </span>
+                        <span>- Số lượng Influencermong muốn và công việc phải làm </span>
+                        <span>- Dạng Influencer mà bạn đang nghĩ tới (travel blogger/ fashionista) </span>
+                        <span>- Ví dụ vài cái tên Influencer mà bạn mong muốn (nếu có)</span>
+                    </div>
+                    <div class="camp-desc">
+                        <textarea name="campdesc" id="campdesc"></textarea>
+                        <span>0/500</span>
+                    </div>
+
+                    <div class="files-attached">
+                        <div class="attached-section">
+                            <span>File đính kèm (tối đa 5 files , mỗi file < 100MB)</span>
+                            <div>
+                                <label for="files">Đính kèm <img src="/assets/icons/paper-clip.svg" alt=""></label>
+                                <input type="file" id="files" multiple>
+                            </div>
+                        </div>
+                        <div class="attached-list">
+                            <div>
+                                <span>File 1</span>
+                                <button class="attached-delele"><img src="/assets/icons/vuesax-linear-trash.svg" alt=""></button>
+                            </div>
+                            <div>
+                                <span>File 2</span>
+                                <button class="attached-delele"><img src="/assets/icons/vuesax-linear-trash.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="camp-subjects">
+                        <div class="sub-desc">
+                            <span class="sub-title">Chủ đề liên quan đến chiến dịch lần này</span>
+                            <span>Chúng tôi sẽ hiển thị đăng tuyển nhiều hơn cho những người có kinh nghiệm trong chủ đề này</span>
+                        </div>
+
+                        <div class="subjects-grid">
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/amthuc.png" class="item-img" alt="">
+                                <span class="item-name">Ẩm thực - Đồ uống</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/giaoduc.png" class="item-img" alt="">
+                                <span class="item-name">Giáo dục - Khoa học</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/giadinh.png" class="item-img" alt="">
+                                <span class="item-name">Gia đình - Trẻ em</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/dulich.png" class="item-img" alt="">
+                                <span class="item-name">Du lịch - Trải nghiệm</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/suckhoe.png" class="item-img" alt="">
+                                <span class="item-name">Sức khoẻ - Y tế</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/thoitrang.png" class="item-img" alt="">
+                                <span class="item-name">Thời trang - Mỹ phẩm</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/Shopping.png" class="item-img" alt="">
+                                <span class="item-name">Mua sắm - Tiêu dùng</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/batdongsan.png" class="item-img" alt="">
+                                <span class="item-name">Bất động sản</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/nghethuat.png" class="item-img" alt="">
+                                <span class="item-name">Nghệ thuật - Biểu diễn</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/congnghe.png" class="item-img" alt="">
+                                <span class="item-name">Đồ công nghệ</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/giaitri.png" class="item-img" alt="">
+                                <span class="item-name">Giải trí - Viral</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/truyencamhung.png" class="item-img" alt="">
+                                <span class="item-name">Truyền cảm hứng</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/taichinh.png" class="item-img" alt="">
+                                <span class="item-name">Tài chính - Kinh doanh</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/Game.png" class="item-img" alt="">
+                                <span class="item-name">Game</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/xe.png" class="item-img" alt="">
+                                <span class="item-name">Xe và phương tiện</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/moitruong.png" class="item-img" alt="">
+                                <span class="item-name">Môi trường - Cộng đồng</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/Pets.png" class="item-img" alt="">
+                                <span class="item-name">Thú nuôi</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/thethao.png" class="item-img" alt="">
+                                <span class="item-name">Thể thao - Vận động</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-section">
+                        <button class="btn-back">Quay lại</button>
+                        <button class="btn-continue">Tiếp tục</button>
+                    </div>
+                </div>
+
+
+                <!-- step 3  -->
+                <div class="box-general step3-box">
+                    <span class="box-title">Mô tả về Influencer</span>
+                    <div class="interested-influencer">
+
+                        <span class="sub-title">Bạn đang quan tâm đến dạng influencer nào ?</span>
+                        <span>Những người đã từng làm việc thành công với dạng influencer này sẽ thấy bài đăng của bạn <a href="">(Tìm hiểu thêm)</a> </span>
+
+                        <div class="subjects-grid">
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/Celebrities.png" class="item-img" alt="">
+                                <span class="item-name">Celebrity</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/KOL.png" class="item-img" alt="">
+                                <span class="item-name">KOL</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/Community.jpeg" class="item-img" alt="">
+                                <span class="item-name">Community</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/Macro.png" class="item-img" alt="">
+                                <span class="item-name">Macro Influencer</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/Micro.png" class="item-img" alt="">
+                                <span class="item-name">Micro Influencer</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/Nano.png" class="item-img" alt="">
+                                <span class="item-name">Nano Influencer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interested-influencer">
+
+                        <span class="sub-title">Các kênh mà influencer có thể sử dụng</span>
+
+                        <div class="subjects-grid">
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/icon_facebook.png" class="item-img" alt="">
+                                <span class="item-name">Facebook</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/icon_insta.png" class="item-img" alt="">
+                                <span class="item-name">Instagram</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/icon_youtube.png" class="item-img" alt="">
+                                <span class="item-name">Youtube</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/icon_tiktok.png" class="item-img" alt="">
+                                <span class="item-name">Tiktok</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/icon_khac.png" class="item-img" alt="">
+                                <span class="item-name">Khác</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interested-influencer">
+
+                        <span class="sub-title">Công việc mà các influencer có thể thực hiện</span>
+
+                        <div class="subjects-grid">
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/bieu dien mc.png" class="item-img" alt="">
+                                <span class="item-name">Biểu diễn - MC</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/dang hinh.png" class="item-img" alt="">
+                                <span class="item-name">Đăng hình</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/Dang story.png" class="item-img" alt="">
+                                <span class="item-name">Đăng story</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/dang video.png" class="item-img" alt="">
+                                <span class="item-name">Đăng video</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/du event.png" class="item-img" alt="">
+                                <span class="item-name">Dự event</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/LiveStream.png" class="item-img" alt="">
+                                <span class="item-name">Livestream</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/sang tac.png" class="item-img" alt="">
+                                <span class="item-name">Sáng tác</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/share bai.png" class="item-img" alt="">
+                                <span class="item-name">Share bài</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/shooting ghi hinh.png" class="item-img" alt="">
+                                <span class="item-name">Shooting - Ghi hình</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/su dung hinh anh.png" class="item-img" alt="">
+                                <span class="item-name">Sử dụng hình ảnh</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="checkbox" class="item-check">
+                                <img src="/assets/icons/icon_khac.png" class="item-img" alt="">
+                                <span class="item-name">Khác</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interested-influencer">
+
+                        <span class="sub-title">Giới tính của influencer tham gia chiến dịch</span>
+
+                        <div class="subjects-grid">
+                            <div class="grid-item">
+                                <input type="radio" name="influencer-gender" class="item-check">
+                                <img src="/assets/icons/Male.png" class="item-img" alt="">
+                                <span class="item-name">Nam</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="radio" name="influencer-gender" class="item-check">
+                                <img src="/assets/icons/Female.png" class="item-img" alt="">
+                                <span class="item-name">Nữ</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="radio" name="influencer-gender" class="item-check">
+                                <img src="/assets/icons/both.png" class="item-img" alt="">
+                                <span class="item-name">Cả hai</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interested-influencer">
+
+                        <span class="sub-title">Địa điểm sinh sống</span>
+
+                        <div class="influencer-location">
+                            <select name="locations" id="locations">
+                                <option value="undefined">Chọn địa điểm</option>
+                                <option value="HN">Hà nội</option>
+                                <option value="DN">Đà Nẵng</option>
+                                <option value="TPHCM">TP HCM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="interested-influencer">
+
+                        <span class="sub-title">Tuổi</span>
+
+                        <div class="influencer-age-body">
+                            <input type="text" class="js-range-slider" name="my_range" value="" data-type="double" data-min="10" data-max="70" data-from="20" data-to="45" data-grid="false" />
+                            <div class="influencer-age-value">
+                                <span class="age-value" id="min-age">20</span>
+                                <span class="age-value" id="max-age">45</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-section">
+                        <button class="btn-back">Quay lại</button>
+                        <button class="btn-continue">Tiếp tục</button>
+                    </div>
+
+                </div>
+
+                <!-- step 4  -->
+
+                <div class="box-general step4-box">
+                    <span class="box-title">Tùy chọn hiển thị và riêng tư</span>
+
+                    <div class="interested-influencer">
+                        <span class="sub-title">Ai có thể nhìn thấy đăng tuyển của bạn?</span>
+
+                        <div class="subjects-grid">
+                            <div class="grid-item">
+                                <input type="radio" name="privacy" class="item-check">
+                                <img src="/assets/icons/both.png" class="item-img" alt="">
+                                <span class="item-name">Bất kì ai</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="radio" name="privacy" class="item-check">
+                                <img src="/assets/icons/both.png" class="item-img" alt="">
+                                <span class="item-name">Thành viên agory</span>
+                            </div>
+                            <div class="grid-item">
+                                <input type="radio" name="privacy" class="item-check">
+                                <img src="/assets/icons/both.png" class="item-img" alt="">
+                                <span class="item-name">Riêng tư</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interested-influencer">
+                        <span class="sub-title">Câu hỏi phụ (Không bắt buộc)</span>
+                        <span>Thêm một câu hỏi dành cho người báo giá để bạn hiểu thêm về năng lực của họ. (Ví dụ: Dự án tương tự từng thực hiện)</span>
+                        <textarea name="additional-question" id="additional-question" placeholder="Câu hỏi cho vendor"></textarea>
+                        <span class="char-count">0/5000</span>
+                    </div>
+
+                    <div class="btn-section">
+                        <button class="btn-back">Quay lại</button>
+                        <button class="btn-continue">Tiếp tục</button>
+                    </div>
+                </div>
+
+                <!-- step 5  -->
+
+                <div class="box-general step5-box">
+                    <span class="box-title">Xem lại và đăng tuyển</span>
+
+                    <div class="interested-influencer">
+                        <span class="sum1-title">Tiêu đề và kinh phí <img src="/assets/icons/vuesax-linear-edit.svg" alt=""></span>
+                        <span class="sub-title sum1-sub">Tiêu đề</span>
+                        <span>Tìm influencer review bộ dưỡng da mới</span>
+                        <span class="sub-title sum2-sub">Kinh phí</span>
+                        <span>25.000.000 VND</span>
+                        <span>Lấy hóa đơn VAT</span>
+                    </div>
+
+                    <div class="interested-influencer">
+                        <span class="sum1-title">Thông tin về chiến dịch <img src="/assets/icons/vuesax-linear-edit.svg" alt=""></span>
+                        <span class="sub-title sum1-sub">Mô tả chiến dịch</span>
+                        <p>
+                            Hi mọi Người, bên mình đang có job share post PR cho khách sạn ở Đà Nẵng + đến review trại nghiệm và đăng album ảnh hoặc video tùy brief và ngân sách. <br> Thời gian dự kiến:<br> 2 tuần cuối tháng 4 đến 2 tuần đầu tháng 5.<br>                            Yêu cầu về KOLs:<br> - Micro Influencers có followers trong khoảng 10K - %0K<br> - Phù hợp với style du lịch check-in san chảnh<br> Quyền lợi:<br> Review trại nghiệm được take care toán bộ chi phí ăn ở
+                        </p>
+                        <span class="sub-title sum2-sub">Chủ đề liên quan</span>
+                        <p>
+                            Du lịch - Trải nghiệm<br> Mua sắm - Tiêu dùng<br> Ẩm thực - Đồ uống
+                        </p>
+                    </div>
+
+                    <div class="interested-influencer">
+                        <span class="sum1-title">Thông tin về influencer <img src="/assets/icons/vuesax-linear-edit.svg" alt=""></span>
+                        <span class="sub-title sum1-sub">Dạng influencer</span>
+                        <span>Du lịch - Trải nghiệm</span>
+                        <span>Mua sắm - Tiêu dùng</span>
+                        <span>Ẩm thực - Đồ uống</span>
+                        <span class="sub-title sum2-sub">Các kênh có thể sử dụng</span>
+                        <span>Facebook</span>
+                        <span>Instagram</span>
+                        <span class="sub-title sum2-sub">Công việc có thể làm</span>
+                        <span>Đăng hình</span>
+                        <span>Khác</span>
+                        <span class="sub-title sum2-sub">Giới tính</span>
+                        <span>Tất cả</span>
+                        <span class="sub-title sum2-sub">Địa điểm</span>
+                        <span>Hồ Chí Minh</span>
+                        <span>Hà Nội</span>
+                        <span class="sub-title sum2-sub">Tuổi đời</span>
+                        <span>24-35</span>
+                    </div>
+
+                    <div class="interested-influencer">
+                        <span class="sum1-title">Hiển thị <img src="/assets/icons/vuesax-linear-edit.svg" alt=""></span>
+                        <span class="sub-title sum1-sub">Ai có thể thấy đăng tuyển này</span>
+                        <span>Ai có thể thấy đăng tuyển này Bất kỳ ai - Tất cả mọi người đang dùng Agory và các công cụ tìm kiếm sẽ thấy đăng tuyển này</span>
+                    </div>
+
+                    <div class="btn-section">
+                        <button class="btn-save">Lưu lại & thoát</button>
+                        <button class="btn-post">Đăng tuyển ngay</button>
+                    </div>
+
+                </div>
+
+                <!-- step 6  -->
+
+                <div class="box-general step6-box">
+                    <span class="box-title">Đăng tuyển thành công</span>
+
+                    <div class="step6-body">
+                        <img src="/assets/images/complete-post.png" alt="">
+                        <div class="success-box">
+                            <span class="sub-title sum1-sub">Các đối tác sẽ gửi báo giá cho bạn sớm thôi</span>
+                            <span> Chuyển hướng đến trang quản lý đăng tuyển trong <span class="cooldown"> 3 giây</span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- footer section  -->
+        <div class="footer">
+            <div class="social">
+                <i class="fas fa-basketball-ball mr-4 text-white fa-lg"></i>
+                <i class="fab fa-instagram mr-4 text-white fa-lg"></i>
+                <i class="fab fa-twitter mr-4 text-white fa-lg"></i>
+                <i class="fab fa-youtube mr-4 text-white fa-lg"></i>
+            </div>
+            <div class="brand-slogan">
+                <span>Agory - Influencer Marketing Network</span>
+            </div>
+            <div class="policy">
+                <div class="trademark">
+                    <span style="font-size: 10px; font-family: Nunito Light;">© 2020 - All Rights Reserved</span>
+                </div>
+                <div class="policy-link">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Sitemap</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/3rdlib/scripts/ion.rangeSlider.min.js"></script>
+    <script src="newcamp-cost.js"></script>
+</body>
+
+</html>
