@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/admin/main_admin.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/0ea2bdc334.js" crossorigin="anonymous"></script>
@@ -111,17 +112,107 @@
 
                 <div class="tabs-container">
                     <div class="tab-items-wrapper">
-                        <div class="btn-tab-item btn-tab-active">
+                        <div class="btn-tab-item btn-tab-active" id="post-view">
                             <span>Xem đăng tuyển</span>
                         </div>
-                        <div class="btn-tab-item">
+                        <div class="btn-tab-item" id="partner-invitation">
                             <span>Mời đối tác</span>
                         </div>
-                        <div class="btn-tab-item">
+                        <div class="btn-tab-item" id="cost-check">
                             <span>Xem báo giá (4)</span>
                         </div>
-                        <div class="btn-tab-item">
+                        <div class="btn-tab-item" id="corporation-partner">
                             <span>Hợp tác (0)</span>
+                        </div>
+                    </div>
+
+                    <div class="tabs-content-wrapper">
+                        <div class="post-view-content">
+                            <div class="post-view-content-section">
+                                <span class="post-view-content-title">Tiêu đề và kinh phí</span>
+                                <div class="section-content-detail">
+                                    <span class="post-view-content-sub-title">Thể loại - Ngày đăng </span>
+                                    <span>Cố định danh sách - 17 tháng 6, 2022</span>
+                                </div>
+                                <div class="section-content-detail">
+                                    <span class="post-view-content-sub-title">Kinh phí </span>
+                                    <span>Lấy hoá đơn VAT</span>
+                                </div>
+                            </div>
+
+                            <div class="post-view-content-section">
+                                <span class="post-view-content-title">Thông tin về chiến dịch</span>
+                                <div class="section-content-detail">
+                                    <span class="post-view-content-sub-title">Mô tả chiến dịch </span>
+                                    <span style="white-space: pre-line; max-width: 750px;">Hi mọi Người, bên mình đang
+                                        có job share post PR cho khách sạn ở Đà Nẵng + đến review trại nghiệm và đăng
+                                        album ảnh hoặc video tùy brief và ngân sách.
+                                        Thời gian dự kiến: 2 tuần cuối tháng 4 đến 2 tuần đầu tháng 5.
+                                        Yêu cầu về KOLs:<br> - Micro Influencers có followers trong khoảng 10K - 50K
+                                        <br> - Phù hợp với style du lịch check-in san chảnh Quyền lợi: Review trại
+                                        nghiệm được take care toán bộ chi phí ăn ở</span>
+                                </div>
+                                <div class="section-content-detail">
+                                    <span class="post-view-content-sub-title">Chủ đề liên quan </span>
+                                    <span>Du lịch - Trải nghiệm</span>
+                                    <span>Mua sắm - Tiêu dùng</span>
+                                    <span>Ẩm thực - Đồ uống</span>
+                                </div>
+                            </div>
+
+                            <div class="post-view-content-section">
+                                <span class="post-view-content-title">Thông tin về Influencer</span>
+                                <div class="section-content-detail">
+                                    <div class="influencer-and-task">
+                                        <div class="total-influencer">
+                                            <img src="../assets/icons/vuesax-linear-people.svg" alt="">
+                                            <span>Tổng số influencer: <span class="total-influencer-value">
+                                                    0</span></span>
+                                        </div>
+                                        <div class="total-task">
+                                            <img src="../assets/icons/vuesax-linear-briefcase.svg" alt="">
+                                            <span>Tổng số công việc: <span class="total-influencer-value">
+                                                    0</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-section-table">
+                                    <div class="section-table-header">
+                                        <div class="influencer-col-header">Influencer</div>
+                                        <div class="type-col-header">Type</div>
+                                        <div class="channel-col-header">Kênh</div>
+                                        <div class="task-col-header">Công việc</div>
+                                        <div class="note-col-header">Note</div>
+                                    </div>
+                                    <div class="section-table-row">
+                                        <div class="section-table-row-item">
+                                            <div class="influencer-col-header">
+                                                <img src="../assets/images/useravt.png" alt="">
+                                                <a href="">Merrile Burgett</a>
+                                                <span class="community-pill hide-item">Community</span>
+                                            </div>
+                                            <div class="type-col-header">
+                                                <span class="community-pill">Community</span>
+                                            </div>
+                                            <div class="channel-col-header">
+                                                <img src="../assets/icons/icon_insta.png" alt="">
+                                            </div>
+                                            <div class="task-col-header">
+                                                <img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
+                                                <span>Đăng hình</span>
+                                                <img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+                                            </div>
+                                            <div class="note-col-header">
+                                                <span>Cần check lại thông tin chi tiết về lịch...</span>
+                                                <img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+                                            </div>
+                                            <span class="task-mobile">Công việc</span>
+                                            <span class="note-mobile">Ghi chú</span>
+                                        </div>                               
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -158,9 +249,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="post-management.js"></script>
 </body>
 

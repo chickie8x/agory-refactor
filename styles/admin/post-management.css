@@ -49,6 +49,7 @@
     margin-top: 32px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .tab-items-wrapper{
@@ -59,6 +60,7 @@
     width: fit-content;
     border: solid 1px #3E7BFA;
     border-radius: 8px;
+    margin: auto;
 }
 
 .btn-tab-item{
@@ -76,4 +78,84 @@
     color: white;
     border: solid 1px #3E7BFA;
     border-radius: 6px;
+}
+
+.tabs-content-wrapper{
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+}
+
+.post-view-content{
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.post-view-content-section{
+    border-bottom: solid 1px #60617029;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.post-view-content-title{
+    font-family: 'Nunito Bold';
+    font-size: 16px;
+    color: #1C1C28;
+}
+
+.section-content-detail{
+    font-size: 14px;
+    color: #555770;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+
+.post-view-content-sub-title{
+    font-family: 'Nunito Bold';
+}
+
+.influencer-and-task{
+    display: flex;
+}
+
+.section-table-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.influencer-col-header{
+    min-width: 310px;
+}
+
+.influencer-col-header img{
+    width: 24px;
+    height: 24px;
+}
+
+.influencer-col-header a{
+    text-decoration: none;
+}
+
+.type-col-header{
+    min-width: 70px;
+}
+
+.channel-col-header{
+    min-width: 60px;
+}
+
+.task-col-header{
+    min-width: 132px;
+}
+
+.note-col-header{
+    min-width: 340px;
+}
+
+.section-table-row-item{
+    display: flex;
 }
