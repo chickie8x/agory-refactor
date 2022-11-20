@@ -18,9 +18,10 @@
     src: url('/assets/fonts/Nunito-Light.ttf');
 }
 
-.post-management-container{
-    padding: 24px 0;
+.post-management-container {
+    margin-top: 24px;
 }
+
 
 .top-nav{
     display: flex;
@@ -71,6 +72,10 @@
     align-items: center;
     font-family: 'Nunito';
     font-size: 14px;
+}
+
+.btn-tab-item span {
+    user-select: none;
 }
 
 .btn-tab-active{
@@ -184,11 +189,10 @@
 }
 
 .invite-partners-container{
-    margin-top: 24px;
     width: 100%;
 }
 
-.partners-tabs-btn{
+.partners-tabs-btn, .cost-view-tabs-btn{
     display: flex;
     align-items: center;
     background-color: white;
@@ -198,7 +202,7 @@
     border-bottom: solid 1px rgba(180, 180, 180, 0.4);
 }
 
-.tab-btn-item{
+.tab-btn-item, .cost-view-tabs-btn-item{
     margin-right: 64px;
     color: #8F90A6;
     font-family: 'Nunito';
@@ -212,7 +216,7 @@
     border-bottom: solid 2px #3E7BFA;
 }
 
-.partners-tabs-content{
+.partners-tabs-content, .cost-view-tabs-content{
     background-color: white;
     border-radius:0 8px 8px 8px;
     box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.2);
@@ -220,7 +224,7 @@
     -moz-box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.2);
 }
 
-.partners-tabs-content-header{
+.partners-tabs-content-header, .cost-view-tabs-content-header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -229,7 +233,7 @@
     padding: 16px;
 }
 
-.partners-tabs-content-header-search-bar{
+.partners-tabs-content-header-search-bar, .cost-view-tabs-content-header-search-bar{
     width: 450px ;
     height: 40px;
     border-radius: 8px;
@@ -244,7 +248,7 @@
 }
 
 
-.partners-tabs-content-header-search-bar input{
+.partners-tabs-content-header-search-bar, .cost-view-tabs-content-header-search-bar input{
     flex: 1;
     margin: auto 12px;
     padding: 0 12px;
@@ -401,4 +405,41 @@
 .current-page-number a{
     color: #3E7BFA !important;
     font-family: 'Nunito Bold';
+}
+
+.cost-view-tabs-content-header-sort-by{
+    display: flex;
+    margin-left: 48px;
+    align-items: center;
+}
+
+.cost-view-tabs-content-header-sort-by span{
+    font-size: 14px;
+    font-family: 'Nunito';
+    color: #555770;
+    margin-right: 8px;
+}
+
+.cost-view-select-wrapper{
+    background-color: #FAFAFC;
+    box-shadow: 0px 0.5px 2px #00000029;
+    padding: 10px 8px;
+    border-radius: 8px;
+    min-width: 240px;
+}
+
+.cost-view-select-wrapper select{
+    border: none;
+    outline: none;
+    color: #555770;
+    font-size: 14px;
+    font-family: 'Nunito Light';
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background: none;
+    background-image: url('../../assets/icons/vuesax-linear-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position-x: 100% ;
+    width: 100%;
 }

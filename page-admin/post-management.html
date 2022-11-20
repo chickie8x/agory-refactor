@@ -101,7 +101,7 @@
 
         <!-- main content section  -->
         <div class="main-wrapper">
-            <div class="post-management-container hide-item">
+            <div class="post-management-container">
                 <div class="top-nav">
                     <img src="../assets/icons/library-blue-back-btn.svg" alt="">
                     <span>Quay lại đăng tuyển</span>
@@ -127,7 +127,7 @@
                     </div>
 
                     <div class="tabs-content-wrapper">
-                        <div class="post-view-content">
+                        <div class="post-view-content main-tab-item hide-item" id="main-tab-1">
                             <div class="post-view-content-section">
                                 <span class="post-view-content-title">Tiêu đề và kinh phí</span>
                                 <div class="section-content-detail">
@@ -263,19 +263,19 @@
                 </div>
             </div>
 
-            <div class="invite-partners-container">
+            <div class="invite-partners-container main-tab-item hide-item" id="main-tab-2">
                 <div class="partners-tabs-wrapper">
                     <div class="partners-tabs-btn">
-                        <div class="recommended-partners tab-btn-item tab-btn-active">
+                        <div class="recommended-partners tab-btn-item tab-btn-active" id="sub-tab-btn-1">
                             <span>Hệ thống đề xuất(4)</span>
                         </div>
-                        <div class="invited-partners tab-btn-item">
+                        <div class="invited-partners tab-btn-item" id="sub-tab-btn-2">
                             <span>Đã mời(0)</span>
                         </div>
-                        <div class="corporated-partners tab-btn-item">
+                        <div class="corporated-partners tab-btn-item" id="sub-tab-btn-3">
                             <span>Từng hợp tác(0)</span>
                         </div>
-                        <div class="favorite-partners tab-btn-item">
+                        <div class="favorite-partners tab-btn-item" id="sub-tab-btn-4">
                             <span>Yêu thích(1)</span>
                         </div>
                     </div>
@@ -292,79 +292,321 @@
                                 <span>Bộ lọc</span>
                             </button>
                         </div>
-                        <div class="partners-list-container">
-                            <div class="partners-list-item">
-                                <div class="partners-list-item-img">
-                                    <img src="../assets/images/useravt.png" alt="">
-                                </div>
-                                <div class="partners-list-item-detail">
-                                    <span class="detail-username">Châu Nguyễn</span>
-                                    <span class="detail-workplace">Freelancer at Beso Team</span>
-                                    <div class="detail-history">
-                                        <img src="../assets/icons/vuesax-linear-profile-2user.svg" alt="">
-                                        <span class="detail-history-content">
-                                            Đã làm việc với 120 Influencer dạng
-                                            <span class="detail-history-related">Celebrity</span>
-                                        </span>
+                        <div class="partners-suggestions sub-tab-item" id="sub-tab-content-1">
+                            <div class="partners-list-container">
+                                <div class="partners-list-item">
+                                    <div class="partners-list-item-img">
+                                        <img src="../assets/images/useravt.png" alt="">
+                                    </div>
+                                    <div class="partners-list-item-detail">
+                                        <span class="detail-username">Châu Nguyễn</span>
+                                        <span class="detail-workplace">Freelancer at Beso Team</span>
+                                        <div class="detail-history">
+                                            <img src="../assets/icons/vuesax-linear-profile-2user.svg" alt="">
+                                            <span class="detail-history-content">
+                                                Đã làm việc với 120 Influencer dạng
+                                                <span class="detail-history-related">Celebrity</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-action-btn">
+                                        <img src="../assets/icons/vuesax-linear-heart.svg" alt="">
+                                        <button>Mời báo giá</button>
                                     </div>
                                 </div>
-                                <div class="detail-action-btn">
-                                    <img src="../assets/icons/vuesax-linear-heart.svg" alt="">
-                                    <button>Mời báo giá</button>
+
+                                <div class="partners-list-item">
+                                    <div class="partners-list-item-img">
+                                        <img src="../assets/images/useravt.png" alt="">
+                                    </div>
+                                    <div class="partners-list-item-detail">
+                                        <span class="detail-username">Châu Nguyễn</span>
+                                        <span class="detail-workplace">Freelancer at Beso Team</span>
+                                        <div class="detail-history">
+                                            <img src="../assets/icons/vuesax-linear-profile-2user.svg" alt="">
+                                            <span class="detail-history-content">
+                                                Đã làm việc với 120 Influencer dạng
+                                                <span class="detail-history-related">Celebrity</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-action-btn">
+                                        <img src="../assets/icons/vuesax-linear-heart.svg" alt="">
+                                        <button>Mời báo giá</button>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="partners-list-item">
-                                <div class="partners-list-item-img">
-                                    <img src="../assets/images/useravt.png" alt="">
+                            <div class="partners-pagination">
+                                <div class="partners-pagination-prev-btn">
+                                    <img src="../assets/icons/prev-page-btn.svg" alt="">
                                 </div>
-                                <div class="partners-list-item-detail">
-                                    <span class="detail-username">Châu Nguyễn</span>
-                                    <span class="detail-workplace">Freelancer at Beso Team</span>
-                                    <div class="detail-history">
-                                        <img src="../assets/icons/vuesax-linear-profile-2user.svg" alt="">
-                                        <span class="detail-history-content">
-                                            Đã làm việc với 120 Influencer dạng
-                                            <span class="detail-history-related">Celebrity</span>
-                                        </span>
+
+                                <div class="partners-pagination-pages">
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">1</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">2</span>
+                                    </div>
+                                    <div class="partners-pagination-page-item current-page-number">
+                                        <a href="">3</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">...</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href>12</a>
                                     </div>
                                 </div>
-                                <div class="detail-action-btn">
-                                    <img src="../assets/icons/vuesax-linear-heart.svg" alt="">
-                                    <button>Mời báo giá</button>
+
+                                <div class="partners-pagination-next-btn">
+                                    <img src="../assets/icons/prev-page-btn.svg" alt="">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="partners-pagination">
-                            <div class="partners-pagination-prev-btn">
-                                <img src="../assets/icons/prev-page-btn.svg" alt="">
+                        <div class="partners-invited-sub-tab-content sub-tab-item hide-item" id="sub-tab-content-2">
+                            <div class="partners-list-container">
+                                <div class="partners-list-item">
+                                    <div class="partners-list-item-img">
+                                        <img src="../assets/images/useravt.png" alt="">
+                                    </div>
+                                    <div class="partners-list-item-detail">
+                                        <span class="detail-username">Châu Nguyễn</span>
+                                        <span class="detail-workplace">Freelancer at Beso Team</span>
+                                    </div>
+                                    <div class="detail-action-btn">
+                                        <img src="../assets/icons/vuesax-linear-heart.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="partners-list-item">
+                                    <div class="partners-list-item-img">
+                                        <img src="../assets/images/useravt.png" alt="">
+                                    </div>
+                                    <div class="partners-list-item-detail">
+                                        <span class="detail-username">Châu Nguyễn</span>
+                                        <span class="detail-workplace">Freelancer at Beso Team</span>
+                                    </div>
+                                    <div class="detail-action-btn">
+                                        <img src="../assets/icons/vuesax-linear-heart.svg" alt="">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="partners-pagination-pages">
-                                <div class="partners-pagination-page-item">
-                                    <a href="">1</a>
+                            <div class="partners-pagination">
+                                <div class="partners-pagination-prev-btn">
+                                    <img src="../assets/icons/prev-page-btn.svg" alt="">
                                 </div>
-                                <div class="partners-pagination-page-item">
-                                    <a href="">2</span>
+
+                                <div class="partners-pagination-pages">
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">1</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">2</span>
+                                    </div>
+                                    <div class="partners-pagination-page-item current-page-number">
+                                        <a href="">3</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">...</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href>12</a>
+                                    </div>
                                 </div>
-                                <div class="partners-pagination-page-item current-page-number">
-                                    <a href="">3</a>
-                                </div>
-                                <div class="partners-pagination-page-item">
-                                    <a href="">...</a>
-                                </div>
-                                <div class="partners-pagination-page-item">
-                                    <a href>12</a>
+
+                                <div class="partners-pagination-next-btn">
+                                    <img src="../assets/icons/prev-page-btn.svg" alt="">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="partners-pagination-next-btn">
-                                <img src="../assets/icons/prev-page-btn.svg" alt="">
+                        <div class="partners-corporated-sub-tab-content sub-tab-item hide-item" id="sub-tab-content-3">
+                            <div class="partners-list-container">
+                                <div class="partners-list-item">
+                                    <div class="partners-list-item-img">
+                                        <img src="../assets/images/useravt.png" alt="">
+                                    </div>
+                                    <div class="partners-list-item-detail">
+                                        <span class="detail-username">Châu Nguyễn</span>
+                                        <span class="detail-workplace">Freelancer at Beso Team</span>
+                                        <div class="detail-history">
+                                            <img src="../assets/icons/vuesax-linear-briefcase.svg" alt="">
+                                            <span class="detail-history-content">
+                                                Đã hoàn thành
+                                                <span class="detail-history-related">12</span>
+                                                hợp đồng với bạn
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-action-btn">
+                                        <img src="../assets/icons/vuesax-linear-heart.svg" alt="">
+                                        <button>Mời báo giá</button>
+                                    </div>
+                                </div>
+
+                                <div class="partners-list-item">
+                                    <div class="partners-list-item-img">
+                                        <img src="../assets/images/useravt.png" alt="">
+                                    </div>
+                                    <div class="partners-list-item-detail">
+                                        <span class="detail-username">Châu Nguyễn</span>
+                                        <span class="detail-workplace">Freelancer at Beso Team</span>
+                                        <div class="detail-history">
+                                            <img src="../assets/icons/vuesax-linear-briefcase.svg" alt="">
+                                            <span class="detail-history-content">
+                                                Đã hoàn thành
+                                                <span class="detail-history-related">12</span>
+                                                hợp đồng với bạn
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="detail-action-btn">
+                                        <img src="../assets/icons/vuesax-linear-heart.svg" alt="">
+                                        <button>Mời báo giá</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="partners-pagination">
+                                <div class="partners-pagination-prev-btn">
+                                    <img src="../assets/icons/prev-page-btn.svg" alt="">
+                                </div>
+
+                                <div class="partners-pagination-pages">
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">1</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">2</span>
+                                    </div>
+                                    <div class="partners-pagination-page-item current-page-number">
+                                        <a href="">3</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">...</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href>12</a>
+                                    </div>
+                                </div>
+
+                                <div class="partners-pagination-next-btn">
+                                    <img src="../assets/icons/prev-page-btn.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="partners-favorite-sub-tab-content sub-tab-item hide-item" id="sub-tab-content-4">
+                            <div class="partners-list-container">
+                                <div class="partners-list-item">
+                                    <div class="partners-list-item-img">
+                                        <img src="../assets/images/useravt.png" alt="">
+                                    </div>
+                                    <div class="partners-list-item-detail">
+                                        <span class="detail-username">Châu Nguyễn</span>
+                                        <span class="detail-workplace">Freelancer at Beso Team</span>
+                                    </div>
+                                    <div class="detail-action-btn">
+                                        <img src="../assets/icons/vuesax-linear-heart-blue.svg" alt="">
+                                        <button>Mời báo giá</button>
+                                    </div>
+                                </div>
+
+                                <div class="partners-list-item">
+                                    <div class="partners-list-item-img">
+                                        <img src="../assets/images/useravt.png" alt="">
+                                    </div>
+                                    <div class="partners-list-item-detail">
+                                        <span class="detail-username">Châu Nguyễn</span>
+                                        <span class="detail-workplace">Freelancer at Beso Team</span>
+                                    </div>
+                                    <div class="detail-action-btn">
+                                        <img src="../assets/icons/vuesax-linear-heart-blue.svg" alt="">
+                                        <button>Mời báo giá</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="partners-pagination">
+                                <div class="partners-pagination-prev-btn">
+                                    <img src="../assets/icons/prev-page-btn.svg" alt="">
+                                </div>
+
+                                <div class="partners-pagination-pages">
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">1</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">2</span>
+                                    </div>
+                                    <div class="partners-pagination-page-item current-page-number">
+                                        <a href="">3</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href="">...</a>
+                                    </div>
+                                    <div class="partners-pagination-page-item">
+                                        <a href>12</a>
+                                    </div>
+                                </div>
+
+                                <div class="partners-pagination-next-btn">
+                                    <img src="../assets/icons/prev-page-btn.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="cost-check-container main-tab-item" id="main-tab-3">
+                <div class="cost-view-tab-wrapper">
+                    <div class="cost-view-tabs-btn">
+                        <div class="cost-view-tabs-btn-item tab-btn-active">
+                            <span>Tất cả báo giá(4)</span>
+                        </div>
+                        <div class="cost-view-tabs-btn-item">
+                            <span>Shortlist(0)</span>
+                        </div>
+                        <div class="cost-view-tabs-btn-item">
+                            <span>Tin nhắn(0)</span>
+                        </div>
+                        <div class="cost-view-tabs-btn-item">
+                            <span>Đã ẩn(1)</span>
+                        </div>
+                    </div>
+                    <div class="cost-view-tabs-content">
+                        <div class="cost-view-tabs-content-header">
+                            <div class="cost-view-tabs-content-header-search-bar">
+                                <img src="../assets/icons/vuesax-linear-search-normal.svg" alt="">
+                                <input type="text" placeholder="Tên influencer , công việc...">
+                                <img src="../assets/icons/grey-close-btn.svg" alt="">
+                            </div>
+
+                            <div class="cost-view-tabs-content-header-sort-by">
+                                <span>Sắp xếp theo</span>
+                                <div class="cost-view-select-wrapper">
+                                    <select name="cost-view-sort-by" id="cost-view-sort-by">
+                                        <option value="by-follower">Lượng follower</option>
+                                        <option value="by-interaction">Tương tác trung bình</option>
+                                        <option value="by-match-point">Điểm phù hợp</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="corporation-partner main-tab-item hide-item" id="main-tab-4">
+                <p>corporated-partners</p>
             </div>
         </div>
 
