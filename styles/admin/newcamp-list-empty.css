@@ -1,6 +1,6 @@
 /* empty table section  */
 
-.empty-list {
+.empty-list-empty {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,8 +81,105 @@
     display: none;
 }
 
+/* attached file section fix  */
 
-/* empty table section end  */
+.attached-section-empty {
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.attached-section-empty span {
+    color: #555770;
+    font-size: 14px;
+    font-family: 'Nunito Bold';
+}
+
+.attached-section-empty>div>label {
+    cursor: pointer;
+    margin-left: 16px;
+    font-size: 14px;
+    font-family: 'Nunito';
+    color: #3E7BFA;
+}
+
+.attached-section-empty>div>label>img {
+    width: 16px;
+    height: 16px;
+}
+
+.attached-section-empty>div>input[type="file"] {
+    display: none;
+}
+
+
+/* btn-action-empty section fix  */
+
+.btn-action-empty{
+    margin-top: 16px;
+}
+
+.btn-action-empty>button {
+    margin-right: 16px;
+    outline: none;
+    font-family: 'Nunito';
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.btn-action-empty>button:focus {
+    outline: none;
+}
+
+.btn-action-empty-add, .mobile-select-list-empty {
+    background-color: #3E7BFA;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 12px;
+    width: 126px;
+    height: 32px;
+    border: none;
+    order: 1;
+}
+
+.btn-action-empty-copy {
+    order: 2;
+}
+
+.btn-action-empty-copy,
+.btn-action-empty-task {
+    color: #3E7BFA;
+    width: 118px;
+    height: 32px;
+    background: white;
+    border: solid 1px #3E7BFA;
+}
+
+.btn-action-empty-task {
+    width: 194px;
+    height: 32px;
+    order: 3;
+}
+
+.btn-action-empty-delete {
+    color: #FF3B3B;
+    border: solid 1px #FF3B3B;
+    width: 89px;
+    height: 32px;
+    background: none;
+    order: 4;
+}
+
+.mobile-select-list-empty{
+    display: none;
+}
+
+/* last step fix  */
+
+.step6-box-empty{
+    margin-top: 24px;
+}
+
 
 @media only screen and (max-width: 700px) {
     .empty-list {
@@ -96,5 +193,67 @@
     }
     .empty-img>img {
         width: 100%;
+    }
+
+    /* attached file section fix  */
+    .attached-section-empty{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .attached-section-empty >div > label{
+        margin-left: 0;
+    }
+
+    .empty-list-empty{
+        width: 100%;
+        flex-direction: column;
+        height: unset;
+    }
+
+    .empty-list-empty > .empty-img{
+        padding: 18px;
+    }
+
+    .empty-list-empty > .empty-img > img{
+        margin-left: unset;
+    }
+
+    /* btn action section fix  */
+
+    .btn-action-empty {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .btn-action-empty-add {
+       width: 50%;
+    }
+
+    .btn-action-empty-copy {
+        display: none;
+    }
+    .btn-action-empty-task {
+        order: 2;
+    }
+    .btn-action-empty-delete {
+        display: none;
+    }
+
+    .btn-action-empty-task{
+        display: none;
+    }
+
+    .mobile-select-list-empty{
+        display: block;
+        width: 50%;
+    }
+
+    /* sumary info section fix  */
+
+    .sumary-info {
+        display: none;
     }
 }

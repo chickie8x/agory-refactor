@@ -141,12 +141,12 @@
 }
 
 .type-col {
-    width: 67px;
+    min-width: 67px;
     margin-right: 16px;
 }
 
 .channel-col {
-    width: 48px;
+    min-width: 48px;
     margin-right: 16px;
 }
 
