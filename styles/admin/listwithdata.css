@@ -268,33 +268,33 @@
     z-index: 100;
 }
 
-.selection-col {
+.table-selection-col {
     width: 5%;
     display: flex;
     align-items: center;
 }
 
-.influencer-col {
+.table-influencer-col {
     width: 20%;
 }
 
-.type-col {
+.table-type-col {
     width: 10%;
 }
 
-.channel-col {
+.table-channel-col {
     width: 10%;
 }
 
-.job-col {
+.table-job-col {
     width: 15%;
 }
 
-.cost-col {
+.table-cost-col {
     width: 15%;
 }
 
-.note-col {
+.table-note-col {
     width: 25%;
     padding-left: 8px;
 }
@@ -2118,19 +2118,19 @@ input[type=number] {
     margin-bottom: 8px;
 }
 
-.task-selection-col {
+.task-table-selection-col {
     width: 15%;
 }
 
-.task-channel-col {
+.task-table-channel-col {
     width: 25%;
 }
 
-.task-job-col {
+.task-table-job-col {
     width: 25%;
 }
 
-.task-cost-col {
+.task-table-cost-col {
     width: 35%;
 }
 
@@ -2758,6 +2758,7 @@ input[type=number] {
     }
     .data-table {
         height: 600px;
+        width: 100%;
     }
     .content-footer {
         padding: 0 16px;
@@ -2847,7 +2848,7 @@ input[type=number] {
     .note-edit-btn {
         display: block;
     }
-    .note-col {
+    .table-note-col {
         padding-left: unset;
     }
     .channel-icon {
