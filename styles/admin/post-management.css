@@ -248,7 +248,7 @@
 }
 
 
-.partners-tabs-content-header-search-bar, .cost-view-tabs-content-header-search-bar input{
+.partners-tabs-content-header-search-bar input, .cost-view-tabs-content-header-search-bar input{
     flex: 1;
     margin: auto 12px;
     padding: 0 12px;
