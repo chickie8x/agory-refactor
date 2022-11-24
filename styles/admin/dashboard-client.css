@@ -62,14 +62,14 @@
     border: none;
 }
 
-.tabs-job-content {
+.tabs-job-content-client {
     margin-top: 16px;
 }
 
 .tabs-btns-container {
     background-color: white;
     width: fit-content;
-    border-radius: 0 12px 0 0;
+    border-radius: 12px 12px 0 0;
     border-bottom: solid #96b5f7 1px;
     position: relative;
 }
@@ -117,7 +117,10 @@
     padding: 16px 0;
     background: white;
     border-radius: 0 8px 8px 8px;
+    min-height: 400px;
 }
+
+
 
 .tab-content-item {
     display: flex;
