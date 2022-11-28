@@ -1,3 +1,8 @@
+.main-wrapper-cost{
+    display: flex;
+    flex-direction: column;
+}
+
 /* main content section  */
 
 .post-title {
