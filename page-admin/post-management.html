@@ -126,10 +126,43 @@
                         </div>
                     </div>
 
+                    <div class="select-item-wrapper-mobile">
+                        <select name="btn-tab-select" id="btn-tab-select">
+                            <option value="main-tab-1">Xem đăng tuyển</option>
+                            <option value="main-tab-2">Mời đối tác</option>
+                            <option value="main-tab-3">Xem báo giá(4)</option>
+                            <option value="main-tab-4">Hợp tác(0)</option>
+                        </select>
+                    </div>
+
                     <div class="tabs-content-wrapper">
-                        <div class="post-view-content main-tab-item hide-item" id="main-tab-1">
+                        <div class="post-view-content main-tab-item" id="main-tab-1">
                             <div class="post-view-content-section">
-                                <span class="post-view-content-title">Tiêu đề và kinh phí</span>
+                                <div class="post-view-content-section-header">
+                                    <span class="post-view-content-title">Tiêu đề và kinh phí</span>
+                                    <div class="header-context-menu-wrapper">
+                                        <button id="show-context-menu"><img src="../assets/icons/threedots.svg" alt=""></button>
+                                        <ul class="header-context-menu hide-item">
+                                            <li class="header-context-menu-item">
+                                                <img src="../assets/icons/vuesax-linear-edit.svg" alt="">
+                                                <a href="">Sửa đăng tuyển</a>
+                                            </li>
+                                            <li class="header-context-menu-item">
+                                                <img src="../assets/icons/vuesax-linear-trash.svg" alt="">
+                                                <a href="">Xóa đăng tuyển</a>
+                                            </li>
+                                            <li class="header-context-menu-item">
+                                                <img src="../assets/icons/vuesax-linear-copy.svg" alt="">
+                                                <a href="">Sử dụng lại đăng tuyển</a>
+                                            </li>
+                                            <li class="header-context-menu-item">
+                                                <img src="../assets/icons/user-square.svg" alt="">
+                                                <a href="">Chuyển thành riêng tư</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                                 <div class="section-content-detail">
                                     <span class="post-view-content-sub-title">Thể loại - Ngày đăng </span>
                                     <span>Cố định danh sách - 17 tháng 6, 2022</span>
@@ -164,7 +197,7 @@
                                 <span class="post-view-content-title">Thông tin về Influencer</span>
                                 <div class="section-content-detail">
                                     <div class="influencer-and-task">
-                                        <div class="total-influencer">
+                                        <div class="total-influencer post-total-influencer">
                                             <img src="../assets/icons/vuesax-linear-people.svg" alt="">
                                             <span>Tổng số influencer: <span class="total-influencer-value">
                                                     0</span></span>
@@ -208,8 +241,8 @@
                                                 <img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
                                                     alt="">
                                             </div>
-                                            <span class="task-mobile">Công việc</span>
-                                            <span class="note-mobile">Ghi chú</span>
+                                            <span class="task-mobile post-task-mobile">Công việc</span>
+                                            <span class="note-mobile note-task-mobile">Ghi chú</span>
                                         </div>
 
                                         <div class="section-table-row-item">
@@ -235,8 +268,60 @@
                                                 <img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
                                                     alt="">
                                             </div>
-                                            <span class="task-mobile">Công việc</span>
-                                            <span class="note-mobile">Ghi chú</span>
+                                            <span class="task-mobile post-task-mobile">Công việc</span>
+                                            <span class="note-mobile note-task-mobile">Ghi chú</span>
+                                        </div>
+                                        <div class="section-table-row-item">
+                                            <div class="influencer-col-header">
+                                                <img src="../assets/images/useravt.png" alt="">
+                                                <a href="">Merrile Burgett</a>
+                                                <span class="community-pill hide-item">Community</span>
+                                            </div>
+                                            <div class="type-col-header">
+                                                <span class="community-pill">Community</span>
+                                            </div>
+                                            <div class="channel-col-header">
+                                                <img src="../assets/icons/icon_insta.png" alt="">
+                                            </div>
+                                            <div class="task-col-header">
+                                                <img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
+                                                <span>Đăng hình</span>
+                                                <img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="note-col-header">
+                                                <span>Cần check lại thông tin chi tiết về lịch...</span>
+                                                <img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
+                                                    alt="">
+                                            </div>
+                                            <span class="task-mobile post-task-mobile">Công việc</span>
+                                            <span class="note-mobile note-task-mobile">Ghi chú</span>
+                                        </div>
+                                        <div class="section-table-row-item">
+                                            <div class="influencer-col-header">
+                                                <img src="../assets/images/useravt.png" alt="">
+                                                <a href="">Merrile Burgett</a>
+                                                <span class="community-pill hide-item">Community</span>
+                                            </div>
+                                            <div class="type-col-header">
+                                                <span class="community-pill">Community</span>
+                                            </div>
+                                            <div class="channel-col-header">
+                                                <img src="../assets/icons/icon_insta.png" alt="">
+                                            </div>
+                                            <div class="task-col-header">
+                                                <img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
+                                                <span>Đăng hình</span>
+                                                <img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
+                                                    alt="">
+                                            </div>
+                                            <div class="note-col-header">
+                                                <span>Cần check lại thông tin chi tiết về lịch...</span>
+                                                <img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
+                                                    alt="">
+                                            </div>
+                                            <span class="task-mobile post-task-mobile">Công việc</span>
+                                            <span class="note-mobile post-note-mobile">Ghi chú</span>
                                         </div>
                                     </div>
                                 </div>
@@ -566,7 +651,7 @@
                 </div>
             </div>
 
-            <div class="cost-check-container main-tab-item" id="main-tab-3">
+            <div class="cost-check-container main-tab-item hide-item" id="main-tab-3">
                 <div class="cost-view-tab-wrapper">
                     <div class="cost-view-tabs-btn">
                         <div class="cost-view-tabs-btn-item tab-btn-active">

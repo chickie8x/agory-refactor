@@ -84,4 +84,27 @@ $(document).ready(function () {
         activeSubTabBtn = $(this)
     })
 
+
+    let contextMenuDisplay = false 
+    $('#show-context-menu').click(function(){
+        contextMenuDisplay = !contextMenuDisplay
+        if(!contextMenuDisplay){
+            $('.header-context-menu').addClass('hide-item')
+            $(this).removeClass('context-menu-btn-active')
+        }
+        else{
+            $('.header-context-menu').removeClass('hide-item')
+            $(this).addClass('context-menu-btn-active')
+        }
+    })
+
+    $('#btn-tab-select').change(function(){
+        let displayTab = $(`#${this.value}`)
+        $('.main-tab-item').each(function(){
+            $(this).addClass('hide-item')
+        })
+
+        $(displayTab).removeClass('hide-item')
+    })
+
 });
