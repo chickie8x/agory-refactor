@@ -18,6 +18,10 @@
     src: url('/assets/fonts/Nunito-Light.ttf');
 }
 
+.mian-wrapper-post-managment{
+	position: relative;
+}
+
 .post-management-container {
     margin-top: 24px;
 }
@@ -31,7 +35,7 @@
     font-size: 14px;
     max-width: fit-content;
     cursor: pointer;
-}
+}	
 
 .top-nav img {
     width: 14px;
@@ -542,6 +546,382 @@
     background-position-x: 100%;
     width: 100%;
 }
+
+.cost-view-tabs-content-body{
+	padding: 16px 0;
+}
+
+.cost-view-tabs-content-item{
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	border-bottom: solid 1px rgba(180, 180, 180, 0.4);
+}
+
+.cost-view-tabs-content-item-avt img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.cost-view-tabs-content-item-detail{
+	padding: 0 16px;
+}
+
+.item-detail-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.item-detail-header-username{
+	font-size: 14px;
+	font-family: 'Nunito';
+	display: flex;
+	align-items: center;
+}
+
+.item-detail-header-username :nth-child(1){
+	font-family: 'Nunito Bold';
+	font-size: 16px;
+	margin-right: 12px;
+}
+
+
+.send-mes-btn{
+	width: 96px;
+	height: 32px;
+	border: solid 1px #3E7BFA;
+	border-radius: 8px;
+	color: #3E7BFA;
+	font-family: 'Nunito';
+	font-size: 12px;
+	background: none;
+	outline: none;
+}
+
+.corporate-btn{
+	width: 92px;
+	height: 32px;
+	color: white;
+	font-size: 12px;
+	font-family: 'Nunito';
+	border: none;
+	background-color: #3E7BFA;
+	border-radius: 8px;
+	outline: none;
+}
+
+.send-mes-btn, .corporate-btn:focus{
+	outline: none;
+}
+
+
+.item-detail-sumary{
+	display: flex;
+	font-family: 'Nunito';
+	font-size: 14px;
+	margin-top: 16px;
+}
+
+.item-detail-sumary div{
+	margin-right: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.item-detail-sumary > div > span > span{
+	font-family: 'Nunito Bold';
+}
+
+.item-detail-sumary > div > img{
+	margin-right: 4px;
+}
+
+.item-detail-letter{
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #555770;
+	margin-top: 16px;
+}
+
+.letter-title{
+	font-family: 'Nunito Bold';
+	display: block;
+}
+
+/* modal section  */
+
+
+.popup-show {
+	top: 0 !important;
+}
+
+#cost-popup {
+	min-height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: -2000px;
+	left: 0;
+	background: #555770;
+	z-index: 999;
+	
+}
+
+#cost-popup > .cost-popup-content {
+	width: 1080px;
+	min-height: 100vh;
+	background: #E4E4EB;
+	margin: auto;
+}
+
+#cost-popup > .cost-popup-content > .cost-popup-header {
+	background-color: #FFFFFF;
+	height: 64px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-family: 'Nunito Bold';
+	padding: 24px;
+}
+
+#cost-popup > .cost-popup-content > .cost-popup-header > img {
+	transform: rotate(90deg);
+}
+
+#cost-popup > .cost-popup-content > .cost-popup-header > span {
+	cursor: pointer;
+}
+
+.about-user {
+	display: flex;
+	border-bottom: solid 1px rgba(180, 180, 180, 0.4);
+}
+
+.about-user-left {
+	min-width: 304px;
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	font-size: 14px;
+	font-family: 'Nunito';
+	border-right: solid 1px rgba(180, 180, 180, 0.4);
+}
+
+.about-user-left img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.about-user-left-username{
+	font-family: 'Nunito Bold';
+	font-size: 20px;
+	color: #28293D;
+	margin-bottom: 8px;
+}
+
+.star-rating {
+	display: flex;
+}
+
+.star-rating span{
+	padding-top: 3px;
+}
+
+.rating-value {
+	font-family: 'Nunito Bold';
+}
+
+.success-campaign {
+	margin-bottom: 12px;
+}
+
+#success-bar {
+	height: 16px;
+	width: 90px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-right: 12px;
+	margin-top: 2px;
+}
+
+progress[value]::-webkit-progress-bar{
+	background-color: #C7C9D9;
+}
+
+progress[value]::-webkit-progress-value{
+	background-color: #0063F7;
+}	
+
+.shortlist-btn {
+	width: 94px;
+	height: 32px;
+	background-color: transparent;
+	color: #0063F7;
+	border: solid 1px #0063F7;
+	border-radius: 8px;
+	font-family: 'Nunito';
+	font-size: 12px;
+	outline: none;
+}
+
+.corp-btn {
+	width: 92px;
+	height: 32px;
+	background-color: #0063F7;
+	color: white;
+	border-radius: 8px;
+	font-family: 'Nunito';
+	font-size: 12px;
+	border: none;
+	outline: none;
+}
+
+.shortlist-btn:focus, .corp-btn:focus {
+	outline: none;
+}
+
+.about-user-right {
+	padding: 24px;
+}
+
+.about-user-right span {
+	display: block;
+}
+
+.letter-content {
+	font-family: 'Nunito';
+	font-size: 14px;
+}
+
+.letter-title-right, .letter-content-right{
+	margin-bottom: 16px;
+}
+
+#feedback-to-user{
+	width: 100%;
+	height: 120px;
+	outline: none;
+	border: none;
+	border-radius: 8px;
+	padding: 16px;
+	font-family: 'Nunito';
+	font-size: 14px;
+	resize: none;
+	margin-top: 8px;
+}
+
+.word-counter{
+	font-family: 'Nunito Light';
+	font-size: 12px;
+	color: #555770;
+	text-align: end;
+}
+
+.send-message{
+	width: 116px;
+	height: 32px;
+	border: solid 1px #3E7BFA;
+	color: #3E7BFA;
+	font-family: 'Nunito';
+	font-size: 14px;
+	border-radius: 8px;
+	outline: none;
+	background-color: white;
+	float: right;
+	margin-top: 16px;
+}
+
+.cost-in-detail-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px;
+}
+.cost-item-detail-sumary {
+	margin-top: unset;
+}
+
+.cost-in-detail-message{
+	background-color: #E5F0FF;
+	border-left: solid 2px #3E7BFA;
+	font-family: 'Nunito';
+	font-size: 12px;
+	color: #1C1C28;
+	padding: 18px;
+	margin: 0 24px;
+}
+
+.cost-in-detail-message img {
+	margin-right: 18px;
+}
+
+.cost-in-detail-intro {
+	display: flex;
+	justify-content: space-between;
+	padding: 24px;
+}
+
+.cost-in-detail-intro img {
+	margin-right: 8px;
+	width: 64px;
+	height: 64px;
+}
+
+.cost-in-detail-intro > div {
+	display: flex;
+	font-size: 14px;
+	font-family: 'Nunito';
+	color: #555770;
+	max-width: 280px;
+}
+
+.cost-in-detail-intro > div span:nth-child(1) {
+	font-family: 'Nunito Bold';
+}
+
+.cost-in-detail-intro > div span {
+	display: block;
+}
+
+
+
+/* stars rating css  */
+div.stars {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	margin-right: 12px;
+  }
+   
+  input.star { display: none; }
+   
+  label.star {
+	float: right;
+	font-size: 14px;
+	padding: 0 1px;
+	color: #28293D;
+	transition: all .2s;
+  }
+   
+  input.star:checked ~ label.star:before {
+	content: '\f005';
+	color: #0063F7;
+	transition: all .25s;
+  }
+
+   
+  label.star:before {
+	content: '\f006';
+	font-family: FontAwesome;
+  }
+
+
+
+
 
 
 

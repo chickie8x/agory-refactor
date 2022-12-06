@@ -100,7 +100,7 @@
 
 
         <!-- main content section  -->
-        <div class="main-wrapper">
+        <div class="main-wrapper main-wrapper-post-management">
             <div class="post-management-container">
                 <div class="top-nav">
                     <img src="../assets/icons/library-blue-back-btn.svg" alt="">
@@ -686,6 +686,52 @@
                                 </div>
                             </div>
                         </div>
+
+						<div class="cost-view-tabs-content-body">
+							<div class="cost-view-tabs-content-item">
+								<div class="cost-view-tabs-content-item-avt">
+									<img src="../assets/images/useravt.png" alt="">
+								</div>
+								<div class="cost-view-tabs-content-item-detail">
+									<div class="item-detail-header">
+										<div class="item-detail-header-username">
+											<span >
+												Châu Nguyễn
+											</span>
+											<span>Freelancer at Beso</span>
+										</div>
+										<div class="item-detail-header-btn">
+											<button class="send-mes-btn">Nhắn tin</button>
+											<button class="corporate-btn">Hợp tác</button>
+										</div>
+									</div>
+
+									<div class="item-detail-sumary">
+										<div>
+											<img src="../assets/icons/vuesax-linear-profile-2user.svg" alt="">
+											<span>Tổng số influencer: <span>16</span></span>
+										</div>
+										<div>
+											<img src="../assets/icons/vuesax-linear-briefcase.svg" alt="">
+											<span>Tổng số công việc: <span>20</span></span>
+										</div>
+										<div>
+											<img src="../assets/icons/vuesax-linear-dollar-circle.svg" alt="">
+											<span>Tổng chi phí: <span>25.000.000</span></span>
+										</div>
+									</div>
+
+									<div class="item-detail-letter">
+										<span class="letter-title">
+											Thư ngỏ
+										</span>
+										<span class="letter-content">
+											Xin chào anh chị, được biết anh chị đang có nhu cầu tìm Influencer review bộ sản phẩm chăm sóc da, em có biết 8/10 bạn trong danh sách này và có thêm một số lựa chọn khác. Em gửi kèm một danh sách khác cho anh chị tiên lựa chọn...
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
                     </div>
                 </div>
             </div>
@@ -693,7 +739,116 @@
             <div class="corporation-partner main-tab-item hide-item" id="main-tab-4">
                 <p>corporated-partners</p>
             </div>
+
+			<!-- modals section  -->
+			<div id="cost-popup">
+				<div class="cost-popup-content">
+					<div class="cost-popup-header">
+						<img src="../assets/icons/vuesax-linear-arrow-down.svg" alt="">
+						<span class="close-main-popup">Quay lại danh sách</span>
+					</div>
+					<div class="cost-popup-body">
+						<div class="about-user">
+							<div class="about-user-left">
+								<img src="../assets/images/useravt.png" alt="">
+								<span class="about-user-left-username">Châu Nguyễn</span>
+								<span>Freelancer at Beso Team</span>
+								<div class="star-rating">
+									<div class="stars">
+										<form action="">
+											<input class="star star-5" id="star-5" type="radio" name="star" checked/>
+											<label class="star star-5" for="star-5"></label>
+											<input class="star star-4" id="star-4" type="radio" name="star"/>
+											<label class="star star-4" for="star-4"></label>
+											<input class="star star-3" id="star-3" type="radio" name="star"/>
+											<label class="star star-3" for="star-3"></label>
+											<input class="star star-2" id="star-2" type="radio" name="star"/>
+											<label class="star star-2" for="star-2"></label>
+											<input class="star star-1" id="star-1" type="radio" name="star"/>
+											<label class="star star-1" for="star-1"></label>
+										  </form>
+									</div>
+									<span><span class="rating-value">4.9</span> từ 15 đánh giá </span>
+								</div>
+								<div class="success-campaign">
+									<progress id="success-bar" value="85" max="100"> 32% </progress>
+									<span><span class="rating-value">85%</span> chiến dịch thành công</span>
+								</div>
+								<div class="about-user-btn">
+									<button class="shortlist-btn">Shortlist</button>
+									<button class="corp-btn">Hợp tác</button>
+								</div>
+							</div>
+							<div class="about-user-right">
+								<span class="letter-title letter-title-right">Thư ngỏ</span>
+								<span class="letter-content letter-content-right">
+									Xin chào anh chị, được biết anh chị đang có nhu cầu tìm Influencer review bộ sản phẩm chăm sóc da, em có biết 8/10 bạn trong danh sách này và có thêm một số lựa chọn khác. Em gửi kèm một danh sách khác cho anh chị tiên lựa chọn khác, em gửi kèm một danh sách khác cho anh chị tiên lựa chọn. Em có kinh nghiệm làm việc với các Influencer chuyên về mỹ phẩm, bản thân từng làm sale mỹ phẩm nên sẽ biết cách giúp review chất lượng hơn. Rất mong được hợp tác với anh chị lần này.
+								</span>
+								<span class="letter-title">Phản hồi cho Châu</span>
+								<textarea name="feedback-to-user" id="feedback-to-user"></textarea>
+								<span class="word-counter">0/5000</span>
+								<button class="send-message">Gửi tin nhắn</button>
+							</div>
+						</div>
+
+						<div class="cost-in-detail">
+							<div class="cost-in-detail-header">
+								<span class="letter-title">Báo giá cụ thể</span>
+								<div class="item-detail-sumary cost-item-detail-sumary">
+									<div>
+										<img src="../assets/icons/vuesax-linear-profile-2user.svg" alt="">
+										<span>Tổng số influencer: <span>16</span></span>
+									</div>
+									<div>
+										<img src="../assets/icons/vuesax-linear-briefcase.svg" alt="">
+										<span>Tổng số công việc: <span>20</span></span>
+									</div>
+									<div>
+										<img src="../assets/icons/vuesax-linear-dollar-circle.svg" alt="">
+										<span>Tổng chi phí: <span>25.000.000</span></span>
+									</div>
+								</div>
+							</div>
+							<div class="cost-in-detail-message">
+								<img src="../assets/icons/blue-info-circle.svg" alt="">
+								<span>
+									Muốn thương lượng giá một vài Influencer? Hãy gửi tin nhắn cho Người báo giá
+								</span>
+							</div>
+
+							<div class="cost-in-detail-intro">
+								<div class="intro-item">
+									<img src="../assets/images/changelist.png" alt="">
+									<div>
+										<span>Danh sách có thay đổi</span>
+										<span>Danh sách Influencer và công việc đã có thay đổi so với yêu cầu ban đầu</span>
+									</div>
+								</div>
+								<div class="intro-item">
+									<img src="../assets/images/payasprocess.png" alt="">
+									<div>
+										<span>Thanh toán theo tiến độ</span>
+										<span>Người báo giá muốn nhận thanh toán sau mỗi công việc hoàn thành</span>
+									</div>
+								</div>
+								<div class="intro-item">
+									<img src="../assets/images/protectedpayment.png" alt="">
+									<div>
+										<span>Báo giá có VAT</span>
+										<span>Báo giá bên dưới đã bao gồm VAT</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
         </div>
+
+		
+
+
 
 
 

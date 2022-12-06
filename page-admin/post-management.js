@@ -73,7 +73,6 @@ $(document).ready(function () {
 
     $('.tab-btn-item').click(function(){
         let tabId = $(this)[0].id
-        console.log(tabId)
         $('.sub-tab-item').each(function(){
             $(this).addClass('hide-item')
         })
@@ -106,5 +105,21 @@ $(document).ready(function () {
 
         $(displayTab).removeClass('hide-item')
     })
+
+
+	// modal section 
+
+	let modalShow = false
+
+	$('.cost-view-tabs-content-item-avt').click(function() {
+		modalShow = !modalShow
+		$('#cost-popup').addClass('popup-show')
+
+	})
+
+	$('.close-main-popup').click(function(){
+		$('#cost-popup').removeClass('popup-show')
+		modalShow = !modalShow
+	})
 
 });
