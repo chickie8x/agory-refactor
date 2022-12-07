@@ -118,9 +118,12 @@ $(document).ready(function () {
 		$('#cost-popup').removeClass('popup-show')
 	})
 
-	$('.about-user-left-username').click(function(){
-		$('#cost-popup').removeClass('popup-show')
+	$('.about-user-left-username, .about-user-left-user-avt').click(function(){
 		$('#popup-profile').addClass('popup-show')
+	})
+
+	$('#close-profile-popup-btn').click(function(){
+		$('#popup-profile').removeClass('popup-show')
 	})
 
 });
