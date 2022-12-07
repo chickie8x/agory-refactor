@@ -256,7 +256,7 @@
 }
 
 .type-col-header {
-    min-width: 70px;
+    min-width: 100px;
 }
 
 .channel-col-header {
@@ -265,6 +265,10 @@
 
 .task-col-header {
     min-width: 132px;
+}
+
+.cost-col-header{
+	min-width: 100px;
 }
 
 .note-col-header {
@@ -649,9 +653,13 @@
 	display: block;
 }
 
+.cost-in-detail-list{
+	padding: 0 24px;
+}
+
+
+
 /* modal section  */
-
-
 .popup-show {
 	top: 0 !important;
 }
@@ -659,11 +667,11 @@
 #cost-popup {
 	min-height: 100vh;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: -2000px;
 	left: 0;
 	background: #555770;
-	z-index: 999;
+	z-index: 888;
 	
 }
 
@@ -698,7 +706,7 @@
 }
 
 .about-user-left {
-	min-width: 304px;
+	min-width: 344px;
 	display: flex;
 	flex-direction: column;
 	padding: 24px;
@@ -886,6 +894,85 @@ progress[value]::-webkit-progress-value{
 .cost-in-detail-intro > div span {
 	display: block;
 }
+
+.total-cost-bar {
+	height: 51px;
+	background-color: #E5F0FF;
+	display: flex;
+	align-items: center;
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #1C1C28;
+	padding: 0 24px;
+	display: flex;
+	align-items: center;
+}
+
+.total-cost-bar > span{
+	margin-left: 486px;
+}
+
+.popup-influencer-col-header{
+	min-width: 280px;
+}
+
+.cost-in-detail-protected-payment {
+	padding: 24px;
+}
+
+.protected-payment{
+	max-width: unset !important;
+}
+
+
+#popup-profile {
+	position: fixed;
+	top: -2000px;
+	left: 0;
+	transition-duration: 0.3s;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #555770;
+	z-index: 999;
+	display: flex;
+}
+
+.popup-profile-content{
+	width: 808px;
+	background: white;
+	border-radius: 8px;
+	margin: auto;
+}
+
+.popup-profile-content-header{
+	display: flex;
+	padding: 24px;
+}
+
+.popup-profile-content-header-avt img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-right: 24px;
+}
+
+.popup-profile-content-header-username > div {
+	display: flex;
+}
+
+.popup-profile-content-header-username > div > span {
+	font-family: 'Nunito Bold';
+	font-size: 20px;
+	color: #28293D;
+	margin-right: 24px;
+}
+
+.popup-profile-content-header-username > span {
+	font-family: 'Nunito Light';
+	font-size: 14px;
+	color: #28293D;
+}
+
 
 
 

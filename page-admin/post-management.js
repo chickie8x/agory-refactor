@@ -109,17 +109,18 @@ $(document).ready(function () {
 
 	// modal section 
 
-	let modalShow = false
-
 	$('.cost-view-tabs-content-item-avt').click(function() {
-		modalShow = !modalShow
 		$('#cost-popup').addClass('popup-show')
 
 	})
 
 	$('.close-main-popup').click(function(){
 		$('#cost-popup').removeClass('popup-show')
-		modalShow = !modalShow
+	})
+
+	$('.about-user-left-username').click(function(){
+		$('#cost-popup').removeClass('popup-show')
+		$('#popup-profile').addClass('popup-show')
 	})
 
 });
