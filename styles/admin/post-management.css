@@ -425,6 +425,7 @@
     color: #555770;
     font-size: 14px;
     font-family: 'Nunito';
+	margin-top: 8px;
 }
 
 .detail-history img {
@@ -660,6 +661,52 @@
 
 .cost-in-detail-list{
 	padding: 0 24px;
+}
+
+.corp-view-tabs-content-item {
+	display: flex;
+	padding: 16px;
+}
+
+.content-item-user-avt img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.content-item-user-header {
+	display: flex;
+	justify-content: space-between;	
+}
+
+.content-item-user-header > span {
+	font-family: 'Nunito Bold';
+	font-size: 20px;
+}
+
+.content-item-user-header > div img, button{
+	margin-right: 16px;
+}
+
+.content-item-user-detail {
+	padding-left: 16px;
+	width: 100%;
+}
+
+.sent-offer-time {
+	display: flex;
+	align-items: center;
+	font-family: 'Nunito';
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+.sent-offer-time img {
+	margin-right: 4px;
+}
+
+.item-detail-letter {
+	max-width: 600px;
 }
 
 
