@@ -107,6 +107,52 @@ $(document).ready(function () {
     })
 
 
+	const costSubTabs = {
+		'cost-sub-tab-btn-1': $('.cost-sub-tab-content-1'),
+		'cost-sub-tab-btn-2': $('.cost-sub-tab-content-2'),
+		'cost-sub-tab-btn-3': $('.cost-sub-tab-content-3'),
+		'cost-sub-tab-btn-4': $('.cost-sub-tab-content-4')
+	}
+
+	let activeCostSubTab = $('#cost-sub-tab-btn-1')
+
+	$('.cost-view-tabs-btn-item').click(function() {
+		let costBtnId = $(this)[0].id
+		$('.cost-view-tabs-content-body').each(function(){
+			$(this).addClass('hide-item')
+		})
+		let showSubTab = costSubTabs[costBtnId]
+		showSubTab.removeClass('hide-item')
+		activeCostSubTab.removeClass('tab-btn-active')
+		activeCostSubTab = $(this)
+		activeCostSubTab.addClass('tab-btn-active')
+	})
+
+	const corpSubTab = {
+		'corp-tab-btn-1': $('.corp-sub-tab-content-1'),
+		'corp-tab-btn-2': $('.corp-sub-tab-content-2')
+	}
+
+	let activeCorpSubTab = $('#corp-tab-btn-1')
+
+	$('.corp-view-tabs-btn-item').click(function() {
+		let corpBtnId = $(this)[0].id
+		$('.corp-view-tabs-content-body').each(function() {
+			$(this).addClass('hide-item')
+		})
+		let showCorpSubTab = corpSubTab[corpBtnId]
+		showCorpSubTab.removeClass('hide-item')
+		activeCorpSubTab.removeClass('tab-btn-active')
+		activeCorpSubTab = $(this)
+		activeCorpSubTab.addClass('tab-btn-active')
+	})
+
+
+
+
+
+
+
 	// modal section 
 
 	$('.cost-view-tabs-content-item-avt').click(function() {
