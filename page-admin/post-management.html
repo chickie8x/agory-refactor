@@ -244,6 +244,7 @@
 											</div>
 											<span class="task-mobile post-task-mobile">Công việc</span>
 											<span class="note-mobile note-task-mobile">Ghi chú</span>
+										
 										</div>
 
 										<div class="section-table-row-item">
@@ -271,6 +272,7 @@
 											</div>
 											<span class="task-mobile post-task-mobile">Công việc</span>
 											<span class="note-mobile note-task-mobile">Ghi chú</span>
+									
 										</div>
 										<div class="section-table-row-item">
 											<div class="influencer-col-header">
@@ -297,6 +299,7 @@
 											</div>
 											<span class="task-mobile post-task-mobile">Công việc</span>
 											<span class="note-mobile note-task-mobile">Ghi chú</span>
+									
 										</div>
 										<div class="section-table-row-item">
 											<div class="influencer-col-header">
@@ -371,7 +374,7 @@
 							<div class="partners-tabs-content-header-search-bar">
 								<img src="../assets/icons/vuesax-linear-search-normal.svg" alt="">
 								<input type="text" placeholder="Tên influencer , công việc...">
-								<img src="../assets/icons/grey-close-btn.svg" alt="">
+								<img src="../assets/icons/grey-close-btn.svg" alt="" class="delete-search-input-content">
 							</div>
 							<button>
 								<img src="../assets/icons/blue-filter.svg" alt="">
@@ -673,7 +676,7 @@
 							<div class="cost-view-tabs-content-header-search-bar">
 								<img src="../assets/icons/vuesax-linear-search-normal.svg" alt="">
 								<input type="text" placeholder="Tên influencer , công việc...">
-								<img src="../assets/icons/grey-close-btn.svg" alt="">
+								<img src="../assets/icons/grey-close-btn.svg" alt="" class="delete-search-input-content">
 							</div>
 
 							<div class="cost-view-tabs-content-header-sort-by">
@@ -1062,7 +1065,10 @@
 								<span class="letter-title">Phản hồi cho Châu</span>
 								<textarea name="feedback-to-user" id="feedback-to-user"></textarea>
 								<span class="word-counter">0/5000</span>
-								<button class="send-message">Gửi tin nhắn</button>
+								<div>
+									<button class="send-message">Gửi tin nhắn</button>
+								</div>
+								
 							</div>
 						</div>
 
@@ -1114,10 +1120,21 @@
 										<span>Báo giá bên dưới đã bao gồm VAT</span>
 									</div>
 								</div>
+								<div class="intro-item protected-payment-mobile">
+									<img src="../assets/images/protectedpayment.png" alt="">
+									<div>
+										<span>Thanh toán được bảo hộ bởi Agory</span>
+										<span>
+											Khoản thanh toán của bạn sẽ được bảo vệ và chỉ được chuyên khoản cho đối tác
+											khi công việc đã hoàn thành
+										</span>
+										<a href="">Tìm hiểu thêm</a>
+									</div>
+								</div>
 							</div>
 
 							<div class="cost-in-detail-list">
-								<div class="content-section-table">
+								<div class="content-section-table popup-content-section-table">
 									<div class="section-table-header">
 										<div class="influencer-col-header popup-influencer-col-header">Influencer</div>
 										<div class="type-col-header">Type</div>
@@ -1127,7 +1144,7 @@
 										<div class="note-col-header">Note</div>
 									</div>
 									<div class="section-table-row">
-										<div class="section-table-row-item">
+										<div class="section-table-row-item section-table-row-item-cost">
 											<div class="influencer-col-header popup-influencer-col-header">
 												<img src="../assets/images/useravt.png" alt="">
 												<a href="">Merrile Burgett</a>
@@ -1148,16 +1165,17 @@
 											<div class="cost-col-header">
 												<span>999.999.999</span>
 											</div>
-											<div class="note-col-header">
+											<div class="note-col-header note-col-header-popup">
 												<span>Cần check lại thông tin chi tiết về lịch...</span>
 												<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
 													alt="">
 											</div>
 											<span class="task-mobile post-task-mobile">Công việc</span>
-											<span class="note-mobile note-task-mobile">Ghi chú</span>
+											<span class="note-mobile note-task-mobile note-mobile-popup">Ghi chú</span>
+											<span class="cost-mobile-popup">Chi phí</span>
 										</div>
 
-										<div class="section-table-row-item">
+										<div class="section-table-row-item section-table-row-item-cost">
 											<div class="influencer-col-header popup-influencer-col-header">
 												<img src="../assets/images/useravt.png" alt="">
 												<a href="">Merrile Burgett</a>
@@ -1178,73 +1196,14 @@
 											<div class="cost-col-header">
 												<span>999.999.999</span>
 											</div>
-											<div class="note-col-header">
+											<div class="note-col-header note-col-header-popup">
 												<span>Cần check lại thông tin chi tiết về lịch...</span>
 												<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
 													alt="">
 											</div>
 											<span class="task-mobile post-task-mobile">Công việc</span>
-											<span class="note-mobile note-task-mobile">Ghi chú</span>
-										</div>
-
-										<div class="section-table-row-item">
-											<div class="influencer-col-header popup-influencer-col-header">
-												<img src="../assets/images/useravt.png" alt="">
-												<a href="">Merrile Burgett</a>
-												<span class="community-pill hide-item">Community</span>
-											</div>
-											<div class="type-col-header">
-												<span class="community-pill">Community</span>
-											</div>
-											<div class="channel-col-header">
-												<img src="../assets/icons/icon_insta.png" alt="">
-											</div>
-											<div class="task-col-header">
-												<img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
-												<span>Đăng hình</span>
-												<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
-													alt="">
-											</div>
-											<div class="cost-col-header">
-												<span>999.999.999</span>
-											</div>
-											<div class="note-col-header">
-												<span>Cần check lại thông tin chi tiết về lịch...</span>
-												<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
-													alt="">
-											</div>
-											<span class="task-mobile post-task-mobile">Công việc</span>
-											<span class="note-mobile note-task-mobile">Ghi chú</span>
-										</div>
-
-										<div class="section-table-row-item">
-											<div class="influencer-col-header popup-influencer-col-header">
-												<img src="../assets/images/useravt.png" alt="">
-												<a href="">Merrile Burgett</a>
-												<span class="community-pill hide-item">Community</span>
-											</div>
-											<div class="type-col-header">
-												<span class="community-pill">Community</span>
-											</div>
-											<div class="channel-col-header">
-												<img src="../assets/icons/icon_insta.png" alt="">
-											</div>
-											<div class="task-col-header">
-												<img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
-												<span>Đăng hình</span>
-												<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
-													alt="">
-											</div>
-											<div class="cost-col-header">
-												<span>999.999.999</span>
-											</div>
-											<div class="note-col-header">
-												<span>Cần check lại thông tin chi tiết về lịch...</span>
-												<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg"
-													alt="">
-											</div>
-											<span class="task-mobile post-task-mobile">Công việc</span>
-											<span class="note-mobile note-task-mobile">Ghi chú</span>
+											<span class="note-mobile note-task-mobile note-mobile-popup">Ghi chú</span>
+											<span class="cost-mobile-popup">Chi phí</span>
 										</div>
 									</div>
 								</div>
@@ -1442,7 +1401,7 @@
 							</div>
 
 							<div class="popup-profile-content-info featured-campaign">
-								<span class="content-info-title">Đánh giá</span>
+								<span class="content-info-title">Chiến dịch tiêu biểu</span>
 								<div class="campaign-list">
 									<div class="campaign-list-item">
 										<div class="campaign-img">
