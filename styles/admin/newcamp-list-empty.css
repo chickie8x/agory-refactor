@@ -1,3 +1,8 @@
+.newcamp-empty-list-main-wrapper {
+	position: relative;
+}
+
+
 /* empty table section  */
 
 .empty-list-empty {
@@ -49,6 +54,10 @@
     border-radius: 8px;
     font-size: 12px;
     margin-top: 16px;
+}
+
+.empty-btn:focus {
+	outline: none;
 }
 
 .selection-decision {
@@ -179,6 +188,63 @@
 .step6-box-empty{
     margin-top: 24px;
 }
+
+
+/* choose lists modal  */
+
+#choose-lists-popup {
+	position: fixed;
+	top: -2000px;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	overflow-y: scroll;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.choose-list-popup-content{
+	width: 1023px;
+	background: white;
+	border-radius: 8px;
+}
+
+.choose-list-popup-content-header {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Nunito Bold';
+	font-size: 16px;
+	color: #1C1C28;
+	padding: 16px;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.choose-item-to-add {
+	width: 72px;
+	height: 32px;
+	border-radius: 8px;
+	font-family: 'Nunito';
+	font-size: 12px;
+	color: white;
+	background-color: #3E7BFA !important;
+	outline: none;
+}
+
+.threedot-action-btn-cell-popup{
+	width: unset !important;
+}
+
+.choose-list-popup-t-row > div {
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+
 
 
 @media only screen and (max-width: 700px) {

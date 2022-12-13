@@ -150,5 +150,9 @@ $(document).ready(function () {
         $(this).parent().parent().toggleClass('selected-item')
     })
 
+	$('.choose-from-list').click(function() {
+		$('#choose-lists-popup').addClass('popup-show')
+	})
+
 
 });
