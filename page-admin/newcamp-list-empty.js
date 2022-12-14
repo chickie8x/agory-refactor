@@ -164,5 +164,25 @@ $(document).ready(function () {
 		$('#choose-lists-popup').removeClass('popup-show')
 	})
 
+	var tableHeaders = $('.t-head').children()
+
+	function tableMobile(){
+        if($(window).width() <=700){
+            $.each($('.t-row'), function(){
+                $.each($(this).children(), function(i,n){
+					console.log(this)
+                    if (i!=0 && i!=5 && $(n).children().length === 1){
+                        $(n).prepend('<span class="header-cells">'+ $(tableHeaders[i]).text() +'</span>')
+                    }
+                })
+            })
+        }
+        else {
+            $('.header-cells').remove()
+        }
+    }
+    tableMobile()
+    $(window).resize(tableMobile)
+
 
 });
