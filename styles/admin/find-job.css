@@ -1,0 +1,117 @@
+.top-notification{
+	background-color: #E5F0FF;
+	width: 100%;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+	border-left: solid 2px #0063F7;
+	padding: 16px;
+	font-family: 'Nunito';
+	font-size: 12px;
+}
+
+.top-notification > img {
+	margin-right: 16px;
+}
+
+.top-notification > span a {
+	text-decoration: none;
+	color: #0063F7;
+	font-family: 'Nunito Bold';
+}
+
+.find-job-title {
+	font-family: 'Nunito Bold';
+	font-size: 20px;
+	margin-top: 16px;
+	color: #1C1C28;
+}
+
+.find-job-content-wrapper{
+	width: 1004px;
+	margin: auto;
+	font-family: 'Nunito';
+	margin-top: 16px;
+}
+
+.find-job-tabs-btn{
+	display: flex;
+	background: white;
+	width: fit-content;
+	border-bottom: solid 1px #E5F0FF;
+	border-radius: 0 8px 0 0;
+}
+
+.find-job-tabs-btn-active {
+	font-family: 'Nunito Bold';
+	border-bottom: solid 2px #3E7BFA;
+}
+
+.find-job-tab-btn-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 156px;
+	height: 40px;
+	font-size: 14px;
+	
+
+}
+
+.find-job-content-body{
+	min-height: 600px;
+	background: white;
+	padding: 24px;
+}
+
+.find-job-content-body-filter{
+	display: flex;
+	justify-content: flex-end;
+	font-size: 14px;
+}
+
+.find-job-content-body-filter{
+	padding-bottom: 16px;
+	border-bottom: solid 1px #60617029;
+}
+
+.filter-container span {
+	margin-right: 8px;
+}
+
+#job-type-select{
+	border: none;
+    outline: none;
+    color: #555770;
+    font-size: 14px;
+    font-family: 'Nunito Light';
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #FAFAFC;
+    background-image: url(../../assets/icons/vuesax-linear-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+	background-position-y: 50%;
+    width: 184px;
+	height: 40px;
+	padding: 8px;
+	box-shadow: 0px 0.5px 2px #00000029;
+	border-radius: 8px;
+}
+
+.find-job-all-jobs-item{
+	display: flex;
+	padding: 16px 0;
+}
+
+.job-item-col-1 > span {
+	font-family: 'Nunito Bold';
+	font-size: 16px;
+	color: #3E7BFA;
+}
+
+.job-item-col-1 > span > span{
+	font-family: 'Nunito Light';
+}
