@@ -125,7 +125,7 @@
 /* btn-action-empty section fix  */
 
 .btn-action-empty{
-    margin-top: 16px;
+    margin: 16px 24px;
 }
 
 .btn-action-empty>button {
@@ -242,8 +242,21 @@
 }
 
 
+@media only screen and (max-width: 800px){
 
+	.choose-list-popup-t-row > div:nth-child(1){
+		grid-column: 1/ span 2;
+	}
 
+	.total-influencer-cell-popup {
+		display: none !important;
+	}
+	
+	.t-body-popup {
+		padding: 0 16px; 
+	}
+
+}
 
 
 
