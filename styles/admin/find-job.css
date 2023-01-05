@@ -104,14 +104,125 @@
 .find-job-all-jobs-item{
 	display: flex;
 	padding: 16px 0;
+	justify-content: space-between;
+	border-bottom: solid 1px #60617029;
 }
 
-.job-item-col-1 > span {
+.job-item-col-1{
+	display: flex;
+	flex-direction: column;
+	max-width: 450px;
+}
+
+.job-item-col-title {
 	font-family: 'Nunito Bold';
 	font-size: 16px;
 	color: #3E7BFA;
 }
 
-.job-item-col-1 > span > span{
+.job-item-col-title > span{
 	font-family: 'Nunito Light';
+}
+
+.job-item-col-content{
+	margin-top: 16px;
+	font-size: 14px;
+}
+
+.job-item-col-2 {
+	min-width: 300px;
+}
+
+.job-follow {
+	width: 116px;
+	height: 32px;
+	border: solid 1px #3E7BFA;
+	outline: none;
+	border-radius: 8px;
+	background: none;
+	color: #3E7BFA;
+	font-family: 'Nunito';
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.job-follow:focus{
+	outline: none;
+}
+
+.job-follow	 > img {
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+}
+
+.time-and-author{
+	font-family: 'Nunito';
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+.post-time {
+	color: #3E7BFA;
+}
+
+a.post-author{
+	text-decoration: none;
+}
+
+.received-offer{
+	font-family: 'Nunito';
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+.received-offer > span {
+	color: #3E7BFA;
+}
+
+.fixed-list-item{
+	display: flex;
+}
+
+.fixed-list-item-info{
+	display: flex;
+}
+
+.fixed-list-item-info > div{
+	margin-left: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.fixed-list-item-info > div > img {
+	width: 24px;
+	height: 24px;
+}
+
+.job-following{
+	background: #0063F7;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	width: 146px;
+	height: 32px;
+	font-family: 'Nunito';
+	font-size: 14px;
+	box-shadow: 0px 2px 4px #60617029;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.job-following:focus{
+	outline: none;
+}
+
+.job-following > img{
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
 }
