@@ -184,6 +184,8 @@ a.post-author{
 
 .fixed-list-item{
 	display: flex;
+	font-family: 'Nunito';
+	font-size: 14px;
 }
 
 .fixed-list-item-info{
@@ -199,6 +201,7 @@ a.post-author{
 .fixed-list-item-info > div > img {
 	width: 24px;
 	height: 24px;
+	margin-right: 4px;
 }
 
 .job-following{
