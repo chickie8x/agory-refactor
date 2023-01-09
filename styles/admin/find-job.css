@@ -400,3 +400,46 @@ a.post-author{
 .section-table-header {
 	font-family: 'Nunito';
 }
+
+.current-campaign-item{
+	padding-top: 24px;
+	padding-left: 24PX;
+	font-family: 'Nunito';
+	font-size: 14px;
+}
+
+.current-campaign-item:last-child{
+	padding-bottom: 50px;
+}
+
+.current-campaign-item > span{
+	font-family: 'Nunito Bold';
+}
+
+.current-campaign-item > div {
+	display: flex;
+	margin-top: 12px;
+}
+
+.current-campaign-item > div > span{
+	margin-right: 16px;
+}
+
+.current-campaign-item > div > div {
+	display: flex;
+	align-items: center;
+	margin-right: 16px;
+}
+
+.current-campaign-item > div > div > img{
+	margin-right: 4px;
+}
+
+.find-job-content-info-title{
+	display: block;
+	min-width: 150px;
+}
+
+.find-job-total-stats-item > span:last-child{
+	max-width: 200px;
+}

@@ -11,4 +11,13 @@ $(document).ready(function () {
 	$('.close-find-job-popup-btn, .find-job-popup-content-header > span').click(function() {
 		$('.find-job-popup').removeClass('popup-show')
 	})
+
+	$('.find-job-user-avt, .find-job-user-username').click(function(){
+		$('#popup-profile').addClass('popup-show')
+	})
+
+	$('#close-profile-popup-btn').click(function(){
+		$('#popup-profile').removeClass('popup-show')
+
+	})
 })
