@@ -447,3 +447,8 @@ a.post-author{
 .find-job-popup-profile-content{
 	padding-bottom: 12px;
 }
+
+.find-job-section-content-detail-suggest{
+	margin-top: 16px;
+	padding: 0;
+}

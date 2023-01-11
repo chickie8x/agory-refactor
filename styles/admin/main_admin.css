@@ -12,6 +12,7 @@
 @import url(./newcamp-list-empty.css);
 @import url(./post-management.css);
 @import url(./find-job.css);
+@import url(./send-file-quotation.css);
 @font-face {
     font-family: Nunito;
     src: url('/assets/fonts/Nunito-Regular.ttf');
