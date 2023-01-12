@@ -83,3 +83,9 @@
 .quotation-content-section-item > textarea::placeholder{
 	color: #8F90A6;
 }
+
+.word-counter{
+	display: block;
+	text-align: right;
+	margin-top: 4px;
+}
