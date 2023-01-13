@@ -89,3 +89,61 @@
 	text-align: right;
 	margin-top: 4px;
 }
+
+.quotation-content-section-table-container > .quotation-content-section-item{
+	padding: 0 100px;
+}
+
+.quotation-content-item-action-btn{
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+}
+
+.quotation-content-item-action-btn button{
+	outline: none;
+	font-family: 'Nunito';
+	font-size: 12px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.quotation-content-item-action-btn button > img{
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+}
+
+.action-add-btn{
+	border: none;
+	color: white;
+	background-color: #3E7BFA;
+	width: 126px;
+	height: 32px;
+}
+
+.action-copy-btn{
+	background-color: white;
+	color: #3E7BFA;
+	width: 118px;
+	height: 32px;
+	border: solid 1px #3E7BFA;
+}
+
+.action-channel-and-task{
+	width: 194px;
+	height: 32px;
+	background-color: white;
+	color: #3E7BFA;
+	border: solid 1px #3E7BFA;
+}
+
+.action-delete-btn{
+	color: #FF3B3B;
+	border: solid 1px #FF3B3B;
+	width: 89px;
+	height: 32px;
+	background-color: white;
+}
