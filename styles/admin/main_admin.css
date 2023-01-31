@@ -28,6 +28,11 @@
     src: url('/assets/fonts/Nunito-Light.ttf');
 }
 
+@font-face {
+	font-family: 'Nunito Bold Italic';
+	src: url('../../assets/fonts/Nunito-BoldItalic.ttf');
+}
+
 html {
     height: -webkit-fill-available;
     scroll-behavior: smooth;
