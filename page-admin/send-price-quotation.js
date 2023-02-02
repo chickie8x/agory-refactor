@@ -13,4 +13,12 @@ $(document).ready(function () {
 		$(this).addClass('camp-payment-method-item-active')
 	})
 
+	$('.btn-quotation-send').click(function(){
+		$('#quotation-send-confirmation-modal').addClass('popup-show')
+	})
+
+	$('.btn-quotation-cancel').click(function(){
+		$('#quotation-send-confirmation-modal').removeClass('popup-show')
+	})
+
 })

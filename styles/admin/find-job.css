@@ -59,14 +59,14 @@
 	width: 156px;
 	height: 40px;
 	font-size: 14px;
-	
-
+	cursor: default;
 }
 
 .find-job-content-body{
 	min-height: 600px;
 	background: white;
 	padding: 24px;
+	border-radius: 0 8px 8px 8px;
 }
 
 .find-job-content-body-filter{
@@ -451,4 +451,21 @@ a.post-author{
 .find-job-section-content-detail-suggest{
 	margin-top: 16px;
 	padding: 0;
+}
+
+.find-job-content-body-loadmore{
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+}
+
+.find-job-content-body-loadmore > span {
+	margin-right: 6px;
+	font-family: 'Nunito';
+	font-size: 16px;
+	color: #3E7BFA;
+}
+
+.find-job-content-body-loadmore > img {
+	filter: invert(58%) sepia(62%) saturate(6178%) hue-rotate(206deg) brightness(99%) contrast(99%);
 }
