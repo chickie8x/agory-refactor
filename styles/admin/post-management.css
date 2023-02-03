@@ -280,7 +280,7 @@
     min-width: 340px;
 }
 
-.section-table-row-item {
+.section-table-row-item, .find-job-section-row-item {
     display: flex;
     justify-content: space-between;
     align-items: center;

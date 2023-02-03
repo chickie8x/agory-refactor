@@ -287,7 +287,28 @@ a.post-author{
 	border-left: solid 1px rgba(112, 112, 112, 0.3);
 	margin: 24px 0;
 	padding: 0 24px;
+	font-size: 14px;
 }
+
+.about-user-left-find-job img{
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+}
+
+.about-user-left-find-job-name{
+	display: flex;
+	flex-direction: column;
+}
+
+.find-job-star-rating {
+	margin-bottom: 12px;
+}
+
+label.star {
+	margin-bottom: unset !important;
+}
+
 
 .content-body-upper-section-col-1{
 	flex: 1;
@@ -368,6 +389,15 @@ a.post-author{
 .find-job-payment-method{
 	display: flex;
 	align-items: center;
+}
+
+.find-job-pm-text{
+	font-family: 'Nunito' !important;
+	font-size: 14px !important;
+}
+
+.profile-pm-method{
+	margin-top: 12px;
 }
 
 .find-job-payment-method img{
@@ -464,8 +494,54 @@ a.post-author{
 	font-family: 'Nunito';
 	font-size: 16px;
 	color: #3E7BFA;
+	cursor: default;
 }
 
 .find-job-content-body-loadmore > img {
 	filter: invert(58%) sepia(62%) saturate(6178%) hue-rotate(206deg) brightness(99%) contrast(99%);
+}
+
+@media only screen and (max-width: 1152px){
+
+	.find-job-popup-content {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1025px) {
+
+	.find-job-content-wrapper {
+		width: 100%;
+	}
+
+	.find-job-section-row-item:nth-child(odd) {
+		background-color: white;
+	}
+
+	.upper-section-col-1-parts-sections {
+		width: unset;
+	}
+
+	.upper-section-col-1-parts-sections > div:nth-child(1) {
+		min-width: 150px;
+	}
+
+	.send-quotation-total-influencer{
+		margin-bottom: unset;
+	}
+
+	.send-quotation-content-section-table{
+		padding: 0;
+	}
+
+}
+
+@media only screen and (max-width: 760px){
+	.find-job-star-rating {
+		margin-top: unset;
+	}
+
+	.find-job-about-user-btn {
+		margin-top: 12px;
+	}
 }
