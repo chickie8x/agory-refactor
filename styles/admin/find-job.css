@@ -299,6 +299,7 @@ a.post-author{
 .about-user-left-find-job-name{
 	display: flex;
 	flex-direction: column;
+	margin-top: 12px;
 }
 
 .find-job-star-rating {
@@ -543,5 +544,65 @@ label.star {
 
 	.find-job-about-user-btn {
 		margin-top: 12px;
+	}
+}
+
+@media only screen and (max-width: 660px){
+
+	.find-job-popup-content-body{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.find-job-content-body{
+		padding: 8px;
+	}
+
+	.find-job-all-jobs-item {
+		flex-direction: column;
+		padding: 12px 0;
+	}
+
+	.job-item-col-2 {
+		margin-top: 12px;
+	}
+
+	.find-job-popup-content-body-upper-section{
+		display: contents;
+	}
+
+	.content-body-upper-section-col-1{
+		order: 1;
+	}
+
+	.about-user-left-find-job{
+		order: 3;
+		display: flex;
+		margin-top: 0;
+	}
+
+	.about-user-left-find-job > img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.about-user-left-find-job > div {
+		margin-left: 8px;
+	}
+
+	.find-job-popup-content-body-below-section{
+		order: 2;
+	}
+
+	.find-job-payment-method {
+		align-items: flex-start;
+	}
+
+	.find-job-payment-method > img {
+		margin-top: 4px;
+	}
+
+	.about-user-left-find-job-name{
+		margin-top: 0;
 	}
 }
