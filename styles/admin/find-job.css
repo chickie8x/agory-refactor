@@ -605,4 +605,31 @@ label.star {
 	.about-user-left-find-job-name{
 		margin-top: 0;
 	}
+
+	.find-job-content-body-filter{
+		padding-top: 12px;
+	}
+
+	#job-type-select{
+		width: 32px;
+		height: 32px;
+		padding: 0;
+		background-image: url('../../assets/icons/sort-btn.svg');
+		font-size: 0;
+		background-position: center;
+		background-size: 100%;
+		box-shadow: none;
+	}
+
+	#job-type-select option {
+		font-size: 14px;
+	}
+
+	.filter-container > span {
+		display: none;
+	}
+
+	.find-job-title {
+		padding-left: 8px;
+	}
 }

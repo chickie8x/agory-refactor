@@ -198,7 +198,7 @@
 	font-family: 'Nunito Bold';
 }
 
-.quotation-content-table-body-item>button {
+.quotation-choose-from-list {
 	width: 136px;
 	height: 32px;
 	background-color: #3E7BFA;
@@ -476,4 +476,88 @@
 .btn-continue-send{
 	width: 158px;
 	height: 32px;
+}
+
+.quotation-mobile-action-add-btn{
+	background: #3E7BFA;
+	color: white;
+	font-size: 12px;
+	font-family: 'Nunito';
+	border: none;
+	outline: none;
+	height: 32px;
+	border-radius: 8px;
+	width: 168px;
+	display: none;
+}
+
+.quotation-mobile-action-add-btn > img{
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+
+@media only screen and (max-width: 1024px){
+	.send-price-quotation-content{
+		width: 100%;
+		padding: 16px ;
+	}
+
+	.quotation-content-section{
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 760px){
+	.quotation-content-table-body{
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.quotation-content-section-1st{
+		flex-direction: column;
+	}
+
+	.quotation-content-section-col-left{
+		max-width: unset;
+		width: 100%;
+		border-bottom: dashed 1px rgba(154, 154, 154, 0.4);
+	}
+
+	.quotation-content-section-col-right{
+		margin-left: 0;
+		padding: 0;
+		border-left: none;
+	}
+
+	.quotation-content-table-body-item > div {
+		display: flex;
+	}
+
+	.quotation-content-section-table-container > .quotation-content-section-item{
+		padding: 0;
+	}
+
+	.quotation-content-item-action-btn{
+		display: none;
+	}
+
+	.quotation-content-table-body-item	 img{
+		margin-right: unset;
+		margin: auto;
+	}
+
+	.table-body-item-title{
+		text-align: center;
+	}
+
+	.table-body-item-content-text{
+		display: block;
+		padding: 0 12px;
+		text-align: center;
+	}
+
+	.quotation-mobile-action-add-btn{
+		display: flex;
+	}
 }
