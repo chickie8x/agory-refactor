@@ -18,11 +18,11 @@ $(document).ready(function () {
 	})
 
 	$('.find-job-user-avt, .find-job-user-username').click(function(){
-		$('#popup-profile').addClass('find-job-popup-show')
+		$('#popup-profile').addClass('popup-show')
 	})
 
 	$('#close-profile-popup-btn').click(function(){
-		$('#popup-profile').removeClass('find-job-popup-show')
+		$('#popup-profile').removeClass('popup-show')
 
 	})
 
