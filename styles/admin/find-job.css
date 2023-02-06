@@ -240,20 +240,21 @@ a.post-author{
 	height: 100vh;
 	overflow: auto;
 	background: #555770;
+	background: rgba(85, 87, 112, 0.5);
 	position: fixed;
-	top: -2000px;
-	left: 0;
+	right: -2000px;
+	top: 0;
 	transition-duration: 0.3s;
-	opacity: 0;
 }
 
-.popup-show{
-	opacity: 1;
+.find-job-popup-show{
+	right: 0;
+	transition-duration: 0.3s;
 }
 
 .find-job-popup-content{
 	width: 1152px;
-	margin: auto;
+	margin-left: auto;
 	background: #E4E4EB;
 }
 
