@@ -924,6 +924,10 @@ body::-webkit-scrollbar {
     display: none;
 } */
 
+body div::-webkit-scrollbar {
+    display: none;
+}
+
 .influencer-library-back-to-list {
     height: 64px;
     background: white;
