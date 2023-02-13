@@ -919,10 +919,10 @@
 .influencer-library-wrapper::-webkit-scrollbar {
     display: none;
 }
-
+/* 
 body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .influencer-library-back-to-list {
     height: 64px;
