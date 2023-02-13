@@ -734,7 +734,7 @@
 	position: absolute;
 	top: -3000px;
 	left: 0;
-	background: #555770;
+	background: rgba(85,87,112,0.5);
 	z-index: 888;
 	transition-duration: 0.3s;
 	opacity: 0;
@@ -1013,7 +1013,7 @@ progress[value]::-webkit-progress-value{
 	opacity: 0;
 	width: 100%;
 	min-height: 100vh;
-	background-color: #555770;
+	background-color: rgba(85, 87, 112, 0.5);
 	z-index: 999;
 	display: flex;
 }
