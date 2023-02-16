@@ -1,3 +1,7 @@
+.disable-body-scroll{
+	overflow: hidden;
+}
+
 .find-job-main-wrapper{
 	position: relative;
 }
