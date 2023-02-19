@@ -305,6 +305,7 @@ a.pre-contract-detail-link{
 .pre-contract-content-footer-btn{
 	display: flex;
 	justify-content: flex-end;
+	margin-top: 16px;
 }
 
 
