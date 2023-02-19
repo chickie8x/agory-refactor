@@ -1,0 +1,297 @@
+
+.pre-contract-job-title{
+	margin-top: 32px;
+}
+
+.pre-contract-content-wrapper{
+	padding: 18px;
+	background: #FAFAFC;
+	border-radius: 8px;
+}
+
+.pre-contract-section-user{
+	display: flex;
+	align-items: center;
+	padding: 0 8px 24px;
+	border-bottom: 0.25px solid rgba(143, 144, 166, 0.3)
+}
+
+.pre-contract-section-user img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-right: 24px;
+}
+
+.pre-contract-section-user div span{
+	display: block;
+}
+
+.pre-contract-section-user-name{
+	font-size: 20px;
+	font-family: 'Nunito Bold';
+	color: #28293D;
+	margin-bottom: 8px;
+}
+
+.pre-contract-user-work-at{
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #28293D;
+}
+
+.pre-contract-section-info-wrapper{
+	border-bottom: 0.25px solid rgba(143, 144, 166, 0.3);
+}
+
+.pre-contract-section-info{
+	display: flex;
+	flex-direction: column;
+	width: 662px;
+	margin: 0 auto;
+	padding: 16px 0;
+	color: #28293D;
+	padding-bottom: 0;
+	
+}
+
+.pre-contract-section-info-title{
+	font-size: 16px;
+	font-family: 'Nunito Bold';
+}
+
+.pre-contract-section-info-sub-title{
+	font-size: 14px;
+	font-family: 'Nunito Bold';
+	margin-top: 16px;
+}
+
+a.pre-contract-detail-link{
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Nunito Light';
+}
+
+.pre-contract-title-input-text{
+	height: 40px;
+	font-size: 14px;
+	border-radius: 8px;
+	padding: 0 8px;
+	margin-top: 4px;
+	border: 1px solid #C7C9D9;
+	outline: none;
+}
+
+#pre-contract-desc-text-area{
+	height: 124px;
+	outline: none;
+	border: 1px solid #C7C9D9;
+	resize: none;
+	border-radius: 8px;
+	padding: 8px;
+	font-size: 14px;
+	color: #28293D;
+	margin-top: 4px;
+}
+
+.pre-contract-files-attached {
+	border-bottom: none;
+}
+
+.pre-contract-files-attached > .attached-section > div > label{
+	margin-bottom: 0;
+	user-select: none;
+}
+
+.pre-contract-table-wrapper{
+	padding: 16px 0;
+}
+
+.pre-contract-detail{
+	width: 662px;
+	margin: auto;
+	font-size: 14px;
+}
+
+.pre-contract-detail span {
+	display: block;
+}
+
+.pre-contract-total-items{
+	padding-bottom: 16px;
+	border-bottom: 0.25px solid rgba(143, 144, 166, 0.3)
+}
+
+.pre-contract-payment-method{
+	border-bottom: 0.25px solid rgba(143, 144, 166, 0.3)
+}
+
+.pre-contract-payment-method-section{
+	margin-top: 16px;
+	font-size: 14px;
+	padding: 0 122px;
+}
+
+.pre-contract-payment-method-section span{
+	display: block;
+}
+
+.pre-contract-payment-method-step{
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+}
+
+.pre-contract-payment-method-step-item{
+	width: 270px;
+	background: #FAFAFC;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+	margin-right: 24px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 14px;
+	text-align: center;
+}
+
+.icon-slot{
+	width: 24px;
+	height: 24px;
+	background: #D9D9D9;
+	margin: 0 auto;
+}
+
+.pre-contract-payment-method-step-item span {
+	margin-top: 8px;
+}
+
+.pre-contract-payment-method > span{
+	display: block;
+	font-size: 14px;
+	padding: 16px 122px;
+}
+
+.pre-contract-set{
+	font-size: 14px;
+	padding-bottom: 16px;
+	border-bottom: solid 1px ;
+	border-bottom: 0.25px solid rgba(143, 144, 166, 0.3)
+}
+
+.pre-contract-set span{
+	display: block;
+	margin-top: 8px;
+}
+
+.pre-contract-tos{
+	padding: 16px 0;
+}
+
+.pre-contract-tos-check{
+	display: flex;
+	align-items: center;
+}
+
+.pre-contract-tos-check input{
+	transform: scale(1.2);
+	margin-right: 8px;
+}
+
+.pre-contract-tos-check span{
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	flex-wrap: wrap;
+}
+
+.pre-contract-tos-check span a{
+	margin: 0 4px;
+}
+
+.pre-contract-btn {
+	margin-top: 24px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.pre-contract-btn button {
+	outline: none;
+}
+
+.pre-contract-btn button:focus{
+	outline: none;
+}
+
+.pre-contract-cancel{
+	border: solid 1px #3E7BFA;
+	border-radius: 8px;
+	color: #3E7BFA;
+	background: white;
+	width: 94px;
+	height: 32px;
+	font-size: 14px;
+}
+
+.pre-contract-approve{
+	border: none;
+	background: #3E7BFA;
+	color: white;
+	border-radius: 8px;
+	width: 208px;
+	height: 32px;
+	font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1161px) {
+
+	.pre-contract-data-table {
+		width: 100%;
+	}
+
+	.pre-contract-data-table .data-table-body .data-table-row{
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 730px){
+
+	.pre-contract-section-info{
+		width: 100%;
+	}
+
+	.pre-contract-detail{
+		width: 100%;
+	}
+
+	.pre-contract-payment-method > span {
+		padding: 16px 0;
+	}
+
+	.pre-contract-payment-method-step{
+		flex-direction: column;
+	}
+
+	.pre-contract-payment-method-step-item{
+		width: 100%;
+		margin-top: 16px;
+	}
+
+	.pre-contract-tos-check{
+		align-items: start;
+	}
+
+	.pre-contract-btn {
+		justify-content: space-evenly;
+	}
+
+	.pre-contract-total-items {
+		display: none;
+	}
+
+	.pre-contract-payment-method-section{
+		padding: 16px 0;
+	}
+}
