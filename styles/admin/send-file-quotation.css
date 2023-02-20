@@ -691,3 +691,31 @@
 		height: unset;
 	}
 }
+
+
+@media screen and (max-height: 620px) { 
+	.confirmation-modal-content{
+		height: 500px;
+	}
+
+	.confirmation-modal-content-body{
+		height: 400px;
+		overflow-y: auto;
+		flex: unset;
+	}
+ }
+/* 
+
+ 
+@media (aspect-ratio: 1.5) { 
+	.confirmation-modal-content{
+		height: 500px;
+	}
+
+	.confirmation-modal-content-body{
+		height: 400px;
+		overflow-y: auto;
+		flex: unset;
+	}
+ } */
+
