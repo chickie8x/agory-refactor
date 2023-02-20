@@ -680,4 +680,14 @@
 	.quotation-mobile-actions-btn{
 		display: flex;
 	}
+
+	.confirmation-modal-content-body{
+		height: 556px;
+		overflow-y: scroll;
+		flex: unset;
+	}
+
+	.confirmation-modal-content-body-item{
+		height: unset;
+	}
 }
