@@ -15,10 +15,12 @@ $(document).ready(function () {
 
 	$('.btn-quotation-send').click(function(){
 		$('#quotation-send-confirmation-modal').addClass('popup-show')
+		$('body').addClass('disable-body-scroll')
 	})
 
 	$('.btn-quotation-cancel').click(function(){
 		$('#quotation-send-confirmation-modal').removeClass('popup-show')
+		$('body').removeClass('disable-body-scroll')
 	})
 
 })
