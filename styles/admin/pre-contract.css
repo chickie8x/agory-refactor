@@ -177,7 +177,9 @@ a.pre-contract-detail-link{
 	font-size: 14px;
 	padding-bottom: 16px;
 	border-bottom: solid 1px ;
-	border-bottom: 0.25px solid rgba(143, 144, 166, 0.3)
+	border-bottom: 0.25px solid rgba(143, 144, 166, 0.3);
+	padding-left: 122px;
+	
 }
 
 .pre-contract-set span{
@@ -192,6 +194,7 @@ a.pre-contract-detail-link{
 .pre-contract-tos-check{
 	display: flex;
 	align-items: center;
+	padding-left: 122px;
 }
 
 .pre-contract-tos-check input{
@@ -317,6 +320,14 @@ a.pre-contract-detail-link{
 
 	.pre-contract-data-table .data-table-body .data-table-row{
 		width: 100% !important;
+	}
+
+	.pre-contract-tos-check{
+		padding-left: 0;
+	}
+
+	.pre-contract-set{
+		padding-left: 0;
 	}
 }
 
