@@ -14,6 +14,9 @@
 @import url(./find-job.css);
 @import url(./send-file-quotation.css);
 @import url(./pre-contract.css);
+@import url(./send-contract.css);
+
+
 @font-face {
     font-family: Nunito;
     src: url('/assets/fonts/Nunito-Regular.ttf');
