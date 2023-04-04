@@ -32,3 +32,114 @@
     margin-bottom: 0;
     margin-top: 16px;
 }
+
+.send-contract-btn-send-mes{
+    border: solid 1px #3E7BFA;
+    outline: none;
+    border-radius: 8px;
+    width: 102px;
+    height: 32px;
+    background: white;
+    color: #3E7BFA;
+}
+
+.send-contract-btn-send-mes:focus{
+    outline: none;
+}
+
+.send-contract-contract-information{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    margin: 0 24px;
+    border-bottom: solid 1px rgba(180, 180, 180, 0.4);
+}
+
+.contract-information-detail-item{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.information-detail-key {
+    font-family: 'Nunito Bold';
+    display: block;
+    min-width: 180px;
+}
+
+
+.contract-information-action-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.contract-information-action-btn button{
+    width: 168px;
+    height: 32px;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 16px;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.request-accepted{
+    border: none;
+    color: white;
+    background: #3E7BFA;
+}
+
+.request-change, .check-quotation-price{
+    color: #3E7BFA;
+    border: solid 1px #3E7BFA;
+    background: white;
+}
+
+.cancel-deal{
+    color: #FF3B3B;
+    border: solid 1px #FF3B3B;
+    background: white;
+}
+
+.contract-information-action-btn button:focus {
+    outline: none;
+}
+
+.contract-information-title{
+    font-family: 'Nunito Bold';
+    font-size: 20px;
+    color: #28293D;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.send-contract-job-description{
+    padding: 24px 0;
+    margin: 0 24px;
+    border-bottom: solid 1px rgba(180, 180, 180, 0.4);
+}
+
+.job-description-content{
+    display: block;
+    max-width: 80%;
+    margin-top: 16px;
+    font-family: 'Nunito';
+}
+
+.file-attached-title{
+    font-family: 'Nunito Bold';
+    font-size: 14px;
+    color: #28293D;
+    margin-top: 16px;
+    display: block;
+}
+
+.send-contract-job-description > a{
+    font-size: 14px;
+    font-family: 'Nunito';
+}
+
+.send-contract-table-cost{
+    padding: 24px 0;
+    margin: 0 24px;
+    border-bottom: solid 1px rgba(180, 180, 180, 0.4);
+}
