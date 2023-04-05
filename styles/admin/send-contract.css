@@ -3,6 +3,9 @@
     background: white;
     border-radius: 8px;
     margin-top: 32px;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Nunito';
 }
 
 .header-user-info{
@@ -167,9 +170,9 @@
 
 /* request accepted popup  */
 
-#request-accepted-popup{
+#request-accepted-popup, #corp-start-popup{
     position: fixed;
-    top: 0;
+    top: -2000px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -184,7 +187,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
     width: 736px;
-    height: 405px;
     padding: 24px;
     font-family: 'Nunito';
     display: flex;
@@ -230,4 +232,37 @@
     margin-right: 8px;
     margin-top: 4px;
     transform: scale(1.2);
+}
+
+.request-accepted-popup-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.popup-cancel-deal-btn, .popup-send-deal-btn, .confirm-contract-btn{
+    font-size: 14px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.popup-cancel-deal-btn:focus, .popup-send-deal-btn:focus, .confirm-contract-btn:focus{
+    outline: none;
+}
+
+.popup-cancel-deal-btn{
+    border: solid 1px #3E7BFA;
+    color:#3E7BFA;
+    background: white;
+    width: 94px;
+    height: 32px;
+}
+
+.popup-send-deal-btn, .confirm-contract-btn{
+    width: 133px;
+    height: 32px;
+    background: #3E7BFA;
+    color: white;
+    border: none;
 }
