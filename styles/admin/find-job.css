@@ -260,6 +260,9 @@ a.post-author{
 	width: 1152px;
 	margin-left: auto;
 	background: #E4E4EB;
+	height: 100vh;
+	overflow-y: scroll;
+	position: relative;
 }
 
 .find-job-popup-content-header{
@@ -269,6 +272,9 @@ a.post-author{
 	background-color: white;
 	padding: 24px;
 	box-shadow: 0px 0.5px 2px #60617029;
+	position: sticky;
+	 top: 0;
+	 left: 0;
 }
 
 .close-find-job-popup-btn{
