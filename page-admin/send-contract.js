@@ -19,4 +19,14 @@ $(document).ready(function () {
         $('#corp-start-popup').removeClass('popup-show')
         $('body').removeClass('disable-body-scroll')
     })
+
+    $('.cancel-deal').click(function(){
+        $('#request-refused-popup').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+    })
+
+    $('.popup-cancel-refuse-deal-btn').click(function(){
+        $('#request-refused-popup').removeClass('popup-show')
+        $('body').removeClass('disable-body-scroll')
+    })
 })

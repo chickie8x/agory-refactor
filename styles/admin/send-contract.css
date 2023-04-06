@@ -1,4 +1,4 @@
-.send-contract-main-wrapper{
+.send-contract-main-wrapper {
     width: 1024px;
     background: white;
     border-radius: 8px;
@@ -8,7 +8,7 @@
     font-family: 'Nunito';
 }
 
-.header-user-info{
+.header-user-info {
     padding: 24px 0;
     margin: 0 24px;
     display: flex;
@@ -16,27 +16,34 @@
     border-bottom: solid 1px rgba(180, 180, 180, 0.4);
 }
 
-.send-contract-user-avt{
+.send-contract-user-avt {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-right: 24px;
 }
 
-.send-contract-payment-method-verified{
+.send-contract-payment-method-verified {
     transform: scale(1.2);
 }
 
-.send-contract-btn-send-mes{
+.send-contract-btn-send-mes {
     margin-bottom: 6px;
 }
 
-.send-contract-user-stats > div {
+.send-contract-user-stats>div {
     margin-bottom: 0;
     margin-top: 16px;
 }
 
-.send-contract-btn-send-mes{
+.send-contract-header-send-mes {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.send-contract-btn-send-mes,
+.send-contract-btn-send-mes-dup {
     border: solid 1px #3E7BFA;
     outline: none;
     border-radius: 8px;
@@ -46,11 +53,16 @@
     color: #3E7BFA;
 }
 
-.send-contract-btn-send-mes:focus{
+.send-contract-btn-send-mes-dup {
+    display: none;
+}
+
+.send-contract-btn-send-mes:focus,
+.send-contract-btn-send-mes-dup:focus {
     outline: none;
 }
 
-.send-contract-contract-information{
+.send-contract-contract-information {
     display: flex;
     justify-content: space-between;
     padding: 24px 0;
@@ -58,7 +70,7 @@
     border-bottom: solid 1px rgba(180, 180, 180, 0.4);
 }
 
-.contract-information-detail-item{
+.contract-information-detail-item {
     display: flex;
     margin-bottom: 8px;
 }
@@ -70,12 +82,12 @@
 }
 
 
-.contract-information-action-btn{
+.contract-information-action-btn {
     display: flex;
     flex-direction: column;
 }
 
-.contract-information-action-btn button{
+.contract-information-action-btn button {
     width: 168px;
     height: 32px;
     border-radius: 8px;
@@ -85,19 +97,20 @@
     font-size: 14px;
 }
 
-.request-accepted{
+.request-accepted {
     border: none;
     color: white;
     background: #3E7BFA;
 }
 
-.request-change, .check-quotation-price{
+.request-change,
+.check-quotation-price {
     color: #3E7BFA;
     border: solid 1px #3E7BFA;
     background: white;
 }
 
-.cancel-deal{
+.cancel-deal {
     color: #FF3B3B;
     border: solid 1px #FF3B3B;
     background: white;
@@ -107,7 +120,7 @@
     outline: none;
 }
 
-.contract-information-title{
+.contract-information-title {
     font-family: 'Nunito Bold';
     font-size: 20px;
     color: #28293D;
@@ -115,20 +128,20 @@
     margin-bottom: 16px;
 }
 
-.send-contract-job-description{
+.send-contract-job-description {
     padding: 24px 0;
     margin: 0 24px;
     border-bottom: solid 1px rgba(180, 180, 180, 0.4);
 }
 
-.job-description-content{
+.job-description-content {
     display: block;
     max-width: 80%;
     margin-top: 16px;
     font-family: 'Nunito';
 }
 
-.file-attached-title{
+.file-attached-title {
     font-family: 'Nunito Bold';
     font-size: 14px;
     color: #28293D;
@@ -136,32 +149,32 @@
     display: block;
 }
 
-.send-contract-job-description > a{
+.send-contract-job-description>a {
     font-size: 14px;
     font-family: 'Nunito';
 }
 
-.send-contract-table-cost{
+.send-contract-table-cost {
     padding: 24px 0;
     margin: 0 24px;
     border-bottom: solid 1px rgba(180, 180, 180, 0.4);
 }
 
-.send-contract-total-item{
+.send-contract-total-item {
     padding: 16px 0;
     border-bottom: solid 1px rgba(180, 180, 180, 0.4);
 }
 
-.send-contract-payment-sumary-info{
+.send-contract-payment-sumary-info {
     border-bottom: dashed 1px rgba(180, 180, 180, 0.4);
     padding-bottom: 16px;
 }
 
-.send-contract-camp-payment-note{
+.send-contract-camp-payment-note {
     padding: 16px 0;
 }
 
-.send-contract-contract-detail{
+.send-contract-contract-detail {
     padding: 24px 0;
     margin: 0 24px;
     font-size: 14px;
@@ -170,7 +183,9 @@
 
 /* request accepted popup  */
 
-#request-accepted-popup, #corp-start-popup{
+#request-accepted-popup,
+#corp-start-popup,
+#request-refused-popup {
     position: fixed;
     top: -2000px;
     left: 0;
@@ -182,7 +197,7 @@
     align-items: center;
 }
 
-.request-accepted-popup-content{
+.request-accepted-popup-content {
     background: #FAFAFC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
@@ -193,23 +208,24 @@
     flex-direction: column;
 }
 
-.popup-contract-information-title{
+.popup-contract-information-title {
     margin-bottom: 8px;
 }
 
-.popup-description-content-text{
+.popup-description-content-text {
     font-size: 14px;
     display: block;
     padding-bottom: 16px;
     border-bottom: solid 1px rgba(180, 180, 180, 0.4);
 }
 
-.send-mes-to-partner{
+.send-mes-to-partner {
     margin-top: 16px;
     font-family: 'Nunito Bold';
     font-size: 14px;
 }
-#partner-mes-content{
+
+#partner-mes-content {
     height: 124px;
     resize: none;
     outline: none;
@@ -234,35 +250,81 @@
     transform: scale(1.2);
 }
 
-.request-accepted-popup-btn{
+.request-accepted-popup-btn {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-top: 16px;
 }
 
-.popup-cancel-deal-btn, .popup-send-deal-btn, .confirm-contract-btn{
+.popup-cancel-deal-btn,
+.popup-send-deal-btn,
+.confirm-contract-btn,
+.popup-cancel-refuse-deal-btn,
+.popup-send-refuse-btn {
     font-size: 14px;
     outline: none;
     border-radius: 8px;
 }
 
-.popup-cancel-deal-btn:focus, .popup-send-deal-btn:focus, .confirm-contract-btn:focus{
+.popup-cancel-deal-btn:focus,
+.popup-send-deal-btn:focus,
+.confirm-contract-btn:focus,
+.popup-cancel-refuse-deal-btn:focus,
+.popup-send-refuse-btn:focus {
     outline: none;
 }
 
-.popup-cancel-deal-btn{
+.popup-cancel-deal-btn,
+.popup-cancel-refuse-deal-btn {
     border: solid 1px #3E7BFA;
-    color:#3E7BFA;
+    color: #3E7BFA;
     background: white;
     width: 94px;
     height: 32px;
 }
 
-.popup-send-deal-btn, .confirm-contract-btn{
+.popup-send-deal-btn,
+.confirm-contract-btn,
+.popup-send-refuse-btn {
     width: 133px;
     height: 32px;
     background: #3E7BFA;
     color: white;
     border: none;
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+    .send-contract-main-wrapper {
+        width: 100%;
+    }
+
+    .header-user-info {
+        justify-content: space-between;
+    }
+
+    .send-contract-header-send-mes {
+        display: none;
+    }
+
+    .send-contract-btn-send-mes-dup {
+        display: block;
+    }
+
+    .send-contract-user-stats {
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+
+    .send-contract-total-item>div>div {
+        min-width: 300px;
+        margin-right: 16px;
+    }
+
 }
