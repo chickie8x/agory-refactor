@@ -100,7 +100,7 @@
 
 
 		<!-- main content section  -->
-		<div class="main-wrapper send-contract-main-wrapper">
+		<div class="main-wrapper send-contract-main-wrapper hide-item">
 			<div class="header-user-info">
 				<div class="header-user-info-avt-wrapper">
 					<img src="../assets/images/useravt.png" alt="" class=" send-contract-user-avt">
@@ -127,9 +127,9 @@
 							</div>
 							<span><span class="rating-value">4.9</span> từ 15 đánh giá </span>
 						</div>
-						<button class="send-contract-btn-send-mes-dup">Nhắn tin</button>
+						<button class="send-contract-btn-send-mes">Nhắn tin</button>
 					</div>
-					
+
 				</div>
 
 				<div class="send-contract-user-stats">
@@ -153,10 +153,6 @@
 						<span>Đã chi trả <span class="rating-value">200.000.000 VND
 							</span></span>
 					</div>
-				</div>
-
-				<div class="send-contract-header-send-mes">
-					<button class="send-contract-btn-send-mes">Nhắn tin</button>
 				</div>
 
 			</div>
@@ -394,7 +390,8 @@
 
 			<div class="send-contract-contract-detail">
 				<span class="contract-information-title">Hợp đồng</span>
-				<span class="job-description-content">Hợp đồng của bạn và Châu Nguyễn sẽ được khởi tạo, bao gồm thông tin pháp nhân mà bạn và Châu Nguyễn đã cung cấp.</span>
+				<span class="job-description-content">Hợp đồng của bạn và Châu Nguyễn sẽ được khởi tạo, bao gồm thông
+					tin pháp nhân mà bạn và Châu Nguyễn đã cung cấp.</span>
 				<a href="">Xem hợp đồng</a>
 
 			</div>
@@ -405,13 +402,16 @@
 			<div id="request-accepted-popup">
 				<div class="request-accepted-popup-content">
 					<span class="contract-information-title popup-contract-information-title">Chấp nhận hợp tác</span>
-					<span class="popup-description-content-text">Hợp đồng của bạn và Châu Nguyễn sẽ được khỏi tạo trong mục Chiến dịch của tôi.</span>
+					<span class="popup-description-content-text">Hợp đồng của bạn và Châu Nguyễn sẽ được khỏi tạo trong
+						mục Chiến dịch của tôi.</span>
 					<span class="send-mes-to-partner">Nhắn tin cho đối tác</span>
-					<textarea id="partner-mes-content" ></textarea>
+					<textarea id="partner-mes-content"></textarea>
 					<div class="request-accepted-tos">
 						<input type="checkbox">
 						<div>
-							<span>Tôi đã hiểu và đồng ý với <a href="">Điều khoản dịch vụ</a> của Agory bao gồm <a href="">Thoả thuận sử dụng dịch vụ </a> và <a href="">Chính sách bảo mật.</a> Tôi sẽ chỉ nhận thanh toán hợp đồng này qua Agory</span>
+							<span>Tôi đã hiểu và đồng ý với <a href="">Điều khoản dịch vụ</a> của Agory bao gồm <a
+									href="">Thoả thuận sử dụng dịch vụ </a> và <a href="">Chính sách bảo mật.</a> Tôi sẽ
+								chỉ nhận thanh toán hợp đồng này qua Agory</span>
 						</div>
 					</div>
 					<div class="request-accepted-popup-btn">
@@ -425,7 +425,8 @@
 				<div class="request-accepted-popup-content">
 					<span class="contract-information-title popup-contract-information-title">Hợp tác bắt đầu</span>
 					<span class="popup-description-content-text">Xin chúc mừng bạn với hợp đồng mới trên Agory.<br>
-						Nếu bạn cần hỗ trợ, có thể tải <a href=""> Hướng dẫn hoạt động </a> để tìm hiểu thêm những thông tin cần thiết.</span>
+						Nếu bạn cần hỗ trợ, có thể tải <a href=""> Hướng dẫn hoạt động </a> để tìm hiểu thêm những thông
+						tin cần thiết.</span>
 					<div class="request-accepted-popup-btn">
 						<button class="confirm-contract-btn">Tôi đã hiểu</button>
 					</div>
@@ -435,14 +436,275 @@
 			<div id="request-refused-popup">
 				<div class="request-accepted-popup-content">
 					<span class="contract-information-title popup-contract-information-title">Từ chối hợp tác</span>
-					<span class="popup-description-content-text">Bạn sẽ từ chối đề nghị hợp tác này của Châu Nguyễn</span>
+					<span class="popup-description-content-text">Bạn sẽ từ chối đề nghị hợp tác này của Châu
+						Nguyễn</span>
 					<span class="send-mes-to-partner">Lý do từ chối(không bắt buộc)</span>
-					<textarea id="partner-mes-content" ></textarea>
+					<textarea id="partner-mes-content"></textarea>
 					<div class="request-accepted-popup-btn">
 						<button class="popup-cancel-refuse-deal-btn">Hủy bỏ</button>
 						<button class="popup-send-refuse-btn">Từ chối hợp tác</button>
 					</div>
 				</div>
+			</div>
+
+		</div>
+
+		<!-- sub wrapper change offer  -->
+
+		<div class="sub-wrapper-change-offer hide-item">
+			<div class="sub-wrapper-change-offer-header">
+				<img src="../assets/icons/arrow-left.svg" alt="">
+				<span>Thay đổi đề nghị hợp tác</span>
+			</div>
+
+			<div class="sub-wrapper-change-offer-content">
+				<div class="send-contract-job-description">
+					<span class="contract-information-title">Mô tả công việc</span>
+					<span class="job-description-content">
+						Hi mọi Người, bên mình đang có job share post PR cho khách sạn ở Đà Nẵng + đến review trại
+						nghiệm và
+						đăng album ảnh hoặc video tùy brief và ngân sách.<br>
+						Thời gian dự kiến: 2 tuần cuối tháng 4 đến 2 tuần đầu tháng 5.<br>
+						Yêu cầu về KOLs:<br>
+						- Micro Influencers có followers trong khoảng 10K - %0K<br>
+						- Phù hợp với style du lịch check-in san chảnh<br>
+						Quyền lợi:<br>
+						Review trại nghiệm được take care toán bộ chi phí ăn ở<br>
+					</span>
+					<span class="file-attached-title">File đính kèm</span>
+					<a href="">Review bộ sản phẩm dưỡng da Shisha</a>
+				</div>
+
+				<div class="send-contract-table-cost">
+					<span class="contract-information-title">Yêu cầu và tổng chi phí</span>
+					<div class="content-section-table send-quotation-content-section-table">
+						<div class="section-table-header">
+							<div class="influencer-col-header">Influencer</div>
+							<div class="type-col-header">Type</div>
+							<div class="channel-col-header">Kênh</div>
+							<div class="task-col-header">Công việc</div>
+							<div class="note-col-header">Note</div>
+						</div>
+						<div class="section-table-row">
+							<div class="section-table-row-item find-job-section-row-item">
+								<div class="influencer-col-header">
+									<img src="../assets/images/useravt.png" alt="">
+									<a href="">Merrile Burgett</a>
+									<span class="community-pill hide-item">Community</span>
+								</div>
+								<div class="type-col-header">
+									<span class="community-pill">Community</span>
+								</div>
+								<div class="channel-col-header">
+									<img src="../assets/icons/icon_insta.png" alt="">
+								</div>
+								<div class="task-col-header">
+									<img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
+									<span>Đăng hình</span>
+									<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+								</div>
+								<div class="note-col-header">
+									<span>Cần check lại thông tin chi tiết về lịch...</span>
+									<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+								</div>
+								<span class="task-mobile post-task-mobile">Công việc</span>
+								<span class="note-mobile note-task-mobile">Ghi chú</span>
+
+							</div>
+
+							<div class="section-table-row-item find-job-section-row-item">
+								<div class="influencer-col-header">
+									<img src="../assets/images/useravt.png" alt="">
+									<a href="">Merrile Burgett</a>
+									<span class="community-pill hide-item">Community</span>
+								</div>
+								<div class="type-col-header">
+									<span class="community-pill">Community</span>
+								</div>
+								<div class="channel-col-header">
+									<img src="../assets/icons/icon_insta.png" alt="">
+								</div>
+								<div class="task-col-header">
+									<img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
+									<span>Đăng hình</span>
+									<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+								</div>
+								<div class="note-col-header">
+									<span>Cần check lại thông tin chi tiết về lịch...</span>
+									<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+								</div>
+								<span class="task-mobile post-task-mobile">Công việc</span>
+								<span class="note-mobile note-task-mobile">Ghi chú</span>
+
+							</div>
+							<div class="section-table-row-item find-job-section-row-item">
+								<div class="influencer-col-header">
+									<img src="../assets/images/useravt.png" alt="">
+									<a href="">Merrile Burgett</a>
+									<span class="community-pill hide-item">Community</span>
+								</div>
+								<div class="type-col-header">
+									<span class="community-pill">Community</span>
+								</div>
+								<div class="channel-col-header">
+									<img src="../assets/icons/icon_insta.png" alt="">
+								</div>
+								<div class="task-col-header">
+									<img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
+									<span>Đăng hình</span>
+									<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+								</div>
+								<div class="note-col-header">
+									<span>Cần check lại thông tin chi tiết về lịch...</span>
+									<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+								</div>
+								<span class="task-mobile post-task-mobile">Công việc</span>
+								<span class="note-mobile note-task-mobile">Ghi chú</span>
+
+							</div>
+							<div class="section-table-row-item find-job-section-row-item">
+								<div class="influencer-col-header">
+									<img src="../assets/images/useravt.png" alt="">
+									<a href="">Merrile Burgett</a>
+									<span class="community-pill hide-item">Community</span>
+								</div>
+								<div class="type-col-header">
+									<span class="community-pill">Community</span>
+								</div>
+								<div class="channel-col-header">
+									<img src="../assets/icons/icon_insta.png" alt="">
+								</div>
+								<div class="task-col-header">
+									<img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
+									<span>Đăng hình</span>
+									<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+								</div>
+								<div class="note-col-header">
+									<span>Cần check lại thông tin chi tiết về lịch...</span>
+									<img class="edit-btn" src="../assets//icons/vuesax-linear-edit.svg" alt="">
+								</div>
+								<span class="task-mobile post-task-mobile">Công việc</span>
+								<span class="note-mobile post-note-mobile">Ghi chú</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="total-items send-contract-total-item">
+						<div class="total-item-row-1 d-flex">
+							<div class="total-influencer total">
+								<img src="/assets/icons/vuesax-linear-people.svg" alt="">
+								<span>Tổng số influencer: <span style="color: #0063F7;">0</span></span>
+							</div>
+							<div class="total-job total">
+								<img src="/assets/icons/vuesax-linear-briefcase.svg" alt="">
+								<span>Tông số công việc: <span style="color: #0063F7;">0</span></span>
+							</div>
+						</div>
+
+						<div class="total-item-row-2 d-flex">
+							<div class="total-cost total">
+								<img src="/assets/icons/vuesax-linear-dollar-circle.svg" alt="">
+								<span>Tổng chi phí: <span style="color: #0063F7;">5.000.000.000 </span>VND</span>
+							</div>
+							<div class="vat-state">
+								<div class="TriSea-technologies-Switch pull-right">
+									<input id="TriSeaPrimary" name="TriSea1" type="checkbox">
+									<label for="TriSeaPrimary" class="label-primary"></label>
+									<span>VAT</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="payment-sumary-info send-contract-payment-sumary-info">
+						<div class="payment-sumary-info-item">
+							<div>
+								<span>Tổng thanh toán</span>
+								<span>999.999.999 VND</span>
+							</div>
+							<span>Tổng chi phí khách hàng thanh toán sau khi hoàn thành chiến dịch</span>
+						</div>
+
+						<div class="payment-sumary-info-item">
+							<div>
+								<span>Phí dịch vụ Agory</span>
+								<span>999.999.999 VND</span>
+							</div>
+							<span>Phí vận hành hệ thống và hỗ trợ (29%)</span>
+						</div>
+
+						<div class="payment-sumary-info-item">
+							<div>
+								<span>Bạn nhận được</span>
+								<span>999.999.999 VND</span>
+							</div>
+							<span>Tổng chi phí bạn nhận được sau khi trừ đi phí dịch vụ</span>
+						</div>
+
+					</div>
+
+					<div class="camp-payment-note send-contract-camp-payment-note">
+						<span><span>Lưu ý: </span>Chỉ thực hiện công việc sau khi có thông báo khách hàng đã ứng
+							tiền<br>
+						</span>
+						<span>*Thanh toán được bảo hộ bởi Agory. <a href="">Tìm hiểu thêm</a></span>
+					</div>
+
+				</div>
+
+				<div class="send-contract-contract-detail">
+					<span class="contract-information-title">Hợp đồng</span>
+					<span class="job-description-content">Hợp đồng của bạn và Châu Nguyễn sẽ được khởi tạo, bao gồm
+						thông
+						tin pháp nhân mà bạn và Châu Nguyễn đã cung cấp.</span>
+					<a href="">Xem hợp đồng</a>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="sub-wrapper-review-offer">
+			<div class="sub-wrapper-change-offer-header">
+				<img src="../assets/icons/arrow-left.svg" alt="">
+				<span>Xem lại báo giá</span>
+			</div>
+
+			<div class="sub-wrapper-change-offer-content">
+				<div class="offer-title">
+					<span class="contract-information-title">Tìm influencer bộ dưỡng da mới </span>
+					<div>
+						<span>Có <span class="num-of-offer">04</span> báo giá được gửi cho Châu Nguyễn</span>
+					</div>
+				</div>
+
+				<div class="offer-item">
+					<div class="offer-detail">
+						<span class="offer-created-time">03/03/2022 15:30:21</span>
+						<div>
+							<div>
+								<img src="../assets/icons/vuesax-linear-profile-2user.svg" alt="">
+								<span class="offer-prop">Tổng số influencer: </span><span class="num-of-offer"> 16</span>
+							</div>
+	
+							<div>
+								<img src="../assets/icons/vuesax-linear-briefcase.svg" alt="">
+								<span class="offer-prop">Tổng số công việc: </span><span class="num-of-offer"> 20</span>
+							</div>
+	
+							<div>
+								<img src="../assets/icons/vuesax-linear-dollar-circle.svg" alt="">
+								<span class="offer-prop">Tổng chi phí: </span><span class="num-of-offer"> 25.000.000</span>
+							</div>
+						</div>
+						
+					</div>
+					<div >
+						<button class="offer-view-btn">Xem báo giá</button>
+					</div>
+				</div>
+
+				
 			</div>
 
 		</div>
@@ -486,7 +748,7 @@
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
 	<script src="../main.js"></script>
-	<script src="send-contract.js"></script>
+	<script src="send-offer.js"></script>
 </body>
 
 </html>
