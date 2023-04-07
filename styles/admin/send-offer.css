@@ -543,5 +543,10 @@
         margin-left: 16px;
     }
 
+    .review-offer-item-table-content .content-table .data-table{
+        height: 450px;
+        overflow-y: scroll;
+    }
+
 
 }
