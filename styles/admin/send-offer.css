@@ -183,7 +183,8 @@
 #request-accepted-popup,
 #request-refused-popup,
 #corp-start-popup,
-#request-refused-popup {
+#request-refused-popup,
+#review-offer-item-table {
     position: fixed;
     top: -2000px;
     left: 0;
@@ -373,6 +374,25 @@
     outline: none;
 }
 
+.review-offer-item-table-content{
+    width: 1006px;
+    min-height: 492px;
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    position: relative;
+}
+
+.review-offer-item-table-close-btn{
+    color: red;
+    transform: scale(1.3);
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -400,6 +420,10 @@
     .sub-wrapper-review-offer, .sub-wrapper-change-offer-content{
         width: 100%;
         padding: 16px;
+    }
+
+    .sub-wrapper-change-offer{
+        width: 100%;
     }
 
 
@@ -484,4 +508,40 @@
     .job-description-content {
         max-width: unset;
     }
+
+    .offer-item {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .offer-detail {
+        margin-right: auto;
+    }
+
+    .offer-prop{
+        display: none;
+    }
+
+    .offer-view-btn {
+        margin-top: 16px;
+        margin-left: auto;
+    }
+
+    .offer-view-btn-wrapper{
+        margin-left: auto;
+    }
+
+    .sub-wrapper-review-offer{
+        padding: 16px 0;
+    }
+
+    .sub-wrapper-change-offer-content{
+        padding: 8px;
+    }
+
+    .sub-wrapper-change-offer-header{
+        margin-left: 16px;
+    }
+
+
 }

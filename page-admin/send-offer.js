@@ -29,4 +29,33 @@ $(document).ready(function () {
         $('#request-refused-popup').removeClass('popup-show')
         $('body').removeClass('disable-body-scroll')
     })
+
+    $('.offer-view-btn').click(function() {
+        $('#review-offer-item-table').addClass('popup-show')
+    })
+
+    $('.review-offer-item-table-close-btn').click(function() {
+        $('#review-offer-item-table').removeClass('popup-show')
+    })
+
+    $('.request-change').click(function() {
+        $('.send-contract-main-wrapper').addClass('hide-item')
+        $('.sub-wrapper-change-offer').removeClass('hide-item')
+    })
+
+    $('.back-from-change-offer').click(function() {
+        $('.sub-wrapper-change-offer').addClass('hide-item')
+        $('.send-contract-main-wrapper').removeClass('hide-item')
+    })
+
+    $('.check-quotation-price').click(function(){
+        $('.send-contract-main-wrapper').addClass('hide-item')
+        $('.sub-wrapper-review-offer').removeClass('hide-item')
+    })
+
+    $('.back-from-review-offer').click(function(){
+        $('.send-contract-main-wrapper').removeClass('hide-item')
+        $('.sub-wrapper-review-offer').addClass('hide-item')
+    })
+
 })
