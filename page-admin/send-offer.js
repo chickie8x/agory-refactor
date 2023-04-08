@@ -40,21 +40,29 @@ $(document).ready(function () {
 
     $('.request-change').click(function() {
         $('.send-contract-main-wrapper').addClass('hide-item')
+        $('.navigation-wrapper').addClass('hide-item')
+        $('.footer').addClass('hide-item')
         $('.sub-wrapper-change-offer').removeClass('hide-item')
     })
 
     $('.back-from-change-offer').click(function() {
         $('.sub-wrapper-change-offer').addClass('hide-item')
+        $('.navigation-wrapper').removeClass('hide-item')
+        $('.footer').removeClass('hide-item')
         $('.send-contract-main-wrapper').removeClass('hide-item')
     })
 
     $('.check-quotation-price').click(function(){
         $('.send-contract-main-wrapper').addClass('hide-item')
+        $('.navigation-wrapper').addClass('hide-item')
+        $('.footer').addClass('hide-item')
         $('.sub-wrapper-review-offer').removeClass('hide-item')
     })
 
     $('.back-from-review-offer').click(function(){
         $('.send-contract-main-wrapper').removeClass('hide-item')
+        $('.navigation-wrapper').removeClass('hide-item')
+        $('.footer').removeClass('hide-item')
         $('.sub-wrapper-review-offer').addClass('hide-item')
     })
 

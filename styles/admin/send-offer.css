@@ -297,17 +297,19 @@
 .sub-wrapper-change-offer,
 .sub-wrapper-review-offer {
     flex: 1;
-    width: 1152px;
-    margin: 32px auto;
+    width: 100%;
     font-family: 'Nunito';
     font-size: 14px;
 }
 
 .sub-wrapper-change-offer-header {
-    font-size: 20px;
-    font-family: 'Nunito Bold';
+    font-size: 14px;
+    font-family: 'Nunito';
     display: flex;
     align-items: center;
+    height: 64px;
+    background: #FAFAFC;
+    padding: 20px 24px;
 }
 
 .sub-wrapper-change-offer-header img {
@@ -323,6 +325,7 @@
     margin-top: 24px;
     border-radius: 8px;
     min-height: 400px;
+    margin-bottom: 24px;
 }
 
 .num-of-offer {
@@ -392,6 +395,12 @@
     cursor: pointer;
 }
 
+.popup-title{
+    width: 1152px;
+    margin: auto;
+    margin-top: 24px;
+}
+
 
 
 
@@ -417,13 +426,22 @@
         box-sizing: border-box;
     }
 
-    .sub-wrapper-review-offer, .sub-wrapper-change-offer-content{
+    .sub-wrapper-review-offer{
         width: 100%;
-        padding: 16px;
+        padding: 0;
+    }
+
+    .sub-wrapper-change-offer-content{
+        width: calc(100% - 32px);
     }
 
     .sub-wrapper-change-offer{
         width: 100%;
+    }
+
+    .popup-title{
+        width: 100%;
+        padding: 16px;
     }
 
 
@@ -531,16 +549,10 @@
         margin-left: auto;
     }
 
-    .sub-wrapper-review-offer{
-        padding: 16px 0;
-    }
-
     .sub-wrapper-change-offer-content{
         padding: 8px;
-    }
-
-    .sub-wrapper-change-offer-header{
-        margin-left: 16px;
+        width: 100%;
+        margin-top: 16px;
     }
 
     .review-offer-item-table-content .content-table .data-table{
@@ -548,5 +560,15 @@
         overflow-y: scroll;
     }
 
+    .popup-title{
+        padding: 0 16px;
+    }
 
+    .send-contract-job-description{
+        padding: 16px 0;
+    }
+
+    .sub-wrapper-change-offer-header{
+        padding: 20px 8px;
+    }
 }
