@@ -43,10 +43,17 @@ $(document).ready(function () {
         $('.navigation-wrapper').addClass('hide-item')
         $('.footer').addClass('hide-item')
         $('.sub-wrapper-change-offer').removeClass('hide-item')
+        setTimeout(function(){
+            $('.sub-wrapper-change-offer').addClass('popup-display')
+        },100)
+        
     })
 
     $('.back-from-change-offer').click(function() {
-        $('.sub-wrapper-change-offer').addClass('hide-item')
+        $('.sub-wrapper-change-offer').removeClass('popup-display')
+        setTimeout(function(){
+            $('.sub-wrapper-change-offer').removeClass('popup-display')
+        },100)
         $('.navigation-wrapper').removeClass('hide-item')
         $('.footer').removeClass('hide-item')
         $('.send-contract-main-wrapper').removeClass('hide-item')
@@ -56,14 +63,14 @@ $(document).ready(function () {
         $('.send-contract-main-wrapper').addClass('hide-item')
         $('.navigation-wrapper').addClass('hide-item')
         $('.footer').addClass('hide-item')
-        $('.sub-wrapper-review-offer').removeClass('hide-item')
+        $('.sub-wrapper-review-offer').addClass('popup-display')
     })
 
     $('.back-from-review-offer').click(function(){
         $('.send-contract-main-wrapper').removeClass('hide-item')
         $('.navigation-wrapper').removeClass('hide-item')
         $('.footer').removeClass('hide-item')
-        $('.sub-wrapper-review-offer').addClass('hide-item')
+        $('.sub-wrapper-review-offer').removeClass('popup-display')
     })
 
 })

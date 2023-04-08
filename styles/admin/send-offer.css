@@ -1,3 +1,7 @@
+.popup-display{
+    left: 0 !important;
+}
+
 .send-contract-main-wrapper {
     width: 1024px;
     background: white;
@@ -300,6 +304,10 @@
     width: 100%;
     font-family: 'Nunito';
     font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 3000px;
+    transition-duration: 0.4s;
 }
 
 .sub-wrapper-change-offer-header {
@@ -310,6 +318,10 @@
     height: 64px;
     background: #FAFAFC;
     padding: 20px 24px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
 }
 
 .sub-wrapper-change-offer-header img {
