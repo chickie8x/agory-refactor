@@ -31,10 +31,13 @@ $(document).ready(function () {
     })
 
     $('.offer-view-btn').click(function() {
+        $('.sub-wrapper-change-offer-header').addClass('hide-item')
         $('#review-offer-item-table').addClass('popup-show')
+
     })
 
     $('.review-offer-item-table-close-btn').click(function() {
+        $('.sub-wrapper-change-offer-header').removeClass('hide-item')
         $('#review-offer-item-table').removeClass('popup-show')
     })
 
@@ -52,7 +55,7 @@ $(document).ready(function () {
     $('.back-from-change-offer').click(function() {
         $('.sub-wrapper-change-offer').removeClass('popup-display')
         setTimeout(function(){
-            $('.sub-wrapper-change-offer').removeClass('popup-display')
+            $('.sub-wrapper-change-offer').addClass('hide-item')
         },100)
         $('.navigation-wrapper').removeClass('hide-item')
         $('.footer').removeClass('hide-item')
@@ -63,7 +66,10 @@ $(document).ready(function () {
         $('.send-contract-main-wrapper').addClass('hide-item')
         $('.navigation-wrapper').addClass('hide-item')
         $('.footer').addClass('hide-item')
-        $('.sub-wrapper-review-offer').addClass('popup-display')
+        $('.sub-wrapper-review-offer').removeClass('hide-item')
+        setTimeout(function(){
+            $('.sub-wrapper-review-offer').addClass('popup-display')
+        },100)
     })
 
     $('.back-from-review-offer').click(function(){
@@ -71,6 +77,9 @@ $(document).ready(function () {
         $('.navigation-wrapper').removeClass('hide-item')
         $('.footer').removeClass('hide-item')
         $('.sub-wrapper-review-offer').removeClass('popup-display')
+        setTimeout(function(){
+            $('.sub-wrapper-review-offer').addClass('hide-item')
+        },100)
     })
 
 })
