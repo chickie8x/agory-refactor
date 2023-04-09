@@ -179,6 +179,8 @@
 .send-contract-contract-detail {
     padding: 24px 0;
     font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -411,6 +413,38 @@
     width: 1152px;
     margin: auto;
     margin-top: 24px;
+}
+
+.cancel-change-offer{
+    border: solid 1px #3E7BFA;
+    outline: none;
+    width: 96px;
+    height: 32px;
+    color: #3E7BFA;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Nunito';
+    background: white;
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+.confirm-change-offer{
+    border: none;
+    outline: none;
+    width: 108px;
+    height: 32px;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Nunito';
+    background: #3E7BFA;
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+.cancel-change-offer:focus, .confirm-change-offer:focus{
+    outline: none;
 }
 
 
