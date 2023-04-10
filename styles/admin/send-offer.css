@@ -355,11 +355,17 @@
     border-top: solid 1px rgba(180, 180, 180, 0.4);
 }
 
+.offer-detail-header{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
 .offer-created-time {
     font-size: 16px;
     font-family: 'Nunito Bold';
-    margin-bottom: 8px;
-    display: block;
+    margin-right: 16px;
 }
 
 .offer-detail div {
@@ -445,6 +451,15 @@
 
 .cancel-change-offer:focus, .confirm-change-offer:focus{
     outline: none;
+}
+
+.send-contract-detail{
+    margin-top: 16px;
+}
+
+.offer-sender-name{
+    font-size: 16px;
+    font-family: 'Nunito Bold';
 }
 
 
