@@ -1,0 +1,107 @@
+.management-board-main-wrapper{
+    width: 1004px;
+    margin: 32px auto;
+}
+
+.management-board-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.management-board-header-general-info{
+    font-family: 'Nunito';
+    color: #1C1C28;
+}
+
+.management-board-header-general-info{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.management-board-header-general-info > .pre-contract-content-header-title{
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.management-board-header-general-info > a {
+    margin-top: 8px;
+}
+
+.management-board-user{
+    display: flex;
+    align-items: center;
+}
+
+.management-board-user-img{
+    margin-right: 16px;
+    position: relative;
+}
+
+.management-board-user-img img{
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+}
+
+.management-board-user-state span{
+    display: block;
+}
+
+.management-board-user-state span:first-child{
+    font-family: 'Nunito Bold';
+    font-size: 24px;
+}
+
+.management-board-user-state span:nth-child(2){
+    font-family: 'Nunito Bold';
+    font-size: 16px;
+    opacity: 0.63;
+}
+
+.state-bagde{
+    width: 22px;
+    height: 22px;
+    display: block;
+    border-radius: 50%;
+    background: #06C270;
+    border: solid 3px white;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.management-board-content{
+    font-family: 'Nunito';
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.management-board-content-tabs{
+    background: white;
+    width: fit-content;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.management-board-content-tab-btn {
+    width: 156px;
+    margin-right: 0;
+    border: none;
+    background: none;
+    outline: none;
+    height: 40px;
+    border-bottom: solid 2px #C7C9D9;
+}
+
+.current-tab-active{
+    border-bottom: solid 3px #3E7BFA;
+}
+
+
+.managment-board-tab-content{
+    width: 100%;
+    background: white;
+    padding: 24px;
+}
