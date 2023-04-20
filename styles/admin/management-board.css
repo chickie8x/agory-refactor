@@ -1,6 +1,7 @@
 .management-board-main-wrapper{
     width: 1004px;
     margin: 32px auto;
+    font-family: 'Nunito';
 }
 
 .management-board-header{
@@ -104,4 +105,49 @@
     width: 100%;
     background: white;
     padding: 24px;
+    color: #1C1C28;
+}
+
+.tab-content-payment-section{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px rgba(180, 180, 180, 0.4);
+    padding: 16px 0;
+}
+
+.payment-section-item{
+    margin-bottom: 32px;
+}
+
+.tab-content-payment-section span{
+    display: block;
+    margin-top: 8px;
+}
+
+.tab-content-payment-section span:nth-child(2){
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tab-content-recent-activity-section{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+}
+
+.recent-activity-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.tab-content-recent-activity-section span, .tab-content-recent-activity-section a{
+    font-size: 14px;
+    width: fit-content;
+}
+
+.activity-timestamp{
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
 }
