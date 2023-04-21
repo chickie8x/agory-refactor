@@ -133,10 +133,11 @@
     display: flex;
     flex-direction: column;
     padding: 16px 0;
+    border-bottom: solid 1px rgba(180, 180, 180, 0.4);
 }
 
 .recent-activity-title{
-    font-size: 20px;
+    font-size: 20px !important;
     font-weight: bold;
     margin-bottom: 16px;
 }
@@ -150,4 +151,41 @@
     font-weight: bold;
     margin-bottom: 8px;
     display: inline-block;
+}
+
+.tab-content-signed-section{
+    padding: 16px 0;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.signed-section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-content-section-btn{
+    outline: none;
+    background: white;
+    border-radius: 8px;
+    color: #3E7BFA;
+    border: solid 1px #3E7BFA;
+    height: 32px;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.tab-content-section-btn:focus{
+    outline: none;
+}
+
+.signed-section-header > button{
+    width: 178px;
+}
+
+
+.note-row img {
+    width: 24px;
+    height: 24px;
 }
