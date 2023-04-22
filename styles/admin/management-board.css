@@ -216,3 +216,11 @@
 .cash-back-btn:focus{
     outline: none;
 }
+
+.tab-content-paid-section > .content-table > .data-table > .data-table-body > .data-table-row > .note-row > .note-wrapper span {
+    max-width: unset;
+}
+
+.tab-content-paid-section {
+    border-bottom: none;
+}
