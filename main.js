@@ -17,7 +17,9 @@ $(document).ready(function () {
 
     
     $.each($('.note-shortened'),function(){
-        $(this).text($(this).next().children().first().val().split(' ').splice(0,6).join(' ')+' ...')
+        if($(this).next().children().first().val()){
+            $(this).text($(this).next().children().first().val().split(' ').splice(0,6).join(' ')+' ...')
+        }
     })
 
 
@@ -434,7 +436,6 @@ $(document).ready(function () {
         }
 
     });
-
 
 
     $(".js-range-slider").ionRangeSlider({

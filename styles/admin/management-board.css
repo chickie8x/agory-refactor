@@ -120,8 +120,12 @@
 }
 
 .tab-content-payment-section span{
-    display: block;
+    display: flex;
     margin-top: 8px;
+}
+
+.tab-content-payment-section span>span {
+    margin-top: 0;
 }
 
 .tab-content-payment-section span:nth-child(2){
@@ -439,6 +443,11 @@
     font-family: 'Nunito';
 }
 
+.tab-content-signed-section > .content-table > .data-table > .data-table-body > .data-table-row > .note-row > .note-wrapper > .note-shortened {
+    max-width: unset;
+    margin-right: 12px;
+}
+
 
 
 @media only screen and (max-width: 1024px) {
@@ -479,20 +488,15 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 16px;
+        justify-content: center;
     }
+
 
     .payment-section-item span:nth-child(2){
         order: 2;
         width: 100%;
+        justify-content: center;
     }
-
-    .payment-section-item span:nth-child(1){
-       margin-left: auto;
-    }
-
-    .payment-section-item span:nth-child(3){
-        margin-right: auto;
-     }
 
      .tab-content-signed-section > .content-table{
         padding: 0;
@@ -516,5 +520,153 @@
         display: block;
         max-width: 60%;
      }
+
+     .tab-content-signed-section > .content-table > .data-table > .data-table-body > .data-table-row > .note-row > .hidden-label{
+        display: block !important;
+     }
+
+     .tab-content-signed-section > .content-table > .data-table > .data-table-body > .data-table-row > .cost-row > .hidden-label{
+        display: block !important;
+     }
+
+     .tab-content-signed-section > .content-table > .data-table > .data-table-body > .data-table-row > .channel-row > .hidden-label{
+        display: block !important;
+     }
+
+     .tab-content-signed-section > .content-table > .data-table > .data-table-body > .data-table-row > .job-row{
+        grid-column: 2/4;
+        margin-left: 128px;
+     }
+
+     .tab-content-signed-section > .content-table > .data-table > .data-table-body > .data-table-row{
+        position: relative;
+        padding: 8px;
+     }
+
+     .tab-content-signed-section > .content-table > .data-table > .data-table-body > .data-table-row > .note-row > img{
+        position: absolute;
+        top: 16px;
+        right:8px;
+     }
+
+     .tab-content-signed-section > .content-table > .data-table > .data-table-body > .data-table-row > .influencer-row > .username{
+        position: absolute;
+        top: 16px;
+        left: 82px;
+     }
+
+     .tab-content-signed-section > .content-table > .data-table > .data-table-body > .data-table-row > .type-row{
+        position: absolute;
+        top: 42px;
+        left: 90px;
+     }
+
+     
+
+}
+
+@media only screen and (max-width: 670px) {
+
+    .management-board-main-wrapper{
+        padding: 0 8px;
+    }
+
+    .management-board-header{
+        flex-direction: column;
+    }
+
+    .management-board-header-general-info{
+        max-width: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .management-board-header-general-info a {
+        margin-top: unset;
+    }
+
+    .management-board-user {
+        flex-direction: row;
+        margin-left: unset;
+        margin-top: 12px;
+    }
+
+    .management-board-user-img{
+        margin-right: 8px;
+    }
+
+    .management-board-user-img img{
+        display: none;
+    }
+
+    .state-bagde{
+        position: unset;
+        width: 16px;
+        height: 16px;
+    }
+
+    .management-board-user-state span:first-child{
+        font-size: 16px;
+        font-family: 'Nunito';
+    }
+
+    .management-board-content-tabs{
+        width: 100%;
+    }
+
+    .management-board-content-tab-btn{
+        width: 50%;
+    }
+
+    .detail-cost{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-section-item span:nth-child(1){
+        width: 100%;
+        justify-content: center;
+    }
+
+    .recent-activity-secondary-text{
+        max-width: unset;
+    }
+
+    .recent-activity-title{
+        margin-bottom: unset;
+    }
+
+    .signed-section-header{
+        margin-bottom: 8px;
+    }
+
+    .tab-content-section-btn{
+        margin-right: unset;
+    }
+
+    .list-pending-changed{
+        padding: 0 8px;
+    }
+
+    .review-changed-list-btn{
+        margin-right: unset;
+    }
+
+    .updated-list-sent-popup-content{
+        height: 90%;
+        overflow-y: scroll;
+        padding: 8px;
+        border-top: solid 12px white;
+        border-bottom: solid 12px white;
+    }
+
+    .sent-popup-content-body-sum-info{
+        flex-direction: column;
+    }
+
+    .content-body-sum-info-item{
+        margin-top: 8px;
+    }
 
 }
