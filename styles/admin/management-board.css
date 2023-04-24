@@ -654,11 +654,14 @@
     }
 
     .updated-list-sent-popup-content{
-        height: 90%;
+        height: 80%;
         overflow-y: scroll;
         padding: 8px;
-        border-top: solid 12px white;
-        border-bottom: solid 12px white;
+    }
+
+    .sent-popup-content-body{
+        height: 100%;
+        overflow: auto;
     }
 
     .sent-popup-content-body-sum-info{
@@ -668,5 +671,10 @@
     .content-body-sum-info-item{
         margin-top: 8px;
     }
+
+    .sent-popup-content-footer{
+        padding: 16px 0;
+    }
+
 
 }
