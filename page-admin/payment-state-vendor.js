@@ -44,4 +44,32 @@ $(document).ready(function () {
         $('.cashback-request-popup').removeClass('popup-show')
         $('body').removeClass('disable-body-scroll')
     })
+
+    $('.request-changed-rejected-btn').click(function(){
+        $('.reject-changed-request-popup').addClass('popup-show')
+    })
+
+    $('.request-changed-accepted-btn').click(function(){
+        $('.accept-changed-request-popup').addClass('popup-show')
+    })
+
+
+    $('.reject-self-close-btn').click(function(){
+        $('.reject-changed-request-popup').removeClass('popup-show')
+    })
+
+    $('.accept-self-close-btn').click(function(){
+        $('.accept-changed-request-popup').removeClass('popup-show')
+    })
+
+
+    $('.reject-changed-process-btn').click(function(){
+        $('.reject-changed-request-popup, .updated-list-sent-popup').removeClass('popup-show')
+        $('body').removeClass('disable-body-scroll')
+    })
+
+    $('.accept-changed-process-btn').click(function(){
+        $('.accept-changed-request-popup, .updated-list-sent-popup').removeClass('popup-show')
+        $('body').removeClass('disable-body-scroll')
+    })
 })

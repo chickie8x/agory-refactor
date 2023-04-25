@@ -556,7 +556,7 @@
     outline: none;
 }
 
-.popup-content-footer-btn-back {
+.popup-content-footer-btn-back, .accept-self-close-btn , .reject-self-close-btn {
     border: solid 1px #3E7BFA;
     color: #3E7BFA;
     font-size: 14px;
@@ -564,7 +564,7 @@
     width: 100px;
 }
 
-.popup-content-footer-btn-process{
+.popup-content-footer-btn-process, .accept-changed-process-btn, .reject-changed-process-btn{
     border: none;
     background: #3E7BFA;
     color: white;
@@ -596,6 +596,10 @@
 
 .request-changed-rejected-btn:focus, .request-changed-accepted-btn:focus{
     outline: none;
+}
+
+.accept-changed-request-popup, .reject-changed-request-popup{
+    z-index: 10003;
 }
 
 
@@ -711,7 +715,9 @@
         left: 90px;
      }
 
-     
+     .sent-popup-content-footer{
+        padding-top: 16px;
+     }
 
 }
 
