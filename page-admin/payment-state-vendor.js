@@ -24,4 +24,24 @@ $(document).ready(function () {
         $('.updated-list-sent-popup').removeClass('popup-show')
         $('body').removeClass('disable-body-scroll')
     })
+
+    $('#tab-content-section-request-payment-btn').click(function(){
+        $('.payment-request-popup').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+    })
+
+    $('.popup-content-footer-btn-back').click(function(){
+        $('.payment-request-popup').removeClass('popup-show')
+        $('body').removeClass('disable-body-scroll')
+    })
+
+    $('.cash-back-btn').click(function(){
+        $('.cashback-request-popup').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+    })
+
+    $('.popup-content-footer-btn-back').click(function(){
+        $('.cashback-request-popup').removeClass('popup-show')
+        $('body').removeClass('disable-body-scroll')
+    })
 })

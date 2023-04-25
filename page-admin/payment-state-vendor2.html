@@ -168,7 +168,7 @@
 						<div class="tab-content-signed-section">
 							<div class="signed-section-header">
 								<span class="recent-activity-title">Đã ký quỹ</span>
-								<button class="tab-content-section-btn">Yêu cầu thanh toán</button>
+								<button id="tab-content-section-request-payment-btn" class="tab-content-section-btn">Yêu cầu thanh toán</button>
 							</div>
 							<span class="recent-activity-secondary-text">Khách hàng đã ứng tiền cho các công việc này, hãy thực hiện công việc và <span class="credit-value">Yêu cầu thanh toán</span>  nếu bạn đã hoàn thành</span>
 							<div class="content-table">
@@ -916,8 +916,8 @@
 
 								<div class="list-pending-changed hide-item">
 									<img src="../assets/icons/lock-slash.svg" alt="">
-									<span class="review-changed-list-text">Đang chờ khách hàng chấp nhận bản cập nhật danh sách </span>
-									<span class="review-changed-list-secondary-text">Danh sách chờ ký quỹ sẽ được hiển thị sau khi khách hàng đồng ý với những thay đổi của bạn</span>
+									<span class="review-changed-list-text">Có yêu cầu thay đổi danh sách chờ ký quỹ từ khách hàng </span>
+									<span class="review-changed-list-secondary-text">Khách hàng có yêu cầu thay đổi danh sách chờ ký quỹ, vui lòng kiểm tra và phản hồi để tiếp tục thực hiện công việc </span>
 									<button class="review-changed-list-btn">Xem lại danh sách cập nhật</button>
 								</div>
 							</div>
@@ -1454,7 +1454,8 @@
 						</div>
 					</div>
 					<div class="sent-popup-content-footer">
-						<button class="close-sent-popup">Đóng</button>
+						<button class="request-changed-rejected-btn">Từ chối</button>
+                        <button class="request-changed-accepted-btn">Chấp nhận thay đổi</button>
 					</div>
 				</div>
 			</div>
@@ -1470,17 +1471,84 @@
 					<div class="payment-request-popup-content-body">
 						<span>Tin nhắn (Không bắt buộc)</span>
 						<textarea  id="payment-request-message" ></textarea>
-						<div>
-							<span>File đính kèm (tối đa 25Mb)</span>
-							<input type="file">
+						<div class="attached-section">
+							<span>File đính kèm (tối đa 25MB)</span>
+							<div>
+								<label for="files">Đính kèm <img src="/assets/icons/paper-clip.svg" alt=""></label>
+								<input type="file" id="files" multiple="">
+							</div>
 						</div>
 						<a href="">Review bộ sản phẩm dưỡng da Shisa</a>
 						<a href="">Review bộ sản phẩm dưỡng da Shisa</a>
 					</div>
 
 					<div class="payment-request-popup-content-footer">
-						<button>Quay lại</button>
-						<button>Yêu cầu thanh toán</button>
+						<button class="popup-content-footer-btn-back">Quay lại</button>
+						<button class="popup-content-footer-btn-process">Yêu cầu thanh toán</button>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- cashback popup section  -->
+			<div class="cashback-request-popup">
+				<div class="payment-request-popup-content">
+					<div class="payment-request-popup-content-header">
+						<span>Hoàn tiền</span>
+						<span>Hoàn tiền ký quỹ cho công việc này. Công việc sẽ được chuyển về lại danh sách Chờ ký quỹ.</span>
+					</div>
+
+					<div class="payment-request-popup-content-body">
+						<span>Tin nhắn (Không bắt buộc)</span>
+						<textarea  id="payment-request-message" ></textarea>
+					</div>
+
+					<div class="payment-request-popup-content-footer">
+						<button class="popup-content-footer-btn-back">Quay lại</button>
+						<button class="popup-content-footer-btn-process">Yêu cầu thanh toán</button>
+					</div>
+				</div>
+			</div>
+
+            <!-- accept changed popup section  -->
+
+            <div class="accept-changed-request-popup">
+				<div class="payment-request-popup-content">
+					<div class="payment-request-popup-content-header">
+						<span>Gửi cập nhật danh sách</span>
+						<span>Danh sách công việc cập nhật sẽ được gửi cho khách hàng duyệt.</span>
+					</div>
+
+					<div class="payment-request-popup-content-body">
+						<span>Tin nhắn (Không bắt buộc)</span>
+						<textarea  id="payment-request-message" ></textarea>
+					</div>
+
+					<div class="payment-request-popup-content-footer">
+						<button class="popup-content-footer-btn-back">Quay lại</button>
+						<button class="popup-content-footer-btn-process">Gửi cập nhật</button>
+					</div>
+				</div>
+			</div>
+
+
+            <!-- reject changed popup section  -->
+
+            <div class="reject-changed-request-popup">
+				<div class="payment-request-popup-content">
+					<div class="payment-request-popup-content-header">
+						<span>Từ chối thay đổi</span>
+						<span>Bạn sẽ từ chối đề xuất thay đổi Danh sách chờ ký quỹ từ phía khách hàng.</span>
+					</div>
+
+					<div class="payment-request-popup-content-body">
+						<span>Tin nhắn (Không bắt buộc)</span>
+						<textarea  id="payment-request-message" ></textarea>
+					</div>
+
+					<div class="payment-request-popup-content-footer">
+						<button class="popup-content-footer-btn-back">Quay lại</button>
+						<button class="popup-content-footer-btn-process">Từ chối cập nhật</button>
 					</div>
 				</div>
 			</div>
@@ -1525,7 +1593,7 @@
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
 	<script src="../main.js"></script>
-	<script src="management-board.js"></script>
+	<script src="payment-state-vendor.js"></script>
 </body>
 
 </html>
