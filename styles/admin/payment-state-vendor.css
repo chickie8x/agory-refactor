@@ -604,6 +604,34 @@
 
 
 
+
+
+
+
+
+
+
+/* payment state client section  */
+
+.tab-content-section-btn-client{
+    width: 229px !important;
+}
+
+/* .tab-content-signed-section-client > .content-table {
+    font-size: 12px !important;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1024px) {
 
     .management-board-main-wrapper {
