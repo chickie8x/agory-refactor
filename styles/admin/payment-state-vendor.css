@@ -186,6 +186,14 @@
     font-size: 14px;
 }
 
+#modify-list-btn{
+    width: 178px;
+}
+
+#list-task-sign-btn{
+    width: 199px;
+}
+
 .tab-content-section-btn:focus{
     outline: none;
 }
@@ -651,11 +659,11 @@
 }
 
 .payment-state-client-table-header-channel{
-    width: 10%;
+    width: 7%;
 }
 
 .payment-state-client-table-header-task {
-    width: 10%;
+    width: 13%;
 }
 
 .payment-state-client-table-header-cost{
@@ -663,13 +671,89 @@
 }
 
 .payment-state-client-table-header-report{
-    width: 10%;
+    width: 8%;
 }
 
 .payment-state-client-table-header-payment{
-    width: calc(30% - 30px);
+    width: calc(32% - 30px);
 }
 
+.payment-state-client-table-row{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.payment-state-client-table-header-influencer{
+    display: flex;
+    align-items: center;
+}
+
+.payment-state-client-table-header-influencer img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.payment-state-client-table-header-type div{
+    text-align: center;
+    width: fit-content;
+}
+
+.payment-state-client-table-header-task{
+    display: flex;
+    align-items: center;
+}
+
+.payment-state-client-table-header-task img {
+    margin-right: 8px;
+}
+
+.payment-state-client-table-header-payment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-state-client-table-header-payment div {
+    display: flex;
+    align-items: center;
+}
+
+.process-pay-btn, .process-reject-btn {
+    border: none;
+    outline: none;
+    width: fit-content;
+    background: none;
+    color: #3E7BFA;
+    margin-right: 0;
+    padding: 0;
+}
+
+.process-pay-btn{
+    margin-right: 16px;
+}
+
+.process-reject-btn{
+    margin-right: 8px;
+}
+
+.process-pay-btn:focus, .process-reject-btn:focus{
+    outline: none;
+}
+
+.table-row-action-btn-collapse {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.card-hidden-label-task, .card-hidden-label-cost, .card-hidden-label-report{
+    display: none;
+}
 
 
 
@@ -795,7 +879,178 @@
         padding-top: 16px;
      }
 
+
+     /* payment state client section  */
+
+     .payment-state-client-table{
+        background-color: white;
+        box-shadow: none;
+        height: auto;
+     }
+
+     .payment-state-client-table-header{
+        display: none;
+     }
+
+     .payment-state-client-table-body{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        gap: 16px;
+    }
+
+     .payment-state-client-table-row{
+        position: relative;
+        width: auto;
+        height: 178px;
+        background: #FAFAFC;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px #00000029;
+     }
+
+     .payment-state-client-table-row > .payment-state-client-table-header-selection{
+        position: absolute;
+        top: 22px;
+        left: 16px;
+     }
+
+     .payment-state-client-table-row > .payment-state-client-table-header-influencer > img {
+        position: absolute;
+        top: 8px;
+        left: 52px;
+        width: 44px;
+        height: 44px;
+     }
+
+     .payment-state-client-table-row > .payment-state-client-table-header-influencer > span{
+        font-size: 16px;
+        font-family: 'Nunito Bold';
+        position: absolute;
+        top: 8px;
+        left: 104px;
+     } 
+
+     .payment-state-client-table-row > .payment-state-client-table-header-type{
+        position: absolute;
+        top: 32px;
+        left: 104px;
+     }
+
+     .table-row-action-btn-collapse{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 16px;
+     }
+
+     .payment-state-client-table-row > .payment-state-client-table-header-channel{
+        position: absolute;
+        top: 68px;
+        left: 124px;
+     }
+
+     .payment-state-client-table-row > .payment-state-client-table-header-channel img{
+        width: 24px;
+        height: 24px;
+     }
+
+     .payment-state-client-table-row > .payment-state-client-table-header-task{
+        position: absolute;
+        top: 68px;
+        left: 154px;
+        width: fit-content;
+     }
+
+     .payment-state-client-table-row > .payment-state-client-table-header-cost{
+        position: absolute;
+        top: 100px;
+        left: 124px;
+     }
+
+     .payment-state-client-table-row > .payment-state-client-table-header-report{
+        position: absolute;
+        top: 144px;
+        left: 124px;
+     }
+
+     .payment-state-client-table-row > .payment-state-client-table-header-payment > span{
+        position: absolute;
+        top: 118px;
+        left: 124px;
+     }
+
+     .table-row-action-btn{
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 42px;
+        right: 16px;
+        width: 88px;
+        height: 66px;
+        padding: 8px;
+        border-radius: 4px;
+        background: #FAFAFC;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        justify-content: space-around;
+     }
+
+     .process-pay-btn, .process-reject-btn{
+        margin-right: unset;
+     }
+
+     .process-reject-btn{
+        color: #FF3B3B;
+     }
+
+     .card-hidden-label-task, .card-hidden-label-cost, .card-hidden-label-report{
+        display: block;
+    }
+
+    .card-hidden-label-task{
+        position: absolute;
+        top: 74px;
+        left: 52px;
+    }
+
+    
+    .card-hidden-label-cost{
+        position: absolute;
+        top: 100px;
+        left: 52px;
+    }
+
+    
+    .card-hidden-label-report{
+        position: absolute;
+        top: 144px;
+        left: 52px;
+    }
+
+    .signed-section-header-client{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signed-section-header-client button{
+        margin-right: unset;
+    }
+
+    #modify-list-btn{
+        width: 199px;
+        margin-bottom: 8px;
+    }
+
+    .tab-content-signed-section-client{
+        border-bottom: none;
+    }
+
+
 }
+
+
+
+
+
 
 @media only screen and (max-width: 670px) {
 
@@ -910,6 +1165,16 @@
 
     .payment-request-popup-content{
         width: 100%;
+    }
+
+    /* payment state client section  */
+
+    .payment-state-client-table-body{
+        grid-template-columns: auto;
+    }
+
+    .payment-state-client-table{
+        padding: 0;
     }
 
 
