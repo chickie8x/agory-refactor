@@ -72,4 +72,52 @@ $(document).ready(function () {
         $('.accept-changed-request-popup, .updated-list-sent-popup').removeClass('popup-show')
         $('body').removeClass('disable-body-scroll')
     })
+
+    // client section 
+
+    var paymentContextMenu = false
+
+
+    $('.table-row-action-btn-collapse').click(function(){
+      var ctx = $(this).prev()[0]
+    
+      if(!paymentContextMenu){
+        $(ctx).css('display', 'flex')
+        paymentContextMenu = true
+      }
+      else{
+        $('.table-row-action-btn ').each((idx,item) => {
+           $(item).css('display', 'none')
+        })
+        paymentContextMenu = false
+      }
+      
+    })
+
+    $('.process-reject-btn').click(function(){
+        $('.reject-payment-request-popup').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+    })
+
+    $('.popup-content-footer-btn-back-client').click(function(){
+        $('.reject-payment-request-popup, .payment-done-popup, .deposite-popup, .view-report-detail-popup').removeClass('popup-show')
+        $('body').removeClass('disable-body-scroll')
+    })
+
+    $('#tab-content-section-request-payment-btn-client, .process-pay-btn').click(function(){
+        $('.payment-done-popup').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+    })
+
+    $('#list-task-sign-btn').click(function(){
+        $('.deposite-popup').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+    })
+
+    $('.view-report-detail').click(function(){
+        $('.view-report-detail-popup').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+    })
+
+
 })
