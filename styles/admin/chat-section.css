@@ -32,6 +32,7 @@
     border-radius: 8px;
     border: solid 1px #C7C9D9;
     font-size: 14px;
+    margin: 16px;
     padding: 0 12px;
 }
 
@@ -58,15 +59,81 @@
     align-items: center;
     padding: 16px;
     height: 104px;
+    color: #28293D;
+    position: relative;
+}
+
+.chat-notification-badge{
+    width: 16px;
+    height: 16px;
+    background: #3E7BFA;
+    border-radius: 50%;
+    display: block;
+    color: white;
+    position: absolute;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom:18px;
+    right: 16px;
+
 }
 
 .contact-item-avt{
+    margin-right: 16px;
+    position: relative;
+}
+
+.contact-item-avt img{
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    margin-right: 16px;
+}
+
+.user-online-state{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #06C270;
+    bottom: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+    border: solid 2px white;
+    box-sizing: content-box;
 }
 
 .contact-item-content{
-    
+    width: 100%;
+}
+
+.contact-item-content-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-item-detail-username{
+    font-family: 'Nunito Bold';
+}
+
+.mes-timing{
+    font-size: 14px;
+}
+
+.from-project{
+    color: #555770;
+    font-size: 14px;
+}
+
+.chat-message-content{
+    font-size: 14px;
+    width: 175px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mes-author{
+    color: #3E7BFA;
 }
