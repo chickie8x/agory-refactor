@@ -1,0 +1,72 @@
+.chat-section-container{
+    width: 1152px;
+    height: 746px;
+    border-radius: 8px;
+    background: #FAFAFC;
+    margin-top: 32px;
+    display: flex;
+    font-family: 'Nunito';
+}
+
+.contacts-list{
+    border-right: solid 1px #C7C9D9;
+    width: 25%;
+    height: 100%;
+}
+
+.chat-content-section{
+    width: 50%;
+    height: 100%;
+    border-right: solid 1px #C7C9D9;
+    padding: 16px;
+}
+
+.chat-sidebar{
+    padding: 16px;
+}
+
+.contacts-list-searchbox{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: solid 1px #C7C9D9;
+    font-size: 14px;
+    padding: 0 12px;
+}
+
+.contacts-list-searchbox img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.contacts-list-searchbox input{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0 4px;
+    width: 100%;
+}
+
+.contacts-list-searchbox input:focus{
+    outline: none;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    height: 104px;
+}
+
+.contact-item-avt{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.contact-item-content{
+    
+}
