@@ -18,7 +18,6 @@
     width: 50%;
     height: 100%;
     border-right: solid 1px #C7C9D9;
-    padding: 16px;
 }
 
 .chat-sidebar{
@@ -64,11 +63,10 @@
 }
 
 .chat-notification-badge{
-    width: 16px;
+    min-width: 16px;
     height: 16px;
     background: #3E7BFA;
-    border-radius: 50%;
-    display: block;
+    border-radius: 8px;
     color: white;
     position: absolute;
     font-size: 12px;
@@ -77,12 +75,14 @@
     align-items: center;
     bottom:18px;
     right: 16px;
-
+    padding: 0 4px;
 }
 
 .contact-item-avt{
     margin-right: 16px;
     position: relative;
+    width: fit-content;
+    height: fit-content;
 }
 
 .contact-item-avt img{
@@ -136,4 +136,147 @@
 
 .mes-author{
     color: #3E7BFA;
+}
+
+.chat-content-section-header{
+    padding: 12px 16px;
+    border-bottom: solid 1px #C7C9D9;
+}
+
+.chat-content-header-from-project{
+    margin-left: 8px;
+}
+
+.chat-content-section-header a{
+    color: #3670F9;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+.chat-content-section-body{
+    padding: 16px;
+}
+
+.time-devider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-devider span{
+    display: block;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+.time-devider::before, .time-devider::after{
+    content: '';
+    flex: 1;
+    border-bottom: solid 1px #C7C9D9;
+}
+
+
+.chat-message-detail{
+    margin-top: 16px;
+    display: flex;
+}
+
+.chat-message-detail-content{
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.chat-message-content-header{
+    display: flex;
+}
+
+.message-content-header-username{
+    font-size: 14px;
+    font-family: 'Nunito Bold';
+    color: #1C1C28;
+    margin-right: 8px;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.message-time{
+    margin-left: 8px;
+    color: #8F90A6;
+}
+
+.message-content-quick-view{
+    background: #EBEBF0;
+    border-left: solid 3px #3E7BFA;
+    padding: 16px;
+    width: fit-content;
+    margin-top: 8px;
+}
+
+.quick-view-info{
+    display: flex;
+}
+
+.quick-view-item{
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.quick-view-item img{
+    margin-right: 4px;
+}
+
+.message-content-quick-view a{
+    text-decoration: none;
+    margin-top: 8px;
+    display: block;
+}
+
+.message-content-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-content-text{
+    display: block;
+    max-width: 85%;
+    margin-top: 4px;
+}
+
+.message-action-btn{
+    display: flex;
+    opacity: 0;
+}
+
+.message-content-body:hover > .message-action-btn{
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.message-action-btn img{
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.message-attached-file{
+    margin-top: 8px;
+}
+
+.message-attached-file span {
+    color: #8F90A6;
+}
+
+.message-attached-file > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.message-attached-file > div > a{
+    text-decoration: none;
+    margin-top: 8px;
 }
