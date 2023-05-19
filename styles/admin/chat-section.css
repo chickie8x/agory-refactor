@@ -18,10 +18,12 @@
     width: 50%;
     height: 100%;
     border-right: solid 1px #C7C9D9;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat-sidebar{
-    padding: 16px;
+    width: 25%;
 }
 
 .contacts-list-searchbox{
@@ -156,6 +158,8 @@
 
 .chat-content-section-body{
     padding: 16px;
+    flex: 1;
+    overflow: auto;
 }
 
 .time-devider{
@@ -279,4 +283,64 @@
 .message-attached-file > div > a{
     text-decoration: none;
     margin-top: 8px;
+}
+
+.chat-input{
+    border-top: solid 1px #C7C9D9;
+    padding: 16px;
+}
+
+.chat-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+}
+
+.chat-input input:focus{
+    outline: none;
+}
+
+.chat-input-action-btn{
+    margin-top: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat-input-action-btn img {
+    margin-left: 16px;
+}
+
+.sidebar-user-avt{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    border-bottom: solid 1px #C7C9D9;
+}
+
+.sidebar-user-avt-img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.sidebar-username{
+    margin-top: 16px;
+    font-size: 20px;
+    font-family: 'Nunito Bold';
+    color: #1C1C28;
+}
+
+.sidebar-user-avt-job-desc{
+    margin-top: 8px;
+    width: 24px;
+    height: 24px    ;
+}
+
+.sidebar-from-project{
+    margin-top: 8px;
+    color: #1C1C28A1;
+    opacity: 0.63;
 }
