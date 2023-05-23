@@ -15,6 +15,7 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
+    transition-duration: 0.3s;
 }
 
 .chat-content-section {
@@ -29,6 +30,7 @@
     width: 25%;
     position: relative;
     overflow: hidden;
+    transition-duration: 0.3s;
 }
 
 .contacts-list-searchbox {
@@ -154,6 +156,8 @@
 .chat-content-section-header {
     padding: 12px 16px;
     border-bottom: solid 1px #C7C9D9;
+    display: flex;
+    justify-content: space-between;
 }
 
 .chat-content-header-from-project {
@@ -490,6 +494,7 @@
 .sidebar-event-note{
     padding: 8px;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -598,4 +603,66 @@
 .sidebar-subview-show{
     left: 0;
     transition-duration: 0.3s;
+}
+
+#collapse-sidebar-mobile{
+    display: none;
+}
+
+.collapse-layout-tablet{
+    width: 0 !important;
+    transition-duration: 0.3s;
+}
+
+.expand-layout-tablet{
+    width: 40% !important;
+    transition-duration: 0.3s;
+}
+
+.button-rotate{
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+
+@media only screen and (max-width: 1153px){
+    .chat-section-main-wrapper{
+        width: 100%;
+        margin: 32px 0;
+        padding: 0 16px;
+    }
+
+    .chat-section-container{
+        width: 100%;
+    }
+
+    .contacts-list{
+        width: 40%;
+    }
+
+    .chat-content-section{
+        width: 60%;
+    }
+
+    .chat-sidebar{
+        width: 0;
+    }
+
+    #collapse-sidebar-mobile{
+        display: block;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+   
+}
+
+@media only screen and (max-width: 670px){
+    .chat-content-section{
+        width: 0;
+    }
+
+    .chat-content-section> * {
+        padding: 0;
+        margin: 0;
+    }
 }
