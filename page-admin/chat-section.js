@@ -3,6 +3,11 @@ $(document).ready(function () {
     $('.contact-item').click(function(){
         $('.contact-item').css('background', 'none')
         $(this).css('background', '#E4E4EB')
+        var w = $(window).width()
+        if(w<=670){
+            $('.contacts-list').addClass('collapse-contacts-mobile')
+            $('.chat-content-section').addClass('expand-chat-mobile')
+        }
     })
 
     $('#sidebar-search-btn').click(function(){
@@ -44,18 +49,45 @@ $(document).ready(function () {
     var defaultViewTablet = true
 
     $('#collapse-sidebar-mobile').click(function(){
-        
-        if(defaultViewTablet){
-            $('.contacts-list').addClass('collapse-layout-tablet')
-            $('.chat-sidebar').addClass('expand-layout-tablet')
-            $(this).addClass('button-rotate')
-        } 
-        else {
-            $('.contacts-list').removeClass('collapse-layout-tablet')
-            $('.chat-sidebar').removeClass('expand-layout-tablet')
-            $(this).removeClass('button-rotate')
+
+        var w = $(window).width()
+
+        if(w > 670){
+            if(defaultViewTablet){
+                $('.contacts-list').addClass('collapse-layout-tablet')
+                $('.chat-sidebar').addClass('expand-layout-tablet')
+                $(this).addClass('button-rotate')
+            } 
+            else {
+                $('.contacts-list').removeClass('collapse-layout-tablet')
+                $('.chat-sidebar').removeClass('expand-layout-tablet')
+                $(this).removeClass('button-rotate')
+            }
+            defaultViewTablet = !defaultViewTablet
         }
-        defaultViewTablet = !defaultViewTablet
+        else{
+            if(defaultViewTablet){
+                $('.chat-content-section').removeClass('expand-chat-mobile')
+                $('.chat-sidebar').addClass('expand-sidebar-mobile')
+            }
+            else{
+                $('.chat-content-section').addClass('expand-chat-mobile')
+                $('.chat-sidebar').removeClass('expand-sidebar-mobile')
+            }
+            
+        }
+        
+        
+    })
+
+    $('#back-to-contacts-btn').click(function(){
+        $('.chat-content-section').removeClass('expand-chat-mobile')
+        $('.contacts-list').removeClass('collapse-contacts-mobile')
+    })
+
+    $('#back-to-chat-content-btn').click(function(){
+        $('.chat-sidebar').removeClass('expand-sidebar-mobile')
+        $('.chat-content-section').addClass('expand-chat-mobile')
     })
 
 
