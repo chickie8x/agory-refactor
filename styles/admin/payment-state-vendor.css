@@ -626,6 +626,16 @@
     z-index: 10003;
 }
 
+.more-btn-wrapper{
+    position: relative;
+}
+
+.more-btn-wrapper button{
+    position: absolute;
+    bottom: -35px;
+    z-index: 10004;
+}
+
 
 
 

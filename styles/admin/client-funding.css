@@ -1,0 +1,401 @@
+.client-funding-main-wrapper{
+    width: 1004px;
+    margin-top: 32px;
+}
+
+.client-funding-content-header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito';
+}
+
+.client-funding-header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-funding-header-title{
+    font-family: 'Nunito Bold';
+    font-size: 28px;
+    color: #1C1C28;
+}
+
+.client-funding-header-date > span {
+    font-family: 'Nunito Bold';
+    margin: 8px auto;
+    display: block;
+}
+
+.client-funding-header-info a {
+    text-decoration: none;
+    color: #3670F9;
+}
+
+
+.client-funding-header-user{
+    display: flex;
+    align-items: center;
+}
+
+.client-funding-header-avatar{
+    width: 116px;
+    height: 116px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 16px;
+}
+
+.client-funding-header-avatar::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: solid 3px white;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    background-color: #06C270;
+    border-radius: 50%;
+}
+
+.client-funding-header-avatar img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.client-funding-header-user div:last-child span{
+    display: block;
+}
+
+.client-funding-header-username{
+    font-size: 24px;
+    font-family: 'Nunito Bold';
+    color: #1C1C28;
+}
+
+.client-funding-user-state{
+    color: #1C1C28;
+    opacity: 63%;
+}
+
+.client-funding-content{
+    margin-top: 24px;
+    background: #FAFAFC;
+    border-radius: 8px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.client-funding-payment-method{
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.funding-payment-method {
+    border-bottom: dashed 1px #C7C9D9;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.funding-payment-method-title{
+    font-family: 'Nunito Bold';
+    font-size: 20px;
+    color: #1C1C28;
+}
+
+.funding-payment-methods-wrapper{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.funding-payment-method-item{
+    width: 202px;
+    height: 116px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 8px;
+    transition-duration: 300ms;
+}
+
+.funding-payment-method-item:hover{
+    background: #E5F0FF;
+    color: #3E7BFA;
+    transition-duration: 300ms;
+}
+
+.funding-payment-method-item:hover > span:first-of-type{
+    color: #3E7BFA;
+    transition-duration: 300ms;
+}
+
+.funding-payment-method-item input{
+    margin-top: 16px;
+    scale: 1.1;
+    border: solid 2px #3670F9;
+}
+
+.funding-payment-method-item span{
+    text-align: center;
+    user-select: none;
+}
+
+.funding-payment-method-item span:first-of-type{
+    font-family: 'Nunito Bold';
+    margin-top: 8px;
+    transition-duration: 300ms;
+}
+
+.funding-payment-method-selected{
+    background: #E5F0FF;
+    color: #3E7BFA;
+}
+
+.funding-payment-method-detail-empty{
+    padding: 16px 0;
+    border-top: dashed 1px #C7C9D9;
+    /* margin-top: 24px; */
+}
+
+.funding-payment-method-detail-empty span{
+    font-size: 14px;
+    font-family: 'Nunito Italic';
+}
+
+.client-funding-deposite{
+    width: 318px;
+    height: 100%;
+    background: #E4E4EB;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.funding-deposite-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.funding-deposite-content div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #1C1C28;
+    font-size: 'Nunito';
+    padding: 8px 0;
+}
+
+.funding-deposite-content > div> span:first-child{
+    display: block;
+    max-width: 50%;
+}
+
+.funding-deposite-content > div:nth-child(2){
+    border-bottom: dashed 1px #C7C9D9;
+}
+
+.funding-deposite-btn{
+    margin-top: 24px;
+    border: none;
+    outline: none;
+    background: #3670F9;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+}
+
+.funding-deposite-btn:focus{
+    outline: none;
+}
+
+.funding-deposite-notice{
+    font-family: 'Nunito Italic';
+    font-size: 14px;
+    display: block;
+    margin-top: 8px;
+}
+
+.funding-deposite-title{
+    font-family: 'Nunito Bold';
+    font-size: 20px;
+}
+
+.total-funding-deposite{
+    font-family: 'Nunito Bold';
+}
+
+.funding-payment-method-content{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.funding-payment-method-content-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: 'Nunito';
+}
+
+.funding-payment-method-content-item > * {
+    margin-right: 16px;
+}
+
+.card-symbol-slot{
+    width: 64px;
+    height: 32px;
+    background: #D9D9D9;
+    display: block;
+}
+
+.add-creditcard{
+    width: 141px;
+    height: 32px;
+    border-radius: 8px;
+    color: #3E7BFA;
+    border: solid 1px #3670F9;
+    background: none;
+    font-size: 14px;
+    font-family: 'Nunito';
+    margin-top: 16px;
+    outline: none;
+}
+
+.add-creditcard:focus{
+    outline: none;
+}
+
+.funding-payment-method-content-ATM{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.funding-payment-method-content-ATM > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.funding-payment-method-content-ATM > div> div{
+    width: 48%;
+}
+
+.funding-payment-method-content-ATM > div > div >div {
+    width: 100%;
+    border-bottom: solid 1px #C7C9D9;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.funding-payment-method-content-ATM > div > div > div:first-child{
+    border-top: solid 1px #C7C9D9;
+}
+
+.atm-bank-symbol-slot{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    display: block;
+    margin-right: 8px;
+}
+
+.search-bank{
+    width: 242px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: solid 1px #C7C9D9;
+    outline: none;
+    background: none;
+    padding: 0 12px;
+    font-size: 14px;
+    font-family: 'Nunito';
+}
+
+.banking-transfer{
+    margin-top: 24px;
+    padding-bottom: 24px;
+}
+
+.banking-transfer-item{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banking-transfer-bank-name{
+    font-family: 'Nunito Bold';
+    font-size: 16px;
+}
+
+.banking-transfer-item-detail{
+    font-size: 14px;
+    margin-top: 8px;
+    display: block;
+}
+
+.deposited-finish{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deposited-finish > span {
+    margin-top: 32px;
+    display: block;
+}
+
+.redirect-count-value{
+    color: #3E7BFA;
+}
+
+/* add creditcard popup  */
+
+.add-creditcard-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(85, 87, 112, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-creditcard-popup-content{
+    background: #FAFAFC;
+    width: 686px;
+    height: 600px;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.add-creditcard-content-title{
+    font-family: 'Nunito Bold';
+    font-size: 20px;
+}
+
+.creditcard-number, .creditcard-expire, .creditcard-CCV, .card-holder-address, .zip-code, .creditcard-holder-name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.creditcard-legal{
+    display: flex;
+    justify-content: space-between;
+}
