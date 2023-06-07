@@ -104,7 +104,7 @@
 			<div class="client-funding-content-header">
 				<div class="client-funding-header-info">
 					<span class="client-funding-header-title">Tìm Influencer review bộ dưỡng da mới</span>
-					<span class="client-funding-header-date">Hoạt động từ <span>16/05/2023</span> </span>
+					<span class="client-funding-header-date">Hoạt động từ <span> 16/05/2023</span> </span>
 					<a href="">Quay lại quản lý chiến dịch</a>
 				</div>
 				<div class="client-funding-header-user">
@@ -142,7 +142,7 @@
 						</div>
 					</div>
 					<div class="funding-payment-method-detail-wrapper">
-						<div class="funding-payment-method-content">
+						<div class="funding-payment-method-content hide-item">
 							<div class="funding-payment-method-content-item">
 								<input type="radio" name="card-selection">
 								<span class="card-symbol-slot"></span>
@@ -164,7 +164,7 @@
 							<button class="add-creditcard">Thêm thẻ khác</button>
 						</div>
 
-						<div class="funding-payment-method-content-ATM">
+						<div class="funding-payment-method-content-ATM hide-item">
 							<input type="text" placeholder="Tìm ngân hàng" class="search-bank">
 							<div>
 								<div>
@@ -236,7 +236,7 @@
 
 						</div>
 
-						<div class="banking-transfer">
+						<div class="banking-transfer hide-item">
 							<div class="banking-transfer-item">
 								<span class="banking-transfer-bank-name">VIETCOMBANK</span>
 								<span class="banking-transfer-item-detail">Số Tài Khoản: 1234 567 8910</span>
@@ -256,6 +256,8 @@
 					</div>
 					<div class="funding-payment-method-detail-empty">
 						<span>*Số dư tài khoản Agory (nếu có) sẽ được sử dụng để áp dụng vào tổng thanh toán</span>
+						<button class="funding-deposite-btn-tablet">Ký quỹ</button>
+						<span class="funding-deposite-notice-tablet">*Chi phí được trung gian bảo hộ bởi Agory</span>
 					</div>
 				</div>
 
@@ -293,35 +295,35 @@
 					<span class="add-creditcard-content-title">Chi tiết thẻ</span>
 					<div class="creditcard-number">
 						<span>Số thẻ</span>
-						<input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+						<input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" class="creditcard-info-input">
 					</div>
 					<div class="creditcard-legal">
 						<div class="creditcard-expire">
 							<span>Ngày hết hạn</span>
-							<input type="text" placeholder="MM / YY">
+							<input type="text" placeholder="MM / YY" class="creditcard-info-input">
 						</div>	
 
 						<div class="creditcard-CCV">
 							<span>Mã CCV</span>
-							<input type="text" placeholder="XXX">
+							<input type="text" placeholder="XXX" class="creditcard-info-input">
 						</div>
 					</div>
 					<div class="creditcard-holder-name">
 						<span>Họ và tên chủ thẻ</span>
-						<input type="text" placeholder="Nhập đầy đủ họ và tên trên thẻ">
+						<input type="text" placeholder="Nhập đầy đủ họ và tên trên thẻ" class="creditcard-info-input">
 					</div>
-					<span class="add-creditcard-content-title">Thông tin gửi hoá đơn</span>
+					<span class="add-creditcard-content-title send-invoice-info">Thông tin gửi hoá đơn</span>
 					<div class="card-holder-address">
-						<span>Địa chỉ <span>Lấy từ tài khoản pháp nhân</span></span>
-						<input type="text" placeholder="Nhập địa chỉ cụ thể">
+						<span>Địa chỉ <span class="address-note">Lấy từ tài khoản pháp nhân</span></span>
+						<input type="text" placeholder="Nhập địa chỉ cụ thể" class="creditcard-info-input">
 					</div>
 					<div class="zip-code">
 						<span>Mã bưu chính</span>
-						<input type="text" placeholder="Nhập mã bưu chính (zipcode)">
+						<input type="text" placeholder="Nhập mã bưu chính (zipcode)" class="creditcard-info-input">
 					</div>
 
 					<div class="creditcard-action-btn">
-						<button>Huỷ</button>
+						<button class="cancel-add-card">Huỷ</button>
 						<button>Hoàn thành</button>
 					</div>
 

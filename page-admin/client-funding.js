@@ -27,15 +27,25 @@ $(document).ready(function () {
     })
 
 
-    $('.funding-deposite-btn').click(function(){
+    $('.funding-deposite-btn, .funding-deposite-btn-tablet').click(function(){
         $('.client-funding-content > div').each((idx,item) => {
             $(item).addClass('hide-item')
+            $('.deposited-finish').removeClass('hide-item')
         })
     })
 
     $('.add-creditcard').click(function(){
-        alert('add card')
+        $('.add-creditcard-popup').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+
     })
+
+    $('.cancel-add-card').click(function(){
+        $('.add-creditcard-popup').removeClass('popup-show')
+        $('body').removeClass('disable-body-scroll')
+    })
+
+
 
 
 })

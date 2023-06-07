@@ -19,11 +19,12 @@
     font-size: 28px;
     color: #1C1C28;
 }
+.client-funding-header-date{
+    margin: 8px 0;
+}
 
 .client-funding-header-date > span {
     font-family: 'Nunito Bold';
-    margin: 8px auto;
-    display: block;
 }
 
 .client-funding-header-info a {
@@ -202,7 +203,7 @@
     border-bottom: dashed 1px #C7C9D9;
 }
 
-.funding-deposite-btn{
+.funding-deposite-btn, .funding-deposite-btn-tablet{
     margin-top: 24px;
     border: none;
     outline: none;
@@ -214,15 +215,25 @@
     font-size: 14px;
 }
 
+.funding-deposite-btn-tablet{
+    width: 91px;
+    margin: 0;
+    display: none;
+}
+
 .funding-deposite-btn:focus{
     outline: none;
 }
 
-.funding-deposite-notice{
+.funding-deposite-notice, .funding-deposite-notice-tablet{
     font-family: 'Nunito Italic';
     font-size: 14px;
     display: block;
     margin-top: 8px;
+}
+
+.funding-deposite-notice-tablet{
+    display: none;
 }
 
 .funding-deposite-title{
@@ -366,7 +377,7 @@
 
 .add-creditcard-popup{
     position: fixed;
-    top: 0;
+    top: -2000px;
     left: 0;
     background: rgba(85, 87, 112, 0.5);
     width: 100%;
@@ -374,14 +385,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 300ms;
 }
 
 .add-creditcard-popup-content{
     background: #FAFAFC;
     width: 686px;
-    height: 600px;
     border-radius: 16px;
     padding: 24px;
+    font-family: 'Nunito';
+    font-size: 14px;
 }
 
 .add-creditcard-content-title{
@@ -398,4 +411,277 @@
 .creditcard-legal{
     display: flex;
     justify-content: space-between;
+}
+
+.send-invoice-info{
+    margin-top: 24px;
+    display: block;
+}
+
+.creditcard-info-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px #C7C9D9;
+    outline: none;
+    padding: 0 8px;
+    font-size: 14px;
+    font-family: 'Nunito';
+}
+
+.address-note{
+    color: #3E7BFA;
+    font-family: 'Nunito Italic';
+}
+
+.creditcard-action-btn{
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.creditcard-action-btn button:first-child{
+    background: #FAFAFC;
+    outline: none;
+    border: solid 1px #3670F9;
+    color: #3670F9;
+    border-radius: 8px;
+    height: 32px;
+    width: 74px;
+}
+
+.creditcard-action-btn button:last-child{
+    width: 122px;
+    height: 32px;
+    border: none;
+    outline: none;
+    background-color: #3670F9;
+    color: white;
+    border-radius: 8px;
+}
+
+.creditcard-expire {
+    width: 368px;
+}
+
+.creditcard-CCV{
+    flex: 1;
+    margin-left: 24px;
+    position: relative;
+}
+
+.creditcard-CCV input{
+    padding-right: 64px;
+}
+
+.creditcard-CCV::after{
+    content: "!";
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    color: #3670F9;
+    border: solid 2px #3670F9;
+    font-size: 16px;
+    font-family: 'Nunito Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creditcard-holder-name{
+    width: 368px;
+}
+
+.zip-code{
+    position: relative;
+}
+
+.zip-code input{
+    padding-right: 64px;
+}
+
+.zip-code::after{
+    content: "!";
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    color: #3670F9;
+    border: solid 2px #3670F9;
+    font-size: 16px;
+    font-family: 'Nunito Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+    .client-funding-main-wrapper{
+        width: calc(100% - 32px);
+        margin: 16px;
+    }
+    
+    .client-funding-content{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .client-funding-deposite{
+        width: 100%;
+        height: auto;
+        padding: 24px 94px;
+    }
+
+    .funding-deposite-btn, .funding-deposite-notice{
+        display: none;
+    }
+
+    .client-funding-header-info{
+        max-width: 70%;
+    }
+
+    .client-funding-header-user{
+        flex-direction: column;
+    }
+
+    .client-funding-user-state{
+        display: none !important;
+    }
+
+    .funding-payment-method-detail-empty{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .funding-deposite-btn-tablet{
+        display: block;
+    }
+
+    .funding-deposite-notice-tablet{
+        display: block;
+        width: 100%;
+    }
+
+    .deposited-finish{
+        padding: 15% 0;
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+
+    .client-funding-main-wrapper{
+        margin: 24px 0;
+        width: 100%;
+    }
+
+    .client-funding-content-header{
+        padding: 8px;
+        flex-wrap: wrap;
+    }
+
+    .client-funding-header-info{
+        max-width: 100%;
+        display: contents;
+    }
+
+    .client-funding-header-avatar img{
+        display: none;
+    }
+
+    .client-funding-header-avatar{
+        width: 32px;
+        height: 32px;
+        margin: 0;
+        order: 1;
+    }
+
+    .client-funding-header-user {
+        flex-direction: row-reverse;
+    }
+
+    .client-funding-header-date{
+        order: 0;
+    }
+
+    .client-funding-header-info a {
+        order: 2;
+    }
+
+    .client-funding-header-username{
+        font-size: 16px;
+    }
+
+
+
+
+    .client-funding-deposite{
+        padding: 24px 8px;
+    }
+
+    .client-funding-payment-method{
+        padding: 24px 8px;
+    }
+
+    .funding-payment-methods-wrapper{
+        overflow-x: auto;
+        display: -webkit-inline-box;
+        padding: 8px;
+    }
+
+    .funding-payment-method-item{
+        margin-right: 16px;
+    }
+
+    .funding-payment-method-detail-empty span:first-child, .funding-payment-method-detail-empty span:last-child{
+        margin-top: 8px;
+        order: 1;
+    }
+
+    .funding-deposite-btn-tablet{
+        width: 100%;
+    }
+    
+    .funding-payment-method-content-ATM > div{
+        flex-direction: column;
+    }
+
+    .funding-payment-method-content-ATM > div > div {
+        width: 100%;
+    }
+
+    .deposited-finish span{
+        padding: 12px;
+        text-align: center;
+    }
+
+    .add-creditcard-popup-content{
+        width: 100%;
+    }
+
+    .creditcard-legal{
+        flex-direction: column;
+    }
+
+    .creditcard-expire{
+        width: 100%;
+    }
+
+    .creditcard-CCV{
+        margin: 16px 0 0 0;
+    }
+
+    .creditcard-holder-name{
+        width: 100%;
+    }
+
+
 }
