@@ -360,6 +360,11 @@
     margin-top: 24px;
 }
 
+.sent-popup-content-body > .content-section-table > .section-table-row{
+    height: 300px;
+    overflow: auto;
+}
+
 .sent-popup-content-body>.send-quotation-content-section-table {
     width: 100%;
     margin-top: 0;
@@ -967,6 +972,11 @@
         padding-top: 16px;
     }
 
+    .sent-popup-content-body > .content-section-table > .section-table-row{
+        height: 600px;
+        overflow: auto;
+    }
+
 
     /* payment state client section  */
 
@@ -1264,6 +1274,7 @@
 
     .recent-activity-title {
         margin-bottom: unset;
+        font-size: 16px !important;
     }
 
     .signed-section-header {
