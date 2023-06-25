@@ -384,11 +384,10 @@
 											<div class="note-row table-note-col">
 												<span class="hidden-label hide-item">Ghi chú</span>
 												<div class="note-wrapper">
-													<span class="note-shortened">Đã yêu cầu thanh toán (còn 7 ngày)</span>
+													<span class="note-shortened payment-request-refused">Bị từ chối thanh toán</span>
 												</div>
 												<div class="more-btn-wrapper">
 													<img role="button" src="../assets/icons/more.svg" alt="">
-													<button class="cash-back-btn">Hoàn tiền</button>
 												</div>
 											</div>
 										</div>
@@ -1527,6 +1526,41 @@
 				</div>
 			</div>
 
+		</div>
+
+		<!-- popup payment request refused  -->
+		<div class="popup-payment-request-refused">
+			<div class="payment-request-popup-content">
+				<div class="payment-request-popup-content-header">
+					<span>Yêu cầu thanh toán bị từ chối</span>
+					<span>Tổng giá trị thanh toán cho (1) công việc: <span class="credit-value">10.000.000 VND</span></span>
+					<span class="refused-detail-status">Trạng thái: <span class="refused-status-text">Bị từ chối thanh toán</span></span>
+					<div class="refused-detail">
+						<span>Lý do: </span>
+						<div>
+							<span>Công việc chưa đạt yêu cầu.<br>
+								Cần chỉnh sửa nhiều chỗ”</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="payment-request-popup-content-body">
+					<span>Tin nhắn (Không bắt buộc)</span>
+					<textarea  id="payment-request-message" ></textarea>
+					<div class="attached-section">
+						<span>File đính kèm (tối đa 25MB)</span>
+						<div>
+							<label for="files">Đính kèm <img src="/assets/icons/paper-clip.svg" alt=""></label>
+							<input type="file" id="files" multiple="">
+						</div>
+					</div>
+				</div>
+
+				<div class="payment-request-popup-content-footer">
+					<button class="popup-content-footer-btn-back">Quay lại</button>
+					<button class="popup-content-footer-btn-process">Yêu cầu thanh toán</button>
+				</div>
+			</div>
 		</div>
 
 		<!-- footer section  -->

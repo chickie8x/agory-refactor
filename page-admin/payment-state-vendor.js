@@ -119,5 +119,9 @@ $(document).ready(function () {
         $('body').addClass('disable-body-scroll')
     })
 
+    $('.payment-request-refused').click(function(){
+        console.log('payment refused')
+    })
+
 
 })
