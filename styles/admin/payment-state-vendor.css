@@ -484,7 +484,7 @@
     top: -2000px;
     left: 0;
     background: rgba(85, 87, 112, 0.5);
-    z-index: 1001;
+    z-index: 10005;
     display: flex;
     justify-content: center;
     align-items: center;
