@@ -120,7 +120,23 @@ $(document).ready(function () {
     })
 
     $('.payment-request-refused').click(function(){
-        console.log('payment refused')
+        $('.popup-payment-request-refused').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+    })
+
+    $('.popup-content-footer-btn-back-refused').click(function(){
+        $('.popup-payment-request-refused').removeClass('popup-show')
+        $('body').removeClass('disable-body-scroll')
+    })
+
+    $('.task-history-popup-btn').click(function(){
+        $('.popup-task-history').addClass('popup-show')
+        $('body').addClass('disable-body-scroll')
+    })
+
+    $('.popup-task-history-close').click(function(){
+        $('.popup-task-history').removeClass('popup-show')
+        $('body').removeClass('disable-body-scroll')
     })
 
 
