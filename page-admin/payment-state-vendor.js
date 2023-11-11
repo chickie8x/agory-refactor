@@ -157,5 +157,15 @@ $(document).ready(function () {
         
     })
 
+    // update add payment-guide-popup
+
+    $('.deposite-signed-section').click(function(){
+        $('.payment-guide-popup').addClass('popup-show')
+    })
+
+    $('.payment-guide-popup-btn-close').click(function(){
+        $('.payment-guide-popup').removeClass('popup-show')
+    })
+
 
 })
