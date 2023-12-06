@@ -1,0 +1,157 @@
+.notifications-main-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications-main-content {
+    width: 564px;
+    border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(28, 28, 40, 0.20);
+    height: calc(100dvh - 222px);
+    padding: 8px;
+    font-family: "Nunito";
+    overflow-y: auto;
+    background: #F2F2F5;
+}
+
+.notifications-main-content>span {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+
+.notifications-list-item {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.notifications-item-user-img>img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.notifications-list-item-action-btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.notifications-list-item-action-btn>button {
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.notifications-list-item-action-btn>button:focus {
+    outline: none;
+}
+
+.notifications-list-item-action-btn>button>img {
+    width: 24px;
+    height: 24px;
+}
+
+.notification-is-read {
+    background: rgba(102, 152, 255, 0.2);
+
+}
+
+.notifications-list-item-content-detail>span>span {
+    font-weight: 700;
+}
+
+.notifications-list-item-action-btn {
+    position: relative;
+}
+
+.notification-context-menu {
+    width: 192px;
+    height: 72px;
+    background: #F2F2F5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(28, 28, 40, 0.20);
+    position: absolute;
+    top: 24px;
+    right: 8px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 400;
+    padding: 8px;
+}
+
+.notification-context-menu span{
+    user-select: none;
+}
+
+.notification-context-menu span:hover{
+    transition-duration: 300ms;
+    color: #3E7BFA;
+    border-radius: 8px;
+}
+
+.floating-notification-list{
+    width: 336px;
+    height: calc(100dvh - 150px);
+    background: #F2F2F5;
+    box-shadow: 0px 4px 4px 0px rgba(28, 28, 40, 0.50);
+    border-radius: 8px;
+    position: absolute;
+    top: 44px;
+    right: 60px;
+    padding: 16px 8px;
+    font-family: 'Nunito';
+    overflow-y: auto;
+    z-index: 10000;
+}
+
+.floating-list-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.floating-list-header span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.floating-list-header a{
+    font-size: 14px;
+    color: #3E7BFA;
+    text-decoration: none;
+}
+
+#floating-context-target-focus:focus + div, #context-target-focus:focus + div{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 670px){
+    .floating-notification-list{
+        width: 100%;
+        right: 0;
+    }
+
+    .notifications-main-content{
+        width: 100%;
+    }
+}
