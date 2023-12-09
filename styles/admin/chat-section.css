@@ -206,6 +206,7 @@
 .chat-message-detail-content {
     font-family: 'Nunito';
     font-size: 14px;
+    width: 100%;
 }
 
 .chat-message-content-header {
@@ -260,6 +261,7 @@
 .message-content-body {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .message-content-text {
