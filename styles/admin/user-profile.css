@@ -1,0 +1,241 @@
+.user-profile-main-wrapper{
+    margin-top: 32px;
+}
+
+.user-profile-title{
+    font-size: 28px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    color: #1C1C28;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.user-profile-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-profile-tabs{
+    width: 270px;
+}
+
+.tab-profile{
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.tab-profile img{
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.tab-profile-active{
+    background: #C7C9D9;
+    border-radius: 4px;
+}
+
+.user-profile-tab-content{
+    width: 858px;
+    background: #FAFAFC;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.tab-profile-information-content{
+    border-bottom: solid 1px #C7C9D9;
+    padding-bottom: 24px;
+    width: 100%;
+}
+
+.tab-profile-information-content:nth-child(2), 
+.tab-profile-information-content:nth-child(3){
+    margin-top: 24px;
+}
+
+.tab-profile-information-content:nth-child(3){
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.tab-profile-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.tab-profile-header span{
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tab-profile-header button{
+    width: 111px;
+    height: 32px;
+    color: #3E7BFA;
+    border-radius: 8px;
+    border: solid 1px #3E7BFA;
+    background: white;
+    outline: none;
+}
+
+.profile-information-content{
+    display: flex;
+}
+
+.information-content-detail{
+    width: 60%;
+    font-family: 'Nunito';
+    font-size: 14px;
+    color: #28293D;
+}
+
+.content-detail-item{
+    display: flex;
+}
+
+.content-detail-item span{
+    display: block;
+}
+
+.content-detail-item span:first-of-type{
+    min-width: 120px;
+    margin-bottom: 12px;
+}
+
+.content-detail-item span:nth-child(2){
+    margin-left: 16px;
+}
+
+.information-content-user{
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.information-content-user span{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.information-content-user span{
+    font-size: 14px;
+    font-family: 'Nunito';
+    color: #28293D;
+}
+
+.information-content-avt{
+    width: 96px;
+    height: 96px;
+}
+
+.information-content-avt img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.cccd{
+    margin-bottom: 16px;
+}
+
+.personal-information-edit-container{
+    display: flex;
+}
+
+#personal-information-edit{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-family: "Nunito";
+    font-size: 14px;
+}
+
+#personal-information-edit label{
+    font-size: 12px;
+}
+
+#personal-information-edit input, .enterprise-information-edit-fields input{
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px #C7C9D9;
+    padding: 0 12px;
+    border-radius: 8px;
+    box-shadow: 0px 0.5px 4px 0px rgba(96, 97, 112, 0.32) inset;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+#personal-information-edit textarea{
+    height: 88px;
+    border-radius: 8px;
+    border: solid 1px #C7C9D9;
+    box-shadow: 0px 0.5px 4px 0px rgba(96, 97, 112, 0.32) inset;
+    resize: none;
+    padding: 12px;
+    font-family: 'Nunito';
+    outline: none;
+}
+
+.edit-user-avt{
+    position: relative;
+}
+
+#choose-file-indicator::before{
+    content: '';
+    width: 96px;
+    height: 96px;
+    display: block;
+    background: black;
+    border-radius: 50%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.file-indicator{
+    position: absolute;
+    top: 36px;;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.enterprise-information-edit{
+    display: flex;
+    font-size: 14px;
+    font-family: 'Nunito';
+}
+
+.enterprise-information-edit-fields{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.identify-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.front-side-label{
+    width: 92px;
+    height: 58px;
+    border: dashed 2px gray;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.front-side-label::before{
+    content: 'Mặt trước';
+}
