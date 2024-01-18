@@ -207,7 +207,7 @@
     height: 24px;
 }
 
-.enterprise-information-edit{
+.enterprise-information-edit, .enterprise2-information-edit{
     display: flex;
     font-size: 14px;
     font-family: 'Nunito';
@@ -219,14 +219,19 @@
     flex-direction: column;
 }
 
+
+.enterprise-information-edit-fields label{
+    font-size: 12px;
+}
+
 .identify-wrapper{
     display: flex;
     flex-direction: column;
 }
 
-.front-side-label{
-    width: 92px;
-    height: 58px;
+.front-side-label, .back-side-label, .company-cert-label{
+    width: 150px;
+    height: 95px;
     border: dashed 2px gray;
     border-radius: 8px;
     position: relative;
@@ -234,8 +239,26 @@
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition-duration: 300ms;
 }
 
-.front-side-label::before{
+.front-side-label:hover, .back-side-label:hover, .company-cert-label:hover{
+    background: rgba(96, 97, 112, 0.12);
+}
+
+.front-side-label::after{
     content: 'Mặt trước';
+    margin-left: 4px;
+}
+
+.back-side-label::after{
+    content: 'Mặt sau';
+    margin-left: 4px;
+}
+
+.company-cert-label{
+    margin-top: 24px;
+    margin-left: 24px;
 }

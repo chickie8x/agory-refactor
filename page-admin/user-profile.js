@@ -7,6 +7,12 @@ $(document).ready(function(){
     const profileEnterprise = $('#enterprise-information')
     const profileEnterpriseEdit = $('.enterprise-information-edit')
 
+    let enterprise2EditFlag = false
+    const profileEnterprise2 = $('#enterprise-information-2')
+    const profileEnterpriseEdit2 = $('.enterprise2-information-edit')
+
+
+
     $('#information-content-edit-btn').click(function(){
         if(!profilePersonalEdit){
             informationPersonal.addClass('hide-item')
@@ -31,6 +37,20 @@ $(document).ready(function(){
         enterpriseEditFlag = !enterpriseEditFlag
     })
     
+
+    $('#btn-edit-enterprise').click(function(){
+        if(!enterprise2EditFlag){
+            profileEnterprise2.addClass('hide-item')
+            profileEnterpriseEdit2.removeClass('hide-item')
+        }
+        else{
+            profileEnterprise2.removeClass('hide-item')
+            profileEnterpriseEdit2.addClass('hide-item')
+        }
+        enterprise2EditFlag = !enterprise2EditFlag
+
+    })
+
 
 
 })

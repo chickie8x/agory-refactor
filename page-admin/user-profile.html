@@ -243,9 +243,11 @@
 								<div class="identify-wrapper">
 									<label for="front-side" class="front-side-label">
 										<input type="file" id="front-side" class="hide-item">
+										<img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
 									</label>
 									<label for="back-side" class="back-side-label">
 										<input type="file" id="back-side" class="hide-item">
+										<img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
 									</label>
 								</div>
 							</div>
@@ -255,9 +257,9 @@
 					<div class="tab-profile-information-content">
                         <div class="tab-profile-header">
                             <span>Thông tin doanh nghiệp</span>
-                            <button class="button-edit-profile-information">Chỉnh sửa</button>
+                            <button class="button-edit-profile-information" id="btn-edit-enterprise">Chỉnh sửa</button>
                         </div>
-                        <div class="profile-information-content">
+                        <div class="profile-information-content" id="enterprise-information-2">
 							<div class="information-content-detail">
 								<div class="content-detail-item">
 									<span>Tên công ty</span>
@@ -288,6 +290,37 @@
 								<img src="../assets/images/TTDN.svg" alt="">
 							</div>
                         </div>
+
+						<div class="enterprise2-information-edit hide-item">
+							<div class="enterprise-information-edit-fields">
+								<label for="company-name">Tên công ty</label>
+								<input type="text"  id="company-name">
+
+								<label for="company-shortname">Tên viết tắt</label>
+								<input type="text" id="company-shortname">
+
+								<label for="company-ndd">Người đại diện</label>
+								<input type="text" id="company-ndd">
+
+								<label for="company-position">Chức vụ</label>
+								<input type="text" id="company-position">
+
+								<label for="company-mst">Mã số thuế</label>
+								<input type="text" id="company-mst">
+
+								<label for="address">Địa chỉ</label>
+								<input type="text" id="company-address">
+							</div>
+
+							<div class="information-content-user">
+								<div class="identify-wrapper">
+									<label for="company-cert" class="company-cert-label">
+										<input type="file" id="company-cert" class="hide-item">
+										<img src="../assets/icons/vuesax-linear-gallery.svg" alt="">
+									</label>
+								</div>
+							</div>
+						</div>
                     </div>
 
                 </div>
