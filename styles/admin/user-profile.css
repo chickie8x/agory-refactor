@@ -356,6 +356,9 @@
 
 .table-col-detail{
     width: 50%;
+}
+
+.table-col-detail>div{
     display: flex;
     flex-direction: column;
 }
@@ -456,9 +459,9 @@
 }
 
 @media only screen and (max-width: 1025px){
-    /* .user-profile-main-wrapper{
-        margin: 32px auto;
-    } */
+    .user-profile-main-wrapper{
+        margin: 32px 0 0 0;
+    }
 
     .tab-profile{
         display: none;
@@ -484,6 +487,142 @@
     .user-profile-tab-content, .account-and-transaction-tab-content, .password-and-security-tab-content, .profile-general-settings-tab-content{
        width: 100%;
     }
+}
 
+@media only screen and (max-width: 670px){
+
+    .user-profile-content{
+        padding: 0;
+    }
+
+    .user-profile-tabs{
+        width: 100%;
+    }
+
+    #tab-profile-selection{
+        width: calc(100% - 32px);
+        margin: 16px;
+    }
+
+    .tab-profile-information-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab-profile-header{
+        display: contents;
+    }
+
+    .tab-profile-header span{
+        margin-bottom: 24px;
+    }
+
+    .tab-profile-header button{
+        order: 1;
+    }
+
+    #information-content-detail{
+        flex-direction: column;
+    }
+
+    #information-content-user-avt{
+        flex-direction: row;
+        margin-top: 16px;
+    }
+
+    #information-content-user-avt span{
+        min-width: 120px;
+    }
+
+    .information-content-detail{
+        width: 100%;
+    }
     
+    .profile-information-content{
+        flex-direction: column;
+    }
+
+    .information-content-user{
+        padding-left: 0;
+    }
+
+    .information-content-avt{
+        margin-left: 16px;
+    }
+
+    .button-edit-profile-information{
+        margin-top: 24px;
+        width: 100% !important;
+    }
+
+    .tab-profile-content{
+        padding: 16px;
+    }
+
+    .account-amount{
+        flex-direction: column;
+    }
+
+    .account-amount-item{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .account-amount-item:nth-child(2){
+        margin-top: 16px;
+    }
+
+    .account-amount-item span:first-child{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .account-amount-item button{
+        grid-column: 2/2;
+        grid-row: 1/2;
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .transaction-table-header{
+        display: none;
+    }
+    
+    .transaction-history-content-tabs{
+        width: 100%;
+    }
+
+    .transaction-history-content-tabs span{
+        width: 50%;
+    }
+
+    .transaction-table-row{
+        flex-direction: column;
+        background: #F2F2F5;
+        margin-bottom: 16px;
+    }
+
+    .transaction-table-row:last-child{
+        margin-bottom: 0;
+    }
+
+    .transaction-table-row > .table-col-date, .transaction-table-row > .table-col-detail, .transaction-table-row > .table-col-state, .transaction-table-row > .table-col-amount{
+        display: flex;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .card-label{
+        min-width: 120px;
+    }
+
+    .pw-change-item div{
+        width: 100%;
+    }
 }
