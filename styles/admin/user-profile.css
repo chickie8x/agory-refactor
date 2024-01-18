@@ -18,6 +18,7 @@
 
 .user-profile-tabs{
     width: 270px;
+    user-select: none;
 }
 
 .tab-profile{
@@ -26,6 +27,7 @@
     display: flex;
     align-items: center;
     padding: 0 4px;
+    margin-bottom: 4px;
 }
 
 .tab-profile img{
@@ -39,7 +41,7 @@
     border-radius: 4px;
 }
 
-.user-profile-tab-content{
+.user-profile-tab-content, .account-and-transaction-tab-content, .password-and-security-tab-content, .profile-general-settings-tab-content{
     width: 858px;
     background: #FAFAFC;
     border-radius: 8px;
@@ -261,4 +263,227 @@
 .company-cert-label{
     margin-top: 24px;
     margin-left: 24px;
+}
+
+.account-content-detail-title, .transaction-history-header-title{
+    font-family: 'Nunito';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.account-amount{
+    display: flex;
+    margin-top: 24px;
+    border-bottom: solid 1px #C7C9D9;
+    padding-bottom: 24px;
+}
+
+.account-amount-item{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-family: 'Nunito';
+}
+
+.account-amount-item span:first-child{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.account-amount-item span:nth-child(2){
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.account-amount-item button{
+    height: 32px;
+    padding: 0 24px;
+    color: #3E7BFA;
+    border: solid 1px #3E7BFA;
+    border-radius: 8px;
+    width: fit-content;
+    background-color: white;
+    margin-top: 16px;
+    outline: none;
+}
+
+.transaction-history{
+    margin-top: 24px;
+    font-family: 'Nunito';
+}
+
+.transaction-history-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.transaction-history-content-tabs{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+.transaction-history-content-tab-item{
+    display: block;
+    padding: 4px 32px;
+    border-bottom: solid 2px #C7C9D9;
+}
+
+.history-content-tab-active{
+    border-bottom: solid 2px #3E7BFA;
+}
+
+.transaction-detail-table{
+    font-family: 'Nunito';
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.transaction-table-header{
+    display: flex;
+    background: #E5F0FF;
+    height: 56px;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.table-col-date{
+    width: 20%;
+}
+
+.table-col-detail{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-col-state{
+    width: 15%;
+}
+
+.table-col-amount{
+    width: 25%;
+}
+
+.transaction-table-row{
+    display: flex;
+    padding: 16px;
+    font-size: 12px;
+}
+
+.transaction-table-row:nth-child(odd){
+    background: #F2F2F5;
+}
+
+.nav-backward{
+    color: #3E7BFA;
+    width: fit-content;
+    font-family: 'Nunito';
+    margin-bottom: 8px;
+    user-select: none;
+}
+
+.nav-backward img{
+    margin-right: 4px;
+}
+
+.password-change-form{
+    margin-top: 24px;
+    font-family: 'Nunito';
+}
+
+.pw-change-item{
+    margin-bottom: 24px;
+    flex-direction: column;
+}
+
+.pw-change-item span{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pw-change-item div{
+    width: 442px;
+    height: 40px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #C7C9D9;
+    box-shadow: 0px 0.5px 4px 0px rgba(96, 97, 112, 0.32) inset;
+}
+
+.pw-change-item div > input{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#update-password{
+    width: 167px;
+    height: 32px;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: #3E7BFA;
+    border: none;
+}
+
+#update-password:focus{
+    outline: none;
+}
+
+#tab-profile-selection {
+    background: #C7C9D9;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Nunito';
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    height: 32px;
+    display: none;
+    align-items: center;
+    width: 266px;
+    padding: 0 12px;
+    margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 1025px){
+    /* .user-profile-main-wrapper{
+        margin: 32px auto;
+    } */
+
+    .tab-profile{
+        display: none;
+    }
+
+    .user-profile-content{
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    #tab-profile-selection{
+        display: flex;
+    }
+
+    .user-profile-title{
+        margin-left: 16px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 860px){
+
+    .user-profile-tab-content, .account-and-transaction-tab-content, .password-and-security-tab-content, .profile-general-settings-tab-content{
+       width: 100%;
+    }
+
+    
 }

@@ -51,6 +51,55 @@ $(document).ready(function(){
 
     })
 
+    $('#go-to-transactions').click(function(){
+        $('.account-content-detail').addClass('hide-item')
+        $('.nav-backward').removeClass('hide-item')
+    })
+
+    $('.nav-backward').click(function(){
+        $('.account-content-detail').removeClass('hide-item')
+        $('.nav-backward').addClass('hide-item')
+    })
+
+
+    const tabs = {
+        '#tab-profile-information': $('.user-profile-tab-content'),
+        '#tab-profile-account': $('.account-and-transaction-tab-content'),
+        '#tab-profile-security': $('.password-and-security-tab-content'),
+        '#tab-profile-settings':$('.profile-general-settings-tab-content')
+    }
+
+    function tabSelection(id){
+        $('.tab-profile').removeClass('tab-profile-active')
+        $(id).addClass('tab-profile-active')
+        $('.tab-profile-content').addClass('hide-item')
+        $(tabs[id]).removeClass('hide-item')
+        $('#tab-profile-selection').val(id)
+    }
+
+    $('#tab-profile-account').click(function(){
+        tabSelection('#tab-profile-account')
+    })
+
+    $('#tab-profile-information').click(function(){
+        tabSelection('#tab-profile-information')
+    })
+
+
+    $('#tab-profile-security').click(function(){
+        tabSelection('#tab-profile-security')
+    })
+
+
+    $('#tab-profile-settings').click(function(){
+        tabSelection('#tab-profile-settings')
+    })
+
+
+    $('#tab-profile-selection').on('change',function(){
+        tabSelection( $(this).find(":selected").val())
+    })
+
 
 
 })

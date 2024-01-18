@@ -104,28 +104,37 @@
             <span class="user-profile-title">Hồ sơ người dùng</span>
             <div class="user-profile-content">
                 <div class="user-profile-tabs">
-                    <div class="tab-profile tab-profile-active" id="tab-profile-information ">
+                    <div class="tab-profile tab-profile-active" id="tab-profile-information">
                         <img src="../assets/icons/user-pro-file-user.svg" alt="">
                         <span>Thông tin tài khoản</span>
                     </div>
                     
-                    <div class="tab-profile" id="tab-profile-account ">
+                    <div class="tab-profile" id="tab-profile-account">
                         <img src="../assets/icons/vuesax-linear-dollar-circle.svg" alt="">
                         <span>Tài khoản & thanh toán</span>
                     </div>
     
-                    <div class="tab-profile" id="tab-profile-security ">
+                    <div class="tab-profile" id="tab-profile-security">
                         <img src="../assets/icons/user-profile-lock.svg" alt="">
                         <span>Mật khẩu & bảo mật</span>
                     </div>
     
-                    <div class="tab-profile" id="tab-profile-settings ">
+                    <div class="tab-profile" id="tab-profile-settings">
                         <img src="../assets/icons/user-profile-settings.svg" alt="">
                         <span>Cài đặt chung</span>
                     </div>
+					<div>
+						<select name="tab-profile-selection" id="tab-profile-selection">
+							<option value="#tab-profile-information">Thông tin tài khoản</option>
+							<option value="#tab-profile-account">Tài khoản & thanh toán</option>
+							<option value="#tab-profile-security">Mật khẩu & bảo mật</option>
+							<option value="#tab-profile-settings">Cài đặt chung</option>
+						</select>
+					</div>
                 </div>
-    
-                <div class="user-profile-tab-content">
+				
+				<!-- profile tab content -->
+                <div class="user-profile-tab-content tab-profile-content">
                     <div class="tab-profile-information-content">
                         <div class="tab-profile-header">
                             <span>Thông tin hợp đồng - Cá nhân</span>
@@ -324,6 +333,188 @@
                     </div>
 
                 </div>
+
+				<!-- account and transaction tab content -->
+				<div class="account-and-transaction-tab-content tab-profile-content hide-item">
+					<div class="account-content-detail">
+						<span class="account-content-detail-title">Tài khoản</span>
+						<div class="account-amount">
+							<div class="account-amount-item">
+								<span>Số dư tài khoản</span>
+								<span>100.000.000 VND</span>
+								<button>Rút tiền</button>
+							</div>
+
+							<div class="account-amount-item">
+								<span>Số Credit</span>
+								<span>100.000.000 VND</span>
+								<button>Nạp tiền</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="transaction-history">
+						<div class="nav-backward hide-item">
+							<img src="../assets/icons/arrow-left-blue.svg" alt="">
+							<span>Trở lại</span>
+						</div>
+						<div class="transaction-history-header">
+							<span class="transaction-history-header-title">Lịch sử giao dịch</span>
+							<a href="#transaction-table-nav" id="go-to-transactions">Xem tất cả giao dịch</a>
+						</div>
+						<div class="transaction-history-content">
+							<div class="transaction-history-content-tabs">
+								<span class="transaction-history-content-tab-item history-content-tab-active">Thanh toán</span>
+								<span class="transaction-history-content-tab-item">Tin nhắn & file</span>
+							</div>
+							<div class="transaction-history-tab-content-detail">
+								<div class="transaction-detail-table" id="transaction-table-nav">
+									<div class="transaction-table-header">
+										<div class="table-col-date">
+											<span>Ngày giao dịch</span>
+										</div>
+
+										<div class="table-col-detail">
+											<span>Chi tiết</span>
+										</div>
+
+										<div class="table-col-state">
+											<span>Trạng thái</span>
+										</div>
+
+										<div class="table-col-amount">
+											<span>Số tiền</span>
+										</div>
+									</div>
+
+									<div class="transaction-table-row">
+										<div class="table-col-date">
+											<span>DD/MM/YYYY</span>
+										</div>
+
+										<div class="table-col-detail">
+											<span>Thanh toán hợp đồng <a href="">Tên hợp đồng</a></span>
+											<span>Influencer: Tên Influencer</span>
+										</div>
+
+										<div class="table-col-state">
+											<span>Hoàn thành</span>
+										</div>
+
+										<div class="table-col-amount">
+											<span>999.999.999</span>
+										</div>
+									</div>
+
+									<div class="transaction-table-row">
+										<div class="table-col-date">
+											<span>DD/MM/YYYY</span>
+										</div>
+
+										<div class="table-col-detail">
+											<span>Thanh toán hợp đồng <a href="">Tên hợp đồng</a></span>
+										</div>
+
+										<div class="table-col-state">
+											<span>Hoàn thành</span>
+										</div>
+
+										<div class="table-col-amount">
+											<span>999.999.999</span>
+										</div>
+									</div>
+
+									<div class="transaction-table-row">
+										<div class="table-col-date">
+											<span>DD/MM/YYYY</span>
+										</div>
+
+										<div class="table-col-detail">
+											<span>Thanh toán hợp đồng <a href="">Tên hợp đồng</a></span>
+										</div>
+
+										<div class="table-col-state">
+											<span>Hoàn thành</span>
+										</div>
+
+										<div class="table-col-amount">
+											<span>999.999.999</span>
+										</div>
+									</div>
+
+									<div class="transaction-table-row">
+										<div class="table-col-date">
+											<span>DD/MM/YYYY</span>
+										</div>
+
+										<div class="table-col-detail">
+											<span>Thanh toán hợp đồng <a href="">Tên hợp đồng</a></span>
+										</div>
+
+										<div class="table-col-state">
+											<span>Hoàn thành</span>
+										</div>
+
+										<div class="table-col-amount">
+											<span>999.999.999</span>
+										</div>
+									</div>
+
+									<div class="transaction-table-row">
+										<div class="table-col-date">
+											<span>DD/MM/YYYY</span>
+										</div>
+
+										<div class="table-col-detail">
+											<span>Thanh toán hợp đồng <a href="">Tên hợp đồng</a></span>
+										</div>
+
+										<div class="table-col-state">
+											<span>Hoàn thành</span>
+										</div>
+
+										<div class="table-col-amount">
+											<span>999.999.999</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- password and security tab content -->
+				<div class="password-and-security-tab-content tab-profile-content hide-item">
+					<span class="account-content-detail-title">Thay đổi mật khẩu</span>
+
+					<div class="password-change-form">
+						<div class="pw-change-item">
+							<span>Mật khẩu hiện tại</span>
+							<div>
+								<input type="password" placeholder="Nhập mật khẩu hiện tại">
+								<img src="../assets/icons/vuesax-linear-eye.svg" alt="">
+							</div>
+						</div>
+
+						<div class="pw-change-item">
+							<span>Mật khẩu mới</span>
+							<div>
+								<input type="password" placeholder="Nhập mật khẩu mới">
+								<img src="../assets/icons/vuesax-linear-eye.svg" alt="">
+							</div>
+						</div>
+
+					</div>
+					<button id="update-password">Cập nhật mật khẩu</button>
+				</div>
+
+				<!-- profile general settings tab content -->
+				<div class="profile-general-settings-tab-content tab-profile-content hide-item">
+					<span>Blank temporary</span>
+				</div>
+
             </div>
 			
 		</div>
