@@ -343,7 +343,7 @@
 							<div class="account-amount-item">
 								<span>Số dư tài khoản</span>
 								<span>100.000.000 VND</span>
-								<button>Rút tiền</button>
+								<button class="withdraw-btn">Rút tiền</button>
 							</div>
 
 							<div class="account-amount-item">
@@ -490,6 +490,35 @@
 						</div>
 					</div>
 
+					<!-- withdraw money section  -->
+
+					<div class="withdraw-section hide-item">
+						<div class="withdraw-section-header">
+							<img src="../assets/icons/arrow-left-blue.svg" alt="">
+							<span>Trở lại</span>
+						</div>
+
+						<div class="withdraw-section-content">
+							<span>Rút tiền</span>
+
+							<div>
+								<span>Chọn tài khoản ngân hàng</span>
+								<div class="bank-choices">
+									<input type="radio" id="select-bank-radio">
+									<span class="select-bank-name">Ngân hàng A - **89</span>
+								</div>
+								<span class="add-bank-text">Chưa có tài khoản? <button class="add-bank-btn">Thêm tài khoản</button></span>
+								<span class="withdraw-amount-text">Số tiền rút</span>
+								<div>
+									<label for="withdraw-amount">Nhập số tiền rút</label>
+									<input type="text" placeholder="VND" id="withdraw-amount" name="withdraw-amount">
+								</div>
+								<span class="amount-left">Số dư khả dụng: 100.000.000VND - <button>Rút hết</button></span>
+								<button class="do-withdraw-btn">Rút tiền</button>
+							</div>
+						</div>
+					</div>
+
 				</div>
 
 				<!-- password and security tab content -->
@@ -523,6 +552,170 @@
 				</div>
 
             </div>
+
+			<!-- add bank popup section  -->
+			<div class="add-bank-popup">
+				<div class="add-bank-popup-content">
+					<div class="add-bank-popup-content-header">
+						<span>Thêm tài khoản ngân hàng</span>
+					</div>
+
+					<div class="add-bank-popup-content-body">
+						<div>
+							<label for="">Tên ngân hàng</label>
+							<select required name="bank-name-selection" id="bank-name-selection">
+								<option value="" disabled selected>-chọn ngân hàng-</option>
+								<option value="">Viettin Bank</option>
+								<option value="">VCB</option>
+								<option value="">MB Bank</option>
+							</select>
+						</div>
+						<div>
+							<label for="">Tên chủ tài khoản</label>
+							<input type="text" placeholder="Tên chủ tài khoản">
+						</div>
+						<div>
+							<label for="">Số tài khoản</label>
+							<input type="text" placeholder="Số tài khoản">
+						</div>
+						<div class="toa-container">
+							<input type="radio">
+							<span>Tôi đã đọc và đồng ý với <a href="">Điều khoản sử dụng</a></span>
+						</div>
+						<div>
+							<button class="do-cancel-add-bank">Huỷ bỏ</button>
+							<button>Thêm tài khoản</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<!-- confirm information popup section  -->
+
+			<div class="confirm-information-withdraw-popup">
+				<div class="confirm-information-withdraw-content">
+					<div class="confirm-information-withdraw-content-header">
+						<span>Rút tiền</span>
+						<span>Vui lòng xác nhận thông tin rút tiền</span>
+					</div>
+
+					<div class="confirm-information-withdraw-content-body">
+						<div>
+							<span>Tài khoản nhận tiền</span>
+							<span>0912345678</span>
+						</div>
+
+						<div>
+							<span>Chủ tài khoản</span>
+							<span>Công ty TNHH Agory</span>
+						</div>
+
+						<div>
+							<span>Ngân hàng</span>
+							<span>Ngân hàng nông nghiệp và phát triển nông thôn - AGRIBANK</span>
+						</div>
+
+						<div>
+							<span>Số tiền rút</span>
+							<span>99.999.999 VNĐ</span>
+						</div>
+
+						<div>
+							<span>Số dư còn lại</span>
+							<span>99.999.999VNĐ</span>
+						</div>
+
+						<div>
+							<button class="do-cancel-confirm-information">Huỷ bỏ</button>
+							<button class="do-confirm-information">Xác nhận</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- enter OTP popup section  -->
+
+			<div class="enter-OTP-popup">
+				<div class="enter-OTP-popup-content">
+					<div class="enter-OTP-popup-content-header">
+						<span>Rút tiền</span>
+						<span>Nhập OTP được gửi đến email xxxx85@gmail.com để xác nhận rút tiền</span>
+					</div>
+
+					<div class="enter-OTP-popup-content-body">
+						<label for="">Mã OTP</label>
+						<input type="text" placeholder="Mã OTP">
+					</div>
+
+					<div>
+						<button class="do-cancel-confirm-OTP">Huỷ bỏ</button>
+						<button class="do-confirm-OTP">Rút tiền</button>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- enter password withdraw popup section  -->
+			<div class="enter-password-withdraw-popup">
+				<div class="enter-password-withdraw-content">
+					<div class="enter-password-withdraw-content-header">
+						<span>Rút tiền</span>
+						<span>Nhập pasword để xác nhận rút tiền</span>
+					</div>
+
+					<div class="enter-password-withdraw-content-body">
+						<label for="">Password</label>
+						<input type="text" placeholder="Nhập password">
+					</div>
+
+					<div>
+						<button class="do-cancel-confirm-password">Huỷ bỏ</button>
+						<button class="do-confirm-password">Rút tiền</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- successfully transaction popup section  -->
+			<div class="successfully-withdraw-transaction-popup">
+				<div class="successfully-withdraw-transaction-popup-content">
+					<div>
+						<img src="../assets/images/successfully-transaction-withdraw.png" alt="">
+					</div>
+					<div>
+						<span>Giao dịch thành công</span>
+						<span>
+							Lệnh rút đã được thực hiện thành công. Tiền sẽ về tài khoản sau 5-7 ngày làm việc.<br>
+							Kiểm tra <a href="">Lịch sử giao dịch</a> để theo dõi trạng thái rút tiền.
+						</span>
+					</div>
+					<div>
+						<button class="close-transaction-modal">Tôi đã hiểu</button>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- failed transaction popup section  -->
+			<div class="failed-withdraw-transaction-popup">
+				<div class="successfully-withdraw-transaction-popup-content">
+					<div>
+						<img src="../assets/images/failed_transaction-withdraw.png" alt="">
+					</div>
+					<div>
+						<span>Giao dịch thất bại</span>
+						<span>
+							Lệnh rút thất bại. Vui lòng thử lại sau hoặc liên lạc với admin.
+						</span>
+					</div>
+					<div>
+						<button class="close-transaction-modal">Tôi đã hiểu</button>
+					</div>
+				</div>
+			</div>
 			
 		</div>
 

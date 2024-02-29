@@ -1,8 +1,9 @@
-.user-profile-main-wrapper{
+.user-profile-main-wrapper {
     margin-top: 32px;
+    position: relative;
 }
 
-.user-profile-title{
+.user-profile-title {
     font-size: 28px;
     font-family: 'Nunito';
     font-weight: 700;
@@ -11,17 +12,18 @@
     margin-bottom: 24px;
 }
 
-.user-profile-content{
+.user-profile-content {
     display: flex;
     justify-content: space-between;
 }
 
-.user-profile-tabs{
+.user-profile-tabs {
     width: 270px;
     user-select: none;
+    padding-right: 16px;
 }
 
-.tab-profile{
+.tab-profile {
     width: 100%;
     height: 32px;
     display: flex;
@@ -30,53 +32,56 @@
     margin-bottom: 4px;
 }
 
-.tab-profile img{
+.tab-profile img {
     width: 24px;
     height: 24px;
     margin-right: 16px;
 }
 
-.tab-profile-active{
+.tab-profile-active {
     background: #C7C9D9;
     border-radius: 4px;
 }
 
-.user-profile-tab-content, .account-and-transaction-tab-content, .password-and-security-tab-content, .profile-general-settings-tab-content{
+.user-profile-tab-content,
+.account-and-transaction-tab-content,
+.password-and-security-tab-content,
+.profile-general-settings-tab-content {
     width: 858px;
     background: #FAFAFC;
     border-radius: 8px;
     padding: 24px;
 }
 
-.tab-profile-information-content{
+.tab-profile-information-content {
     border-bottom: solid 1px #C7C9D9;
     padding-bottom: 24px;
     width: 100%;
 }
 
-.tab-profile-information-content:nth-child(2), 
-.tab-profile-information-content:nth-child(3){
+.tab-profile-information-content:nth-child(2),
+.tab-profile-information-content:nth-child(3) {
     margin-top: 24px;
 }
 
-.tab-profile-information-content:nth-child(3){
+.tab-profile-information-content:nth-child(3) {
     border-bottom: none;
     padding-bottom: 0;
 }
 
-.tab-profile-header{
+.tab-profile-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
 }
 
-.tab-profile-header span{
+.tab-profile-header span {
     font-family: Nunito;
     font-size: 20px;
     font-weight: 700;
 }
 
-.tab-profile-header button{
+.tab-profile-header button {
     width: 111px;
     height: 32px;
     color: #3E7BFA;
@@ -86,71 +91,71 @@
     outline: none;
 }
 
-.profile-information-content{
+.profile-information-content {
     display: flex;
 }
 
-.information-content-detail{
+.information-content-detail {
     width: 60%;
     font-family: 'Nunito';
     font-size: 14px;
     color: #28293D;
 }
 
-.content-detail-item{
+.content-detail-item {
     display: flex;
 }
 
-.content-detail-item span{
+.content-detail-item span {
     display: block;
 }
 
-.content-detail-item span:first-of-type{
+.content-detail-item span:first-of-type {
     min-width: 120px;
     margin-bottom: 12px;
 }
 
-.content-detail-item span:nth-child(2){
+.content-detail-item span:nth-child(2) {
     margin-left: 16px;
 }
 
-.information-content-user{
+.information-content-user {
     padding-left: 24px;
     display: flex;
     flex-direction: column;
 }
 
 
-.information-content-user span{
+.information-content-user span {
     display: block;
     margin-bottom: 8px;
 }
 
-.information-content-user span{
+.information-content-user span {
     font-size: 14px;
     font-family: 'Nunito';
     color: #28293D;
 }
 
-.information-content-avt{
+.information-content-avt {
     width: 96px;
     height: 96px;
 }
 
-.information-content-avt img{
+.information-content-avt img {
     width: 100%;
     border-radius: 50%;
 }
 
-.cccd{
+.cccd {
     margin-bottom: 16px;
 }
 
-.personal-information-edit-container{
+.personal-information-edit-container {
     display: flex;
 }
 
-#personal-information-edit{
+#personal-information-edit {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -158,11 +163,12 @@
     font-size: 14px;
 }
 
-#personal-information-edit label{
+#personal-information-edit label {
     font-size: 12px;
 }
 
-#personal-information-edit input, .enterprise-information-edit-fields input{
+#personal-information-edit input,
+.enterprise-information-edit-fields input {
     height: 40px;
     border-radius: 8px;
     border: solid 1px #C7C9D9;
@@ -173,7 +179,7 @@
     outline: none;
 }
 
-#personal-information-edit textarea{
+#personal-information-edit textarea {
     height: 88px;
     border-radius: 8px;
     border: solid 1px #C7C9D9;
@@ -184,11 +190,11 @@
     outline: none;
 }
 
-.edit-user-avt{
+.edit-user-avt {
     position: relative;
 }
 
-#choose-file-indicator::before{
+#choose-file-indicator::before {
     content: '';
     width: 96px;
     height: 96px;
@@ -201,37 +207,41 @@
     left: 0;
 }
 
-.file-indicator{
+.file-indicator {
     position: absolute;
-    top: 36px;;
+    top: 36px;
+    ;
     left: 0;
     width: 24px;
     height: 24px;
 }
 
-.enterprise-information-edit, .enterprise2-information-edit{
+.enterprise-information-edit,
+.enterprise2-information-edit {
     display: flex;
     font-size: 14px;
     font-family: 'Nunito';
 }
 
-.enterprise-information-edit-fields{
+.enterprise-information-edit-fields {
     width: 60%;
     display: flex;
     flex-direction: column;
 }
 
 
-.enterprise-information-edit-fields label{
+.enterprise-information-edit-fields label {
     font-size: 12px;
 }
 
-.identify-wrapper{
+.identify-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.front-side-label, .back-side-label, .company-cert-label{
+.front-side-label,
+.back-side-label,
+.company-cert-label {
     width: 150px;
     height: 95px;
     border: dashed 2px gray;
@@ -246,57 +256,60 @@
     transition-duration: 300ms;
 }
 
-.front-side-label:hover, .back-side-label:hover, .company-cert-label:hover{
+.front-side-label:hover,
+.back-side-label:hover,
+.company-cert-label:hover {
     background: rgba(96, 97, 112, 0.12);
 }
 
-.front-side-label::after{
+.front-side-label::after {
     content: 'Mặt trước';
     margin-left: 4px;
 }
 
-.back-side-label::after{
+.back-side-label::after {
     content: 'Mặt sau';
     margin-left: 4px;
 }
 
-.company-cert-label{
+.company-cert-label {
     margin-top: 24px;
     margin-left: 24px;
 }
 
-.account-content-detail-title, .transaction-history-header-title{
+.account-content-detail-title,
+.transaction-history-header-title {
     font-family: 'Nunito';
     font-size: 20px;
     font-weight: 700;
 }
 
-.account-amount{
+.account-amount {
     display: flex;
     margin-top: 24px;
     border-bottom: solid 1px #C7C9D9;
     padding-bottom: 24px;
 }
 
-.account-amount-item{
+.account-amount-item {
     display: flex;
     flex-direction: column;
     width: 50%;
     font-family: 'Nunito';
 }
 
-.account-amount-item span:first-child{
+.account-amount-item span:first-child {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 8px;
 }
 
-.account-amount-item span:nth-child(2){
+.account-amount-item span:nth-child(2) {
     font-size: 24px;
     font-weight: 700;
 }
 
-.account-amount-item button{
+.account-amount-item button {
     height: 32px;
     padding: 0 24px;
     color: #3E7BFA;
@@ -308,41 +321,41 @@
     outline: none;
 }
 
-.transaction-history{
+.transaction-history {
     margin-top: 24px;
     font-family: 'Nunito';
 }
 
-.transaction-history-header{
+.transaction-history-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
 }
 
-.transaction-history-content-tabs{
+.transaction-history-content-tabs {
     display: flex;
     justify-content: center;
     width: fit-content;
 }
 
-.transaction-history-content-tab-item{
+.transaction-history-content-tab-item {
     display: block;
     padding: 4px 32px;
     border-bottom: solid 2px #C7C9D9;
 }
 
-.history-content-tab-active{
+.history-content-tab-active {
     border-bottom: solid 2px #3E7BFA;
 }
 
-.transaction-detail-table{
+.transaction-detail-table {
     font-family: 'Nunito';
     font-size: 14px;
     margin-top: 16px;
 }
 
-.transaction-table-header{
+.transaction-table-header {
     display: flex;
     background: #E5F0FF;
     height: 56px;
@@ -350,38 +363,38 @@
     padding: 0 16px;
 }
 
-.table-col-date{
+.table-col-date {
     width: 20%;
 }
 
-.table-col-detail{
+.table-col-detail {
     width: 50%;
 }
 
-.table-col-detail>div{
+.table-col-detail>div {
     display: flex;
     flex-direction: column;
 }
 
-.table-col-state{
+.table-col-state {
     width: 15%;
 }
 
-.table-col-amount{
+.table-col-amount {
     width: 25%;
 }
 
-.transaction-table-row{
+.transaction-table-row {
     display: flex;
     padding: 16px;
     font-size: 12px;
 }
 
-.transaction-table-row:nth-child(odd){
+.transaction-table-row:nth-child(odd) {
     background: #F2F2F5;
 }
 
-.nav-backward{
+.nav-backward {
     color: #3E7BFA;
     width: fit-content;
     font-family: 'Nunito';
@@ -389,27 +402,27 @@
     user-select: none;
 }
 
-.nav-backward img{
+.nav-backward img {
     margin-right: 4px;
 }
 
-.password-change-form{
+.password-change-form {
     margin-top: 24px;
     font-family: 'Nunito';
 }
 
-.pw-change-item{
+.pw-change-item {
     margin-bottom: 24px;
     flex-direction: column;
 }
 
-.pw-change-item span{
+.pw-change-item span {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.pw-change-item div{
+.pw-change-item div {
     width: 442px;
     height: 40px;
     padding: 0 12px;
@@ -421,13 +434,13 @@
     box-shadow: 0px 0.5px 4px 0px rgba(96, 97, 112, 0.32) inset;
 }
 
-.pw-change-item div > input{
+.pw-change-item div>input {
     border: none;
     outline: none;
     background: none;
 }
 
-#update-password{
+#update-password {
     width: 167px;
     height: 32px;
     color: white;
@@ -438,7 +451,7 @@
     border: none;
 }
 
-#update-password:focus{
+#update-password:focus {
     outline: none;
 }
 
@@ -458,127 +471,557 @@
     margin-bottom: 16px;
 }
 
-.card-label{
+.card-label {
     display: none;
 }
 
-@media only screen and (max-width: 1025px){
-    .user-profile-main-wrapper{
+
+
+
+/* withdraw money section  */
+
+.withdraw-section {
+    height: 100%;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.withdraw-section-header {
+    display: flex;
+    align-items: center;
+    color: #3E7BFA;
+    font-family: 'Nunito';
+    font-size: 16px;
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+}
+
+.withdraw-section-header img {
+    margin-right: 8px;
+}
+
+.withdraw-section-content {
+    margin-top: 8px;
+}
+
+.withdraw-section-content>span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.withdraw-section-content>div>span:first-child {
+    font-weight: 700;
+    margin-top: 32px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#select-bank-radio {
+    scale: 1.2;
+    margin-right: 8px;
+}
+
+.add-bank-text {
+    display: block;
+    margin-top: 8px;
+}
+
+.add-bank-btn {
+    background: none;
+    border: none;
+    outline: none;
+    color: #3E7BFA;
+}
+
+.add-bank-btn:focus {
+    outline: none;
+}
+
+.withdraw-amount-text {
+    font-weight: 700;
+    display: block;
+    margin-top: 24px;
+}
+
+label {
+    font-size: 12px;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+#withdraw-amount {
+    border: solid 1px #C7C9D9;
+    border-radius: 8px;
+    box-shadow: 0px 0.5px 4px 0px rgba(96, 97, 112, 0.32) inset;
+    width: 497px;
+    height: 40px;
+    padding: 0 12px;
+    outline: none;
+}
+
+#withdraw-amount:focus {
+    outline: none;
+}
+
+
+.amount-left {
+    display: block;
+    margin-top: 8px;
+}
+
+.amount-left button {
+    background: none;
+    outline: none;
+    border: none;
+    color: #3E7BFA;
+}
+
+.do-withdraw-btn {
+    width: 98px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #3E7BFA;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 32px;
+}
+
+.do-withdraw-btn:focus {
+    outline: none;
+}
+
+.bank-choices {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+
+/* withdraw popup section  */
+.add-bank-popup,
+.confirm-information-withdraw-popup,
+.enter-OTP-popup,
+.enter-password-withdraw-popup,
+.successfully-withdraw-transaction-popup,
+.failed-withdraw-transaction-popup {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -2000px;
+    left: 0;
+    background: rgba(85, 87, 112, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito';
+}
+
+.add-bank-popup-content {
+    width: 545px;
+    border-radius: 8px;
+    padding: 24px;
+    background: #FAFAFA;
+}
+
+.add-bank-popup-content-header>span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.add-bank-popup-content-body>div {
+    margin-top: 24px;
+}
+
+#bank-name-selection,
+.add-bank-popup-content-body>div input[type="text"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: solid 1px #C7C9D9;
+    padding: 8px;
+    outline: none;
+    box-shadow: 0px 0.5px 4px 0px rgba(96, 97, 112, 0.32) inset;
+}
+
+#bank-name-selection:focus {
+    outline: none;
+}
+
+#bank-name-selection:required:invalid {
+    color: gray;
+    font-size: 14px;
+}
+
+#bank-name-selection>option[value=""][disabled] {
+    display: none;
+}
+
+#bank-name-selection>option {
+    color: black;
+}
+
+.add-bank-popup-content-body>div input[type="text"]::placeholder {
+    font-size: 14px;
+}
+
+.add-bank-popup-content-body>div input[type="radio"] {
+    scale: 1.5;
+    margin-right: 8px;
+}
+
+.toa-container {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.toa-container>span>a {
+    font-style: italic;
+}
+
+.add-bank-popup-content-body>div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.add-bank-popup-content-body>div button {
+    height: 32px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    margin: 0;
+}
+
+.add-bank-popup-content-body>div button:first-child {
+    background: none;
+    border: solid 1px #3E7BFA;
+    color: #3E7BFA;
+    width: 94px;
+}
+
+.add-bank-popup-content-body>div button:last-child {
+    background: #3E7BFA;
+    border: solid 1px #3E7BFA;
+    color: white;
+    width: 146px;
+    margin-left: 12px;
+}
+
+/* confirm information withdraw popup section  */
+.confirm-information-withdraw-content {
+    width: 736px;
+    border-radius: 8px;
+    background: #FAFAFC;
+    padding: 24px;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.confirm-information-withdraw-content-header {
+    padding-bottom: 16px;
+    border-bottom: solid 1px rgba(143, 144, 166, 0.4);
+}
+
+.confirm-information-withdraw-content-header>span:first-child,
+.enter-OTP-popup-content-header>span:first-child,
+.enter-password-withdraw-content-header>span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.confirm-information-withdraw-content-body {
+    margin-top: 16px;
+}
+
+.confirm-information-withdraw-content-body>div {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.confirm-information-withdraw-content-body>div>span:first-child {
+    display: block;
+    min-width: 125px;
+    margin-right: 12px;
+}
+
+.confirm-information-withdraw-content-body>div:last-child {
+    justify-content: flex-end;
+    margin-bottom: 0;
+    border-top: solid 1px rgba(143, 144, 166, 0.4);
+    padding-top: 16px;
+}
+
+.confirm-information-withdraw-content-body>div>button,
+.do-cancel-confirm-OTP,
+.do-confirm-OTP,
+.do-cancel-confirm-password,
+.do-confirm-password {
+    height: 32px;
+    border-radius: 8px;
+    border: solid 1px #3E7BFA;
+    outline: none;
+    margin-right: 0;
+}
+
+.confirm-information-withdraw-content-body>div>button:first-child,
+.do-cancel-confirm-OTP, .do-cancel-confirm-password {
+    background: none;
+    color: #3E7BFA;
+    width: 94px;
+    margin-right: 16px;
+}
+
+.confirm-information-withdraw-content-body>div>button:last-child,
+.do-confirm-OTP, .do-confirm-password {
+    background: #3E7BFA;
+    color: white;
+    width: 106px;
+}
+
+/* enter OTP popup section  */
+
+.enter-OTP-popup-content,
+.enter-password-withdraw-content {
+    background: #FAFAFC;
+    border-radius: 8px;
+    width: 736px;
+    padding: 16px 24px;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.enter-OTP-popup-content-header, .enter-password-withdraw-content-header {
+    padding-bottom: 16px;
+    border-bottom: solid 1px rgba(143, 144, 166, 0.4);
+}
+
+.enter-OTP-popup-content>div, .enter-password-withdraw-content>div {
+    margin-bottom: 16px;
+}
+
+.enter-OTP-popup-content>div:last-child, .enter-password-withdraw-content>div:last-child {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    border-top: solid 1px rgba(143, 144, 166, 0.4);
+    padding-top: 16px;
+}
+
+.enter-OTP-popup-content-body>input, .enter-password-withdraw-content-body > input {
+    height: 40px;
+    width: 497px;
+    border-radius: 8px;
+    padding: 0 12px;
+    border: solid 1px #C7C9D9;
+    box-shadow: 0px 0.5px 4px 0px rgba(96, 97, 112, 0.32) inset;
+    outline: none;
+}
+
+.do-cancel-confirm-OTP:focus,
+.do-confirm-OTP:focus,
+.do-cancel-confirm-password:focus,
+.do-confirm-password:focus {
+    outline: none;
+}
+
+
+/* successfully transaction withdraw popup section  */
+.successfully-withdraw-transaction-popup-content{
+    width: 736px;
+    background: white;
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.successfully-withdraw-transaction-popup-content > div:first-child {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+    border-bottom: solid 1px rgba(143, 144, 166, 0.4);
+}
+
+.successfully-withdraw-transaction-popup-content > div:nth-child(2) > span:first-child{
+    font-size: 20px;
+    font-weight: 700;
+    color: #06C270;
+    display: block;
+    margin: 16px 0;
+}
+
+.successfully-withdraw-transaction-popup-content > div:last-child{
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.successfully-withdraw-transaction-popup-content > div:last-child > button{
+    width: 116px;
+    height: 32px;
+    border: solid 1px #3E7BFA;
+    background: none;
+    color: #3E7BFA;
+    border-radius: 8px;
+    outline: none;
+}
+
+.successfully-withdraw-transaction-popup-content > div:last-child > button:focus{
+    outline: none;
+}
+
+.failed-withdraw-transaction-popup >.successfully-withdraw-transaction-popup-content > div:nth-child(2) > span:first-child{
+    color: #FF3B3B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1025px) {
+    .user-profile-main-wrapper {
         margin: 32px 0 0 0;
     }
 
-    .tab-profile{
+    .tab-profile {
         display: none;
     }
 
-    .user-profile-content{
+    .user-profile-content {
         flex-direction: column;
         padding: 16px;
     }
 
-    #tab-profile-selection{
+    #tab-profile-selection {
         display: flex;
     }
 
-    .user-profile-title{
+    .user-profile-title {
         margin-left: 16px;
         margin-bottom: 0;
     }
 }
 
-@media only screen and (max-width: 860px){
+@media only screen and (max-width: 860px) {
 
-    .user-profile-tab-content, .account-and-transaction-tab-content, .password-and-security-tab-content, .profile-general-settings-tab-content{
-       width: 100%;
+    .user-profile-tab-content,
+    .account-and-transaction-tab-content,
+    .password-and-security-tab-content,
+    .profile-general-settings-tab-content {
+        width: 100%;
     }
 }
 
-@media only screen and (max-width: 670px){
+@media only screen and (max-width: 760px){
+    .enter-OTP-popup-content, .enter-password-withdraw-content{
+        width: 100%;
+    }
+    
+}
 
-    .user-profile-content{
+@media only screen and (max-width: 670px) {
+
+    .user-profile-content {
         padding: 0;
     }
 
-    .user-profile-tabs{
+    .user-profile-tabs {
         width: 100%;
     }
 
-    #tab-profile-selection{
+    #tab-profile-selection {
         width: calc(100% - 32px);
         margin: 16px;
     }
 
-    .tab-profile-information-content{
+    .tab-profile-information-content {
         display: flex;
         flex-direction: column;
     }
 
-    .tab-profile-header{
+    .tab-profile-header {
         display: contents;
     }
 
-    .tab-profile-header span{
+    .tab-profile-header span {
         margin-bottom: 24px;
     }
 
-    .tab-profile-header button{
+    .tab-profile-header button {
         order: 1;
     }
 
-    #information-content-detail{
+    #information-content-detail {
         flex-direction: column;
     }
 
-    #information-content-user-avt{
+    #information-content-user-avt {
         flex-direction: row;
         margin-top: 16px;
     }
 
-    #information-content-user-avt span{
+    #information-content-user-avt span {
         min-width: 120px;
     }
 
-    .information-content-detail{
+    .information-content-detail {
         width: 100%;
     }
-    
-    .profile-information-content{
+
+    .profile-information-content {
         flex-direction: column;
     }
 
-    .information-content-user{
+    .information-content-user {
         padding-left: 0;
     }
 
-    .information-content-avt{
+    .information-content-avt {
         margin-left: 16px;
     }
 
-    .button-edit-profile-information{
+    .button-edit-profile-information {
         margin-top: 24px;
         width: 100% !important;
     }
 
-    .tab-profile-content{
+    .tab-profile-content {
         padding: 16px;
     }
 
-    .account-amount{
+    .account-amount {
         flex-direction: column;
     }
 
-    .account-amount-item{
+    .account-amount-item {
         width: 100%;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
     }
 
-    .account-amount-item:nth-child(2){
+    .account-amount-item:nth-child(2) {
         margin-top: 16px;
     }
 
-    .account-amount-item span:first-child{
+    .account-amount-item span:first-child {
         grid-column: 1/2;
         grid-row: 1/2;
         width: 100%;
@@ -587,47 +1030,58 @@
         align-items: center;
     }
 
-    .account-amount-item button{
+    .account-amount-item button {
         grid-column: 2/2;
         grid-row: 1/2;
         margin: 0;
         margin-left: auto;
     }
 
-    .transaction-table-header{
+    .transaction-table-header {
         display: none;
     }
-    
-    .transaction-history-content-tabs{
+
+    .transaction-history-content-tabs {
         width: 100%;
     }
 
-    .transaction-history-content-tabs span{
+    .transaction-history-content-tabs span {
         width: 50%;
     }
 
-    .transaction-table-row{
+    .transaction-table-row {
         flex-direction: column;
         background: #F2F2F5;
         margin-bottom: 16px;
     }
 
-    .transaction-table-row:last-child{
+    .transaction-table-row:last-child {
         margin-bottom: 0;
     }
 
-    .transaction-table-row > .table-col-date, .transaction-table-row > .table-col-detail, .transaction-table-row > .table-col-state, .transaction-table-row > .table-col-amount{
+    .transaction-table-row>.table-col-date,
+    .transaction-table-row>.table-col-detail,
+    .transaction-table-row>.table-col-state,
+    .transaction-table-row>.table-col-amount {
         display: flex;
         width: 100%;
         margin-bottom: 12px;
     }
 
-    .card-label{
+    .card-label {
         min-width: 120px;
         display: block;
     }
 
-    .pw-change-item div{
+    .pw-change-item div {
+        width: 100%;
+    }
+
+    #withdraw-amount{
+        width: 100%;
+    }
+
+    .enter-OTP-popup-content-body>input, .enter-password-withdraw-content-body > input{
         width: 100%;
     }
 }

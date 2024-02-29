@@ -101,5 +101,57 @@ $(document).ready(function(){
     })
 
 
+    $('.withdraw-btn').click(function(){
+        $('.account-content-detail').addClass('hide-item')
+        $('.transaction-history').addClass('hide-item')
+        $('.withdraw-section').removeClass('hide-item')
+    })
+
+    $('.withdraw-section-header').click(function(){
+        $('.withdraw-section').addClass('hide-item')
+        $('.account-content-detail').removeClass('hide-item')
+        $('.transaction-history').removeClass('hide-item')
+    })
+
+    $('.add-bank-btn').click(function(){
+        $('.add-bank-popup').addClass('popup-show')
+    })
+
+    $('.do-cancel-add-bank').click(function(){
+        $('.add-bank-popup').removeClass('popup-show')
+    })
+
+    $('.do-withdraw-btn').click(function(){
+        $('.confirm-information-withdraw-popup').addClass('popup-show')
+    })
+
+    $('.do-cancel-confirm-information').click(function(){
+        $('.confirm-information-withdraw-popup').removeClass('popup-show')
+    })
+
+    $('.do-confirm-information').click(function() {
+        $('.confirm-information-withdraw-popup').removeClass('popup-show')
+        $('.enter-OTP-popup').addClass('popup-show')
+    })
+
+    $('.do-confirm-OTP').click(function(){
+        $('.enter-OTP-popup').removeClass('popup-show')
+        $('.enter-password-withdraw-popup').addClass('popup-show')
+    })
+
+    $('.do-cancel-confirm-password').click(function(){
+        $('.enter-password-withdraw-popup').removeClass('popup-show')
+        $('.failed-withdraw-transaction-popup').addClass('popup-show')
+    })
+
+    $('.do-confirm-password').click(function(){
+        $('.enter-password-withdraw-popup').removeClass('popup-show')
+        $('.successfully-withdraw-transaction-popup').addClass('popup-show')
+    })
+
+    $('.close-transaction-modal').click(function(){
+        $('.failed-withdraw-transaction-popup').removeClass('popup-show')
+        $('.successfully-withdraw-transaction-popup').removeClass('popup-show')
+    })
 
 })
