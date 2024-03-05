@@ -294,27 +294,27 @@
                     <div class="data-table">
 
                         <div class="data-table-header">
-                            <div class="selection-col">
+                            <div class="table-selection-col">
                                 <img src="/assets/icons/vuesax-linear-minus-square.svg" class="check-icon check-some hide-item" alt="">
                                 <img src="/assets/icons/unchecked-all.svg" alt="" class="check-icon unchecked-all">
                                 <img src="/assets/icons/checked-all.svg" alt="" class="check-icon checked-all hide-item">
                             </div>
-                            <div class="influencer-col">
+                            <div class="table-influencer-col">
                                 Influencer
                             </div>
-                            <div class="type-col">
+                            <div class="table-type-col">
                                 Type
                             </div>
-                            <div class="channel-col">
+                            <div class="table-channel-col">
                                 Kênh
                             </div>
-                            <div class="job-col">
+                            <div class="table-job-col">
                                 Công việc
                             </div>
-                            <div class="cost-col">
+                            <div class="table-cost-col">
                                 Chi phí
                             </div>
-                            <div class="note-col">
+                            <div class="table-note-col">
                                 Note
                             </div>
                         </div>
@@ -323,22 +323,22 @@
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
-                                    <div class="influencer-pill">Influencer</div>
+                                <div class="type-row table-type-col">
+                                    <div class="influencer-pill influencer-pill-celebrity">Celebrity</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -348,14 +348,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -363,10 +363,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content"> </span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -379,22 +387,22 @@
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
-                                    <div class="influencer-pill">Influencer</div>
+                                <div class="type-row table-type-col">
+                                    <div class="influencer-pill influencer-pill-kol">KOL</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -404,14 +412,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -419,11 +427,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content">Cần check lại
-                                                thông tin chi tiết về lịch ...</span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -431,28 +446,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
-                                    <div class="influencer-pill">Influencer</div>
+                                <div class="type-row table-type-col">
+                                    <div class="influencer-pill influencer-pill-community">community</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -462,14 +476,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -477,11 +491,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content">Cần check lại
-                                                thông tin chi tiết về lịch ...</span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -489,28 +510,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
-                                    <div class="influencer-pill">Influencer</div>
+                                <div class="type-row table-type-col">
+                                    <div class="influencer-pill influencer-pill-macro">macro</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -520,14 +540,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -535,11 +555,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content">Cần check lại
-                                                thông tin chi tiết về lịch ...</span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -547,28 +574,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
-                                    <div class="influencer-pill">Influencer</div>
+                                <div class="type-row table-type-col">
+                                    <div class="influencer-pill influencer-pill-micro">micro</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -578,14 +604,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -593,10 +619,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content"> </span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -604,28 +638,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
-                                    <div class="influencer-pill">Influencer</div>
+                                <div class="type-row table-type-col">
+                                    <div class="influencer-pill influencer-pill-nano">nano</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -635,14 +668,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -650,11 +683,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content">Cần check lại
-                                                thông tin chi tiết về lịch ...</span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -662,28 +702,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
+                                <div class="type-row table-type-col">
                                     <div class="influencer-pill">Influencer</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -693,14 +732,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -708,11 +747,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content">Cần check lại
-                                                thông tin chi tiết về lịch ...</span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -720,28 +766,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
+                                <div class="type-row table-type-col">
                                     <div class="influencer-pill">Influencer</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -751,14 +796,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -766,11 +811,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content">Cần check lại
-                                                thông tin chi tiết về lịch ...</span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -778,28 +830,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
+                                <div class="type-row table-type-col">
                                     <div class="influencer-pill">Influencer</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -809,14 +860,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -824,10 +875,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content"> </span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -835,28 +894,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
+                                <div class="type-row table-type-col">
                                     <div class="influencer-pill">Influencer</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -866,14 +924,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -881,11 +939,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content">Cần check lại
-                                                thông tin chi tiết về lịch ...</span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -893,28 +958,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
+                                <div class="type-row table-type-col">
                                     <div class="influencer-pill">Influencer</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -924,14 +988,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -939,11 +1003,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content">Cần check lại
-                                                thông tin chi tiết về lịch ...</span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -951,28 +1022,27 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="data-table-row">
 
-                                <div class="selection-row selection-col">
+                                <div class="selection-row table-selection-col">
                                     <input type="checkbox" class="selection-state">
                                 </div>
 
-                                <div class="influencer-row influencer-col">
+                                <div class="influencer-row table-influencer-col">
                                     <div class="user-avatar">
                                         <img src="/assets/images/useravt.png" class="img-fluid" alt="">
                                     </div>
                                     <span class="username">Merrile Burgett</span>
                                 </div>
 
-                                <div class="type-row type-col">
+                                <div class="type-row table-type-col">
                                     <div class="influencer-pill">Influencer</div>
                                 </div>
 
-                                <div class="channel-row channel-col">
+                                <div class="channel-row table-channel-col">
                                     <span class="hidden-label hide-item">Công việc</span>
                                     <div class="channel-icon">
                                         <img src="/assets/images/instagram.png" class="img-fluid" alt="">
@@ -982,14 +1052,14 @@
                                     </div>
                                 </div>
 
-                                <div class="job-row job-col">
+                                <div class="job-row table-job-col">
 
                                     <img src="/assets/icons/vuesax-linear-gallery.svg" alt="">
                                     <span>Đăng hình</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="job-edit-btn hidden-btn" alt="" data-toggle="modal" data-target="#exampleModalCenter">
                                 </div>
 
-                                <div class="cost-row cost-col">
+                                <div class="cost-row table-cost-col">
                                     <span class="hidden-label hide-item">Chi phí(VND)</span>
                                     <span class="price-value">10,000,000</span><span class="unit">VND</span>
                                     <img src="/assets/icons/vuesax-linear-edit.svg" class="price-edit-btn hidden-btn" alt="">
@@ -997,11 +1067,18 @@
                                     <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit">
                                 </div>
 
-                                <div class="note-row note-col">
+                                <div class="note-row table-note-col">
                                     <span class="hidden-label hide-item">Ghi chú</span>
                                     <div class="note-wrapper">
-                                        <span class="note-content"><span class="truncated-note-content">Cần check lại
-                                                thông tin chi tiết về lịch ...</span><span class="hidden-note-content hide-item"></span></span>
+                                        <span class="note-shortened"> Lorem Ipsum is simply dummy ...</span>
+                                        <div class="note-popup-editor hide-item">
+                                            <textarea name="" id="" class="note-detail"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standards</textarea>
+                                            <div class="btn-group-edit-note">
+                                                <img src="/assets/icons/tick-square.svg" alt="" class="confirm-edit-note">
+                                                <img src="/assets/icons/red-close-btn.svg" alt="" class="cancel-edit-note">
+                                            </div>
+                                        </div>
+
                                         <img src="/assets/icons/vuesax-linear-edit.svg" class="note-edit-btn hidden-btn" alt="">
                                     </div>
 
@@ -1009,14 +1086,12 @@
                                         <img src="/assets/icons/vuesax-linear-copy.svg" class="row-duplicate-btn hidden-btn" alt="">
                                         <img src="/assets/icons/red-trash.svg" class="row-delete-btn hidden-btn" alt="" data-toggle="modal" data-target="#delete-modal">
                                     </div>
-
                                 </div>
                             </div>
 
                         </div>
 
                     </div>
-
                 </div>
 
                 <div class="content-footer">
@@ -1399,45 +1474,41 @@
 
 
     <!-- manualy add influencer modal  -->
-    <div class="modal fade" id="manually-add-influencer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <span class="modal-header-title">Nhập influencer thủ công</span>
-
-                    <span class="name-label">Tên influencer </span>
-
-                    <div class="influencer-input-group">
-                        <input type="text" placeholder="Tên influencer, công việc...">
+    <div class="manual-add-influencer-popup">
+        <div class="manual-add-influencer-popup-content">
+            <div class="manual-add-influencer-content-header">
+                <span>Nhập influencer thủ công</span>
+            </div>
+            <div class="manual-add-influencer-content-body">
+                <div>
+                    <span>Tên influencer </span>
+                    <div class="">
+                        <input type="text" placeholder="Tên influencer, công việc..." class="">
                         <img src="/assets/icons/grey-close-btn.svg" alt="" class="clear-data-input">
                     </div>
+                </div>
 
-                    <span class="influencer-link">Link</span>
-
-                    <div class="influencer-input-group fb-input-link">
-                        <img src="/assets/images/facebook.png" alt="" class="fb-head">
+                <div>
+                    <span>Link</span>
+                    <div class="">
+                        <img src="/assets/images/facebook.png" alt="">
                         <input type="text" placeholder="www.facebook.com/mb88mbt">
                         <img src="/assets/icons/grey-close-btn.svg" alt="" class="clear-data-input">
                     </div>
-
-                    <div class="influencer-input-group link-input-item">
-                        <img src="/assets/icons/vuesax-linear-link-2.svg" alt="" class="link-head">
+                    <div class="">
+                        <img src="/assets/icons/vuesax-linear-link-2.svg" alt="">
                         <input type="text" placeholder="Tên influencer, công việc...">
                         <img src="/assets/icons/grey-close-btn.svg" alt="" class="clear-data-input">
                     </div>
-
-                    <button type="button" class="add-link"><img src="/assets/icons/white-add-icon.svg" alt="" class="mr-1"> Thêm link</button>
-
-                    <div class="manually-add-btn-group">
-                        <button type="button" class="cancel-add-btn">Cancel</button>
-                        <button type="button" class="confirm-add-btn">Thêm vào danh sách</button>
-                    </div>
-
+                </div>
+                <button type="button" class="add-link"><img src="/assets/icons/white-add-icon.svg" alt="" class="mr-1"> Thêm link</button>
+                <div>
+                    <button type="button" class="cancel-add-btn">Cancel</button>
+                    <button type="button" class="confirm-add-btn">Thêm vào danh sách</button>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- influencer library section  -->
     <div class="influencer-library-wrapper">
@@ -2327,8 +2398,8 @@
                     <img src="/assets/icons/blue-info-circle.svg" alt="">
                     <span>Nếu Influencer bạn tìm chưa có trong hệ thống, bạn có thể tự thêm vào danh sách của
                         mình.</span>
-                    <div class="manual-add-btn" data-toggle="modal" data-target="#manually-add-influencer">Tự thêm influencer
-                    </div>
+                    <button class="btn-add-influencer-manual">Tự thêm influencer
+                    </button>
                 </div>
 
                 <div class="list-of-filters">

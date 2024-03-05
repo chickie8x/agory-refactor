@@ -666,5 +666,13 @@ $(document).ready(function () {
 
 // note-popup-editor aditional modified 
 
+$('.btn-add-influencer-manual').click(function() {
+    $('.manual-add-influencer-popup').addClass('popup-show')
+})
+
+$('.cancel-add-btn').click(function() {
+    $('.manual-add-influencer-popup').removeClass('popup-show')
+})
+
 
 });
