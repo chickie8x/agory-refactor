@@ -309,6 +309,12 @@
     font-weight: 700;
 }
 
+.account-amount-item span:nth-child(3){
+    display: block;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
 .account-amount-item button {
     height: 32px;
     padding: 0 24px;
@@ -317,7 +323,7 @@
     border-radius: 8px;
     width: fit-content;
     background-color: white;
-    margin-top: 16px;
+    margin-top: auto;
     outline: none;
 }
 
