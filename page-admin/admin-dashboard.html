@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="/styles/admin/main_admin.css">
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/0ea2bdc334.js" crossorigin="anonymous"></script>
+	<title>Agory</title>
+</head>
+
+<body>
+
+	<div class="fluid-container">
+
+		<!-- navigation bar section  -->
+
+		<div class="navigation-wrapper">
+			<div class="navigation">
+				<div class="brand-logo">
+					<img src="/assets/images/logo.jfif" class="img-fluid w-100" alt="">
+				</div>
+				<div class="menu">
+					<div class="menu-item">
+						<span>Dashboard</span>
+					</div>
+					<div class="menu-item">
+						<span>Job của tôi</span>
+					</div>
+					<div class="menu-item">
+						<span>Danh sách Influencer</span>
+					</div>
+					<div class="menu-item">
+						<span>Đối tác</span>
+					</div>
+				</div>
+				<div class="message-notification">
+					<div class="messages right-section-item">
+						<img src="/assets/icons/white-message.svg" class="text-white" alt="">
+						<span class="notification-badge">8</span>
+					</div>
+					<div class="notifications right-section-item">
+						<img src="/assets/icons/white-notification.svg" alt="">
+						<span class="notification-badge">8</span>
+					</div>
+					<div class="user right-section-item">
+						<img src="/assets/images/useravt.png" class="img-fluid w-100" alt="">
+					</div>
+				</div>
+				<div class="collapse-btn">
+					<img src="/assets/icons/bars-btn.svg" class="collapse-btn-img" alt="">
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- navigation bar section end  -->
+
+
+
+		<!-- collapse-menu section  -->
+
+		<div class="collapse-menu">
+			<div class="collapse-menu-header">
+				<div class="collapse-btn">
+					<img src="/assets/icons/bars-btn-blue.svg" class="collapse-btn-img" alt="">
+				</div>
+				<div class="collapse-header-item">
+					<div class="messages right-section-item">
+						<img src="/assets/icons/blue-message.svg" alt="">
+						<span class="notification-badge">8</span>
+					</div>
+					<div class="notifications right-section-item">
+						<img src="/assets/icons/blue-notification.svg" alt="">
+						<span class="notification-badge">8</span>
+					</div>
+				</div>
+			</div>
+			<div class="collapse-menu-item-wrapper">
+				<div class="collapse-menu-item">
+					<span>Job của tôi</span>
+				</div>
+				<div class="collapse-menu-item">
+					<span>Danh sách Influencer</span>
+				</div>
+				<div class="collapse-menu-item">
+					<span>Đối tác</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- collapse menu section end  -->
+
+
+		<!-- main content section  -->
+		<div class="main-wrapper user-profile-main-wrapper">
+			<span class="user-profile-title">Bảng quản trị viên</span>
+			<div class="user-profile-content">
+				<div class="user-profile-tabs">
+					<div class="tab-profile tab-profile-active" id="withdraw-request-management">
+						<img src="../assets/icons/user-pro-file-user.svg" alt="">
+						<span>Quản lý yêu cầu rút tiền</span>
+					</div>
+
+					<div class="tab-profile" id="tab-profile-account">
+						<img src="../assets/icons/vuesax-linear-dollar-circle.svg" alt="">
+						<span>Admin dashboard menu 1</span>
+					</div>
+
+					<div class="tab-profile" id="tab-profile-security">
+						<img src="../assets/icons/user-profile-lock.svg" alt="">
+						<span>Admin dashboard menu 2</span>
+					</div>
+
+					<div class="tab-profile" id="tab-profile-settings">
+						<img src="../assets/icons/user-profile-settings.svg" alt="">
+						<span>Admin dashboard menu 3</span>
+					</div>
+				</div>
+
+				<!-- transaction management content -->
+				<div class="user-profile-tab-content tab-profile-content">
+					<div class="tab-profile-information-content transaction-management-content-tab">
+						<div class="tab-profile-header transaction-management-content">
+							<span>Thông tin hợp đồng - Cá nhân</span>
+							<div class="transaction-sort-by">
+								<span>Sắp xếp theo</span>
+								<select required name="bank-name-selection" id="bank-name-selection">
+									<option value="" disabled selected>Ngày giao dịch</option>
+									<option value="">Ngày giao dịch</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="transaction-management-content-body">
+							<div class="payment-requests-tab-btn">
+								<span class="payment-requests-tab-btn-active">Tất cả(100)</span>
+								<span>Chờ xử lý(100)</span>
+								<span>Hoàn thành(100)</span>
+								<span>Thất bại(100)</span>
+							</div>
+
+							<div class="payment-requests-tab-content">
+								<div class="request-payment-list">
+									<table>
+										<thead>
+											<tr>
+												<td>
+													Ngày giao dịch
+												</td>
+												<td>
+													User
+												</td>
+												<td>
+													Số tiền
+												</td>
+												<td>
+													Trạng thái
+												</td>
+												<td>
+
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>DD/MM/YYYY</td>
+												<td>Nguyễn Văn A</td>
+												<td>999.999.999.999</td>
+												<td class="pending-state-request">Chờ xử lý</td>
+												<td>
+													<button class="pending-state-view-btn">Xem</button>
+												</td>
+											</tr>
+
+											<tr>
+												<td>DD/MM/YYYY</td>
+												<td>Nguyễn Văn A</td>
+												<td>999.999.999.999</td>
+												<td class="successful-state-request">Hoàn thành</td>
+												<td>
+													<button class="successful-state-view-btn">Xem</button>
+												</td>
+											</tr>
+
+											<tr>
+												<td>DD/MM/YYYY</td>
+												<td>Nguyễn Văn A</td>
+												<td>999.999.999.999</td>
+												<td class="failed-state-request">Thất bại</td>
+												<td>
+													<button class="failed-state-view-btn">Xem</button>
+												</td>
+											</tr>
+
+											<tr>
+												<td>DD/MM/YYYY</td>
+												<td>Nguyễn Văn A</td>
+												<td>999.999.999.999</td>
+												<td class="successful-state-request">Hoàn thành</td>
+												<td>
+													<button class="successful-state-view-btn">Xem</button>
+												</td>
+											</tr>
+
+											<tr>
+												<td>DD/MM/YYYY</td>
+												<td>Nguyễn Văn A</td>
+												<td>999.999.999.999</td>
+												<td class="successful-state-request">Hoàn thành</td>
+												<td>
+													<button class="successful-state-view-btn">Xem</button>
+												</td>
+											</tr>
+
+											<tr>
+												<td>DD/MM/YYYY</td>
+												<td>Nguyễn Văn A</td>
+												<td>999.999.999.999</td>
+												<td class="successful-state-request">Hoàn thành</td>
+												<td>
+													<button class="successful-state-view-btn">Xem</button>
+												</td>
+											</tr>
+
+											<tr>
+												<td>DD/MM/YYYY</td>
+												<td>Nguyễn Văn A</td>
+												<td>999.999.999.999</td>
+												<td class="successful-state-request">Hoàn thành</td>
+												<td>
+													<button class="successful-state-view-btn">Xem</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="request-pagination">
+										<span>1</span>
+										<span>2</span>
+										<span class="current-active-page">3</span>
+										<span>4</span>
+										<span>5</span>
+										<span>...</span>
+										<span>12</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- check pending payment request section  -->
+					<div class="pending-withdraw-request-detail hide-item">
+						<div class="pending-withdraw-request-detail-back">
+							<img src="../assets/icons/arrow-left-blue.svg" alt="">
+							<span>Trở lại</span>
+						</div>
+						<div class="pending-withdraw-request-detail-content">
+							<span>Kiểm tra yêu cầu rút tiền</span>
+							<span>Thông tin</span>
+							<div>
+								<span>User</span>
+								<span class="username-holder">Nguyễn Văn A</span>
+							</div>
+
+							<div>
+								<span>Tình trạng</span>
+								<span class="request-state-holder-pending">Chờ xử lý</span>
+							</div>
+
+							<div>
+								<span>Số tiền rút</span>
+								<span>999,999,999 VND</span>
+							</div>
+
+							<div>
+								<span>Tài khoản nhận tiền</span>
+								<span>012345678</span>
+							</div>
+
+							<div>
+								<span>Chủ tài khoản</span>
+								<span>Công ty TNHH Agory</span>
+							</div>
+
+							<div>
+								<span>Ngân hàng</span>
+								<span>Ngân hàng Nông Nghiệp và Phát Triển Nông Thôn - AGRIBANK</span>
+							</div>
+						</div>
+
+						<div>
+							<span>Upload file uỷ nhiệm chi</span>
+							<label for="unc-upload">
+								Upload
+								<input type="file" id="unc-upload">
+							</label>
+							<div>
+								<span id="filename-holder">No file chosen</span>
+								<img src="../assets/icons/vuesax-linear-trash.svg" alt="" id="delete-chosen-file">
+							</div>
+						</div>
+
+						<div>
+							<span>Báo tình trạng thanh toán</span>
+							<span>Admin lưu ý: Chuyển tiền thành công mới báo duyệt thanh toán</span>
+							<div>
+								<button id="cancel-payment-btn">Báo huỷ thanh toán</button>
+								<button id="approve-payment-btn">Báo duyệt thanh toán</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- check complete payment request section  -->
+					<div class="complete-withdraw-request-detail hide-item">
+						<div class="complete-withdraw-request-detail-back">
+							<img src="../assets/icons/arrow-left-blue.svg" alt="">
+							<span>Trở lại</span>
+						</div>
+						<div class="complete-withdraw-request-detail-content">
+							<span>Kiểm tra yêu cầu rút tiền</span>
+							<span>Thông tin</span>
+							<div>
+								<span>User</span>
+								<span class="username-holder">Nguyễn Văn A</span>
+							</div>
+
+							<div>
+								<span>Tình trạng</span>
+								<span class="request-state-holder-complete">Hoàn thành</span>
+							</div>
+
+							<div>
+								<span>Ngày xác nhận</span>
+								<span>MM/DD/YYYY</span>
+							</div>
+
+							<div>
+								<span>Admin xác nhận</span>
+								<span>Doan Van B</span>
+							</div>
+
+							<div>
+								<span>File uỷ nhiệm chi</span>
+								<span><a href="">uy_nhiem_chi.pdf</a></span>
+							</div>
+
+							<div>
+								<span>Số tiền rút</span>
+								<span>999.999.999 VND</span>
+							</div>
+
+							<div>
+								<span>Tài khoản nhận tiền</span>
+								<span>0987654321</span>
+							</div>
+
+							<div>
+								<span>Chủ tài khoản</span>
+								<span>Công ty TNHH Agory</span>
+							</div>
+
+							<div>
+								<span>Ngân hàng</span>
+								<span>Ngân hàng Nông Nghiệp và Phát Triển Nông Thôn - AGRIBANK</span>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- check failed payment request section  -->
+					<div class="failed-withdraw-request-detail hide-item">
+						<div class="failed-withdraw-request-detail-back">
+							<img src="../assets/icons/arrow-left-blue.svg" alt="">
+							<span>Trở lại</span>
+						</div>
+						<div class="failed-withdraw-request-detail-content">
+							<span>Kiểm tra yêu cầu rút tiền</span>
+							<span>Thông tin</span>
+							<div>
+								<span>User</span>
+								<span class="username-holder">Nguyễn Văn A</span>
+							</div>
+
+							<div>
+								<span>Tình trạng</span>
+								<span class="request-state-holder-failed">Thất bại</span>
+							</div>
+
+							<div>
+								<span>Ngày xác nhận</span>
+								<span>MM/DD/YYYY</span>
+							</div>
+
+							<div>
+								<span>Admin xác nhận</span>
+								<span>Doan Van B</span>
+							</div>
+
+							<div>
+								<span>File uỷ nhiệm chi</span>
+								<span><a href="">uy_nhiem_chi.pdf</a></span>
+							</div>
+
+							<div>
+								<span>Số tiền rút</span>
+								<span>999.999.999 VND</span>
+							</div>
+
+							<div>
+								<span>Tài khoản nhận tiền</span>
+								<span>0987654321</span>
+							</div>
+
+							<div>
+								<span>Chủ tài khoản</span>
+								<span>Công ty TNHH Agory</span>
+							</div>
+
+							<div>
+								<span>Ngân hàng</span>
+								<span>Ngân hàng Nông Nghiệp và Phát Triển Nông Thôn - AGRIBANK</span>
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+
+
+			<!-- cancel payment popup section  -->
+			<div class="cancel-payment-popup">
+				<div class="cancel-payment-popup-content">
+					<span>Báo huỷ thanh toán</span>
+					<span>Xin xác nhận tình trạng thanh toán. Tình trạng sẽ được thông báo cho người dùng.</span>
+					<div>
+						<button id="do-exit-cancel-popup">Quay lại</button>
+						<button>Báo huỷ thanh toán</button>
+					</div>
+
+				</div>
+			</div>
+
+
+			<!-- aprrove payment popup section  -->
+			<div class="approve-payment-popup">
+				<div class="approve-payment-popup-content">
+					<span>Báo duyệt thanh toán</span>
+					<span>Xin xác nhận tình trạng thanh toán. Tình trạng sẽ được thông báo cho người dùng.</span>
+					<div>
+						<button id="do-exit-approve-popup">Quay lại</button>
+						<button>Báo duyệt thanh toán</button>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- footer section  -->
+		<div class="footer">
+			<div class="social">
+				<i class="fas fa-basketball-ball mr-4 text-white fa-lg"></i>
+				<i class="fab fa-instagram mr-4 text-white fa-lg"></i>
+				<i class="fab fa-twitter mr-4 text-white fa-lg"></i>
+				<i class="fab fa-youtube mr-4 text-white fa-lg"></i>
+			</div>
+			<div class="brand-slogan">
+				<span>Agory - Influencer Marketing Network</span>
+			</div>
+			<div class="policy">
+				<div class="trademark">
+					<span style="font-size: 10px; font-family: Nunito Light;">© 2020 - All Rights Reserved</span>
+				</div>
+				<div class="policy-link">
+					<a href="#">Terms & Conditions</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Sitemap</a>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="../main.js"></script>
+	<script src="admin-dashboard.js"></script>
+</body>
+
+</html>
