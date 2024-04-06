@@ -17,11 +17,60 @@
     background: #F2F2F5;
 }
 
-.notifications-main-content>span {
+.notifications-main-content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 16px;
+    position: relative;
+}
+
+#noti-header-context-menu{
+    font-size: 14px;
+    font-family: 'Nunito';
+    position: absolute;
+    top: 24px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    user-select: none;
+    transition-duration: 300ms;
+    box-shadow: 0px 4px 4px 0px rgba(28, 28, 40, 0.20);
+    display: none;
+}
+
+#noti-header-context-menu:hover{
+    background: #eceff6;
+}
+
+.notifications-main-content-header > span {
     font-size: 20px;
     font-weight: 700;
+}
+
+#noti-header-content-menu-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: none;
+    margin: 0;
+    transition-duration: 300ms;
+}
+
+#noti-header-content-menu-btn:hover{
+    background: #e3eafb;
+}
+
+#noti-header-content-menu-btn:focus + #noti-header-context-menu{
+    outline: none;
     display: block;
+}
+
+#noti-header-content-menu-btn > img{
+    scale: 1.2;
 }
 
 .notifications-list-item {
@@ -119,6 +168,8 @@
     font-family: 'Nunito';
     overflow-y: auto;
     z-index: 10000;
+    display: flex;
+    flex-direction: column;
 }
 
 .floating-list-header{
@@ -142,6 +193,48 @@
 
 #floating-context-target-focus:focus + div, #context-target-focus:focus + div{
     display: flex;
+}
+
+.floating-notification-list-content-empty{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.floating-notification-list-content-empty img{
+    width: 128px;
+    height: 128px;
+}
+
+.floating-notification-list-content-empty span{
+    font-size: 14px;
+    font-family: 'Nunito';
+    display: block;
+    margin-top: 12px;
+}
+
+.chat-mes-popup{
+    position: absolute;
+    top: 32px;
+    right: 0;
+    display: none;
+    z-index: 10001;
+}
+
+.chat-mes-popup .contacts-list{
+    width: 300px;
+    background: white;
+    border-radius: 8px;
+    max-height: 560px;
+    box-shadow: 0px 4px 4px 0px rgba(28, 28, 40, 0.20);
+
+}
+
+#mes-show-popup-btn:focus ~ .chat-mes-popup , .notification-badge:focus ~.chat-mes-popup{
+    display: block;
 }
 
 

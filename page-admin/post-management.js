@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     const mainTabObj = {
         'post-view': $('#main-tab-1'),
-        'partner-invitation': $('#main-tab-2'),
+        'partner-invitation': $('#main-tab-2-empty'),
         'cost-check': $('#main-tab-3'),
         'corporation-partner': $('#main-tab-4')
 
@@ -63,7 +63,7 @@ $(document).ready(function () {
     })
 
     const subTabObj = {
-        'sub-tab-btn-1': $('#sub-tab-content-1'),
+        'sub-tab-btn-1': $('#sub-tab-content-1-empty'),
         'sub-tab-btn-2': $('#sub-tab-content-2'),
         'sub-tab-btn-3': $('#sub-tab-content-3'),
         'sub-tab-btn-4': $('#sub-tab-content-4')
@@ -108,10 +108,10 @@ $(document).ready(function () {
 
 
 	const costSubTabs = {
-		'cost-sub-tab-btn-1': $('.cost-sub-tab-content-1'),
-		'cost-sub-tab-btn-2': $('.cost-sub-tab-content-2'),
-		'cost-sub-tab-btn-3': $('.cost-sub-tab-content-3'),
-		'cost-sub-tab-btn-4': $('.cost-sub-tab-content-4')
+		'cost-sub-tab-btn-1': $('.cost-sub-tab-content-1-empty'),
+		'cost-sub-tab-btn-2': $('.cost-sub-tab-content-2-empty'),
+		'cost-sub-tab-btn-3': $('.cost-sub-tab-content-3-empty'),
+		'cost-sub-tab-btn-4': $('.cost-sub-tab-content-4-empty')
 	}
 
 	let activeCostSubTab = $('#cost-sub-tab-btn-1')
@@ -129,8 +129,8 @@ $(document).ready(function () {
 	})
 
 	const corpSubTab = {
-		'corp-tab-btn-1': $('.corp-sub-tab-content-1'),
-		'corp-tab-btn-2': $('.corp-sub-tab-content-2')
+		'corp-tab-btn-1': $('.corp-sub-tab-content-1-empty'),
+		'corp-tab-btn-2': $('.corp-sub-tab-content-2-empty')
 	}
 
 	let activeCorpSubTab = $('#corp-tab-btn-1')

@@ -50,7 +50,7 @@ $(document).ready(function () {
     var tabs = [
         {
             id: 0,
-            el: $('#tab-corporating')
+            el: $('#tab-corporating-empty')
         },
         {
             id: 1,
@@ -58,7 +58,7 @@ $(document).ready(function () {
         },
         {
             id: 2,
-            el: $('#tab-notes')
+            el: $('#tab-notes-empty')
         },
     ]
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
                 item.el.css('display', 'none')
             }
             else {
-                item.el.css('display', 'block')
+                item.el.css('display', 'flex')
             }
 
         })

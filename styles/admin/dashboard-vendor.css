@@ -8,3 +8,20 @@
     margin-top: 16px;
     min-height: 400px;
 }
+
+#tab-notes-vendor-empty{
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+#tab-notes-vendor-empty img{
+    width: 30%;
+}
+
+#tab-notes-vendor-empty span {
+    display: block;
+    margin-top: 24px;
+    font-family: 'Nunito';
+    font-size: 14px;
+}

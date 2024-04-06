@@ -118,6 +118,8 @@
     background: white;
     border-radius: 0 8px 8px 8px;
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -127,6 +129,7 @@
     background-color: white;
     padding: 16px;
     border-bottom: solid 1px rgb(222, 219, 219);
+    width: 100%;
 }
 
 .tab-content-item img {
@@ -215,9 +218,29 @@
     margin-right: 4px;
 }
 
+#tab-applying, #tab-notes-empty {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: white;
+}
+
+#tab-notes-empty img{
+    width: 20%;
+}
+
+#tab-notes-empty span{
+    display: block;
+    margin-top: 24px;
+    font-size: 14px;
+    font-family: 'Nunito';
+}
+
 #tab-applying,
 #tab-invitation,
-#tab-notes {
+#tab-notes
+#tab-notes-empty {
     display: none;
 }
 
@@ -486,6 +509,26 @@
 
 .text-change-color {
     color: #3E7BFA;
+}
+
+#tab-corporating-empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 32px 24px;
+}
+
+#tab-corporating-empty img {
+    width: 30%;
+}
+
+#tab-corporating-empty span{
+    font-size: 14px;
+    font-family: 'Nunito';
+    display: block;
+    margin-top: 24px;
 }
 
 

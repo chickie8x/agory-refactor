@@ -62,7 +62,7 @@ $(document).ready(function () {
         },
         {
             id: 3,
-            el: $('#tab-notes')
+            el: $('#tab-notes-vendor-empty')
         },
     ]
 
@@ -82,7 +82,7 @@ $(document).ready(function () {
                 item.el.css('display', 'none')
             }
             else {
-                item.el.css('display', 'block')
+                item.el.css('display', 'flex')
             }
 
         })
