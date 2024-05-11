@@ -167,5 +167,24 @@ $(document).ready(function () {
         $('.payment-guide-popup').removeClass('popup-show')
     })
 
+    //update payment comfirmation popup 
+    $('.pay-by-account-btn').click(function() {
+        $('.payment-guide-popup').removeClass('popup-show')
+        $('.payment-confirmation-popup').addClass('popup-show')
+    })
+
+    $('.payment-confirmation-popup-cancel').click(function() {
+        $('.payment-confirmation-popup').removeClass('popup-show')
+    })
+
+    $('.payment-confirmation-popup-ok').click(function() {
+        $('.payment-confirmation-popup').removeClass('popup-show')
+        $('.confirmation-OTP-popup').addClass('popup-show')
+    })
+
+    $('.confirmation-OTP-action-btn button:first-child').click(function() {
+        $('.confirmation-OTP-popup').removeClass('popup-show')
+    })
+
 
 })

@@ -493,7 +493,9 @@
 .payment-done-popup,
 .deposite-popup,
 .payment-guide-popup,
-.view-report-detail-popup {
+.view-report-detail-popup,
+.payment-confirmation-popup, 
+.confirmation-OTP-popup {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -946,7 +948,7 @@
 .payment-guide-popup-content{
     border-radius: 16px;
     background: white;
-    width: 700px;
+    width: 800px;
     padding: 16px;
     position: relative;
 }
@@ -975,10 +977,98 @@
 .payment-guide-content-body{
     display: flex;
     margin-top: 24px;
+    justify-content: space-between;
+}
+
+
+.deposite-from-account {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.deposite-from-account > div {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito';
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 32px;
+    color: #575763;
+}
+
+.deposite-from-account > div:last-of-type{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+
+}
+
+.deposite-from-account > div > div {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.deposite-from-account > div > div > span:first-child{
+    display: block;
+    min-width: 100px;
+    opacity: 80%;
+}
+
+.pay-by-account-btn{
+    border: none;
+    color: white;
+    background: #3E7BFA;
+    border-radius: 8px;
+    outline: none;
+    width: 156px;
+    height: 32px;
+}
+
+.pay-by-account-btn:focus{
+    outline: none;
+}
+
+.deposite-from-bank {
+    width: 60%;
+}
+
+.inside-divider {
+    width: 1px;
+    position: relative;
+    display: block;
+    background: #5c5b5b;
+    margin: 0 32px;
+}
+
+
+.inside-divider > span {
+    position: absolute;
+    top: 40%;
+    left: -16px;
+    display: block;
+    padding: 20px 0;
+    background: white;
+    font-weight: 700;
+    color: #575763;
+    font-size: 14px;
+}
+
+
+.deposite-from-bank > span, .deposite-from-account > span{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: #575763;
+}
+
+.deposite-from-bank > div > div {
+    display: flex;
 }
 
 .payment-guide-content-info{
-    padding: 16px 24px 0 24px;
+    padding: 16px 16px 0 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -989,6 +1079,8 @@
     color: #575763;
     font-family: 'Nunito';
     font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 
 .payment-guide-content-info-hint img{
@@ -1001,13 +1093,15 @@
     display: flex;
     flex-direction: column;
     padding: 18px;
+    width: 180px;
+    height: 180px;
 }
 
 .qr-container a {
     display: flex;
     align-items: center;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     justify-content: center;
     margin-top: 16px;
 }
@@ -1015,7 +1109,7 @@
 
 .payment-guide-content-info-item > span:nth-child(1){
     display: block;
-    min-width: 180px;
+    min-width: 110px;
     font-weight: 600;
     opacity: 0.9;
 }
@@ -1032,11 +1126,11 @@
 }
 
 .payment-guide-content-note{
-    margin-top: 24px;
-    padding: 16px 24px;
+    padding: 8px 16px;
     background: rgb(195, 193, 193);
     border-radius: 8px;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .payment-guide-content-note > span{
@@ -1046,6 +1140,99 @@
 .payment-guide-content-note > span > span{
     color: #2c2c31;
 }
+
+/* payment confirmation popup section  */
+.payment-confirmation-popup-content {
+    width: 420px;
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.confirmation-content-header, .confirmation-OTP-popup-header{
+    font-weight: 700;
+    font-family: 'Nunito';
+    color: #1C1C28;
+}
+
+.confirmation-content-body{
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.confirmation-content-body button, .confirmation-OTP-action-btn button {
+    height: 32px;
+    font-family: 'Nunito';
+    font-size: 14px;
+    outline: none;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.confirmation-content-body button:first-child{
+    color: #3E7BFA;
+    border: solid 1px #3E7BFA;
+    width: 80px;
+    background: none;
+}
+
+.confirmation-content-body button:last-child{
+    color: white;
+    border: none;
+    width: 100px;
+    background: #3E7BFA;
+    margin-left: 24px;
+}
+
+
+/* confirmation OTP popup section  */
+.confirmation-OTP-popup-content{
+    width: 400px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background: white;
+}
+
+.confirmation-OTP-popup-content > div {
+    margin-bottom: 18px;
+}
+
+.confirmation-OTP-popup-content > div:last-of-type{
+    margin-bottom: 0;
+}
+
+.confirmation-OTP-popup-content > div > input {
+    width: 100%;
+    outline: none;
+    border: solid 1px rgb(206, 206, 206);
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.confirmation-OTP-action-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.confirmation-OTP-action-btn button:first-child{
+    color: #3E7BFA;
+    border: solid 1px #3E7BFA;
+    width: 80px;
+    background: none;
+}
+
+.confirmation-OTP-action-btn button:last-child{
+    color: white;
+    border: none;
+    width: 100px;
+    background: #3E7BFA;
+    margin-left: 24px;
+}
+
 
 
 
@@ -1404,14 +1591,71 @@
 
 }
 
-@media only screen and (max-width: 730px){
+@media only screen and (max-width: 800px){
     .payment-guide-popup-content{
+        width: 80%;
+    }
+
+    .payment-guide-content-body{
+        flex-direction: column;
+    }
+
+    .deposite-from-account{
+        order: 2;
         width: 100%;
     }
+
+    .inside-divider{
+        order: 1;
+    }
+
+    .deposite-from-bank{
+        width: 100%;
+    }
+
+    .deposite-from-bank > span{
+        display: block;
+        text-align: left;
+    }
+
+    .qr-container{
+        padding-left: 0;
+    }
+
+    .payment-guide-content-info-hint:last-child{
+        margin-top: 18px;
+    }
+
+    .inside-divider{
+        width: 100%;
+        height: 1px;
+        margin: 32px 0;
+    }
+
+    .inside-divider > span {
+        top: -12px;
+        left: 42%;
+        padding: 0 16px;
+        background: white;
+    }
+
+    .deposite-from-account > span {
+        display: block;
+        text-align: left;
+    }
+
+    .deposite-from-account > div:first-of-type{
+        margin-top: 18px;
+    }
+
+    .deposite-from-account > div:last-of-type{
+        margin-top: 18px;
+    }
+
+    .deposite-from-account > div > div {
+        margin-bottom: 8px;
+    }
 }
-
-
-
 
 
 
@@ -1575,4 +1819,45 @@
         padding: 8px 16px;
     }
 
+
+    .payment-guide-popup-content{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+
+
+    .payment-guide-content-body{
+        margin-top: 12px;
+    }
+
+    .deposite-from-bank > div > div:first-of-type{
+        flex-direction: column;
+    }
+
+    .qr-container{
+        width: 100%;
+        height: auto;
+        margin-top: 12px;
+    }
+
+    .qr-container > a {
+        margin-top: 8px;
+    }
+
+    .payment-guide-content-info {
+        padding: 8px 0;
+    }
+
+    .payment-guide-content-info-hint:last-child{
+        margin: 8px 0;
+    }
+
+    .payment-guide-content-note{
+        margin-top: 0;
+    }
+
+    .deposite-from-account > div:last-child{
+        margin-top: 12px;
+    }
 }

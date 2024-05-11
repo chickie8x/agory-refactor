@@ -1805,44 +1805,115 @@
 							<span class="payment-guide-popup-btn-close">&#10005;</span>
 						</div>
 						<div class="payment-guide-content-body">
-							<div class="qr-container">
-								<img src="../assets/images/qrcode.png" alt="qr-code">
-								<a href=""><img src="../assets/icons/blue-download.svg" alt="">Tải ảnh QR</a>
-							</div>
-							<div class="payment-guide-content-info">
-								<div class="payment-guide-content-info-item">
-									<span>Ngân hàng</span>
-									<span>Vietcombank</span>
-								</div>
+							<div class="deposite-from-account">
+								<span>Từ số dư tài khoản</span>
+								<div>
+									<div>
+										<span>Số dư : </span>
+										<span>99,999,999 VND</span>
+									</div>
 
-								<div class="payment-guide-content-info-item">
-									<span>Số tài khoản</span>
-									<span>9217418888 <img src="../assets/icons/fast-copy.svg" class="fast-copy-icon" alt=""></span>
-								</div>
+									<div>
+										<span>Thanh toán : </span>
+										<span>99,999,999 VND</span>
+									</div>
 
-								<div class="payment-guide-content-info-item">
-									<span>Thụ hưởng</span>
-									<span>Bùi Tấn Việt</span>
-								</div>
+									<div>
+										-------------
+									</div>
 
-								<div class="payment-guide-content-info-item">
-									<span>Nội dung CK</span>
-									<span>SEP00000371 <img src="../assets/icons/fast-copy.svg" class="fast-copy-icon" alt=""></span>
+									<div>
+										<span>Còn lại : </span>
+										<span>99,999,999 VND</span>
+									</div>
 								</div>
-
-								<div class="payment-guide-content-info-item">
-									<span>Số tiền</span>
-									<span>99,000 đ</span>
-								</div>
-
-								<div class="payment-guide-content-info-hint">
-									<img src="../assets/icons/qrcode-icon.svg" alt="">
-									<span>Dùng ứng dụng ngân hàng quét mã QR để chuyển khoản </span>
+								<div>
+									<button class="pay-by-account-btn">Thanh toán</button>
 								</div>
 							</div>
+							<div class="inside-divider">
+								<span>Hoặc</span>
+							</div>
+							<div class="deposite-from-bank">
+								<span>Từ tài khoản ngân hàng</span>
+								<div>
+									<div>
+										<div class="qr-container">
+											<img src="../assets/images/qrcode.png" alt="qr-code">
+											<a href=""><img src="../assets/icons/blue-download.svg" alt="">Tải ảnh QR</a>
+										</div>
+										<div class="payment-guide-content-info">
+											<div class="payment-guide-content-info-item">
+												<span>Ngân hàng</span>
+												<span>Vietcombank</span>
+											</div>
+			
+											<div class="payment-guide-content-info-item">
+												<span>Số tài khoản</span>
+												<span>9217418888 <img src="../assets/icons/fast-copy.svg" class="fast-copy-icon" alt=""></span>
+											</div>
+			
+											<div class="payment-guide-content-info-item">
+												<span>Thụ hưởng</span>
+												<span>Bùi Tấn Việt</span>
+											</div>
+			
+											<div class="payment-guide-content-info-item">
+												<span>Nội dung CK</span>
+												<span>SEP00000371 <img src="../assets/icons/fast-copy.svg" class="fast-copy-icon" alt=""></span>
+											</div>
+			
+											<div class="payment-guide-content-info-item">
+												<span>Số tiền</span>
+												<span>99,000 đ</span>
+											</div>
+			
+											<div class="payment-guide-content-info-hint">
+												<img src="../assets/icons/qrcode-icon.svg" alt="">
+												<span>Dùng ứng dụng ngân hàng quét mã QR để chuyển khoản </span>
+											</div>
+										</div>
+									</div>
+									
+									<div class="payment-guide-content-note">
+										<span>Vui lòng <span>giữ nguyên nội dung chuyển khoản.</span> Hệ thống sẽ tự nhận diện thanh toán trong vài giây </span>
+									</div>
+								</div>
+							</div>
+							
 						</div>
-						<div class="payment-guide-content-note">
-							<span>Vui lòng <span>giữ nguyên nội dung chuyển khoản.</span> Hệ thống sẽ tự nhận diện thanh toán trong vài giây </span>
+
+					</div>
+				</div>
+
+
+				<!-- payment comfirmation popup section  -->
+				<div class="payment-confirmation-popup">
+					<div class="payment-confirmation-popup-content">
+						<div class="confirmation-content-header">
+							<span>Xác nhận thanh toán</span>
+						</div>
+						<div class="confirmation-content-body">
+							<button class="payment-confirmation-popup-cancel">Huỷ</button>
+							<button class="payment-confirmation-popup-ok">Xác nhận</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- payment comfirmation enter OTP popup  -->
+				<div class="confirmation-OTP-popup">
+					<div class="confirmation-OTP-popup-content">
+						<div class="confirmation-OTP-popup-header">
+							<span>Nhập OTP được gửi tới email của bạn</span>
+						</div>
+	
+						<div class="confirmation-OTP-popup-input">
+							<input type="text">
+						</div>
+	
+						<div class="confirmation-OTP-action-btn">
+							<button>Huỷ</button>
+							<button>Thanh toán</button>
 						</div>
 					</div>
 				</div>
